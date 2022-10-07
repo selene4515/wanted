@@ -1,0 +1,30 @@
+.blueBanner{
+    margin: 60px auto 0;
+    width: 87.72%;
+    max-width: 1060px;
+    margin-top: 0;
+}
+.blueBanner_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 30px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 38.5px;
+    line-height: normal;
+    background-image: linear-gradient(90deg,#01a9fe -12%,#2f5fef 37%,#046afe 72%,#00d2dd 110%);
+}
+.blueBanner_line_spansvg{
+    display: inline-flex;
+    width: 10px;
+    margin-left: 2px;
+    vertical-align: text-top;
+}
+.blueBanner_line_spansvg svg{
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    flex-shrink: 0;
+}
