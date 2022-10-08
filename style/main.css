@@ -338,3 +338,102 @@
     flex-shrink: 0;
     font-size: inherit;
 }
+
+
+
+.companyinfo{
+    padding: 60px 0 80px;
+}
+.companyinfo > div{
+    max-width: 1060px;
+    width: 90%;
+    margin: 0 auto;
+}
+.companyinfo_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    grid-gap: 8px;
+    gap: 8px;
+}
+.companyinfo_title > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.companyinfo_title > div > h2{
+    font-size: 22px;
+    line-height: 1.33;
+    font-weight: 700;
+    color: #333;
+    margin-left: 4px;
+}
+
+.companyinfo_content{
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    color: #333;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.companyinfo_content > div{
+    padding: 18px 0 0;
+    border-right: 1px solid #ececec;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+.companyinfo_content_icon{
+    font-size: 32px;
+}
+.companyinfo_content_icon span{
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+}
+.companyinfo_content_icon svg{
+    width: 1em;
+    height: 1em;
+}
+.companyinfo_content_text{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    min-width: 64px;
+    height: 50px;
+    padding: 0 27px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 8px;
+    color :  #333;
+}
+.companyinfo_content_text > span{
+    display: flex;
+    align-items: inherit;
+}
+.companyinfo_content_text_span{
+    margin-top: -2px;
+    margin-right: -1px;
+    margin-left: 2px;
+    flex-direction: row;
+}
+.companyinfo_content_text_span > span{
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+}
+.companyinfo_content_text_span svg{
+    width: 1em;
+    height: 1em;
+}
