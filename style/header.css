@@ -201,3 +201,19 @@ img {
     font-weight: 400;
 }
 
+
+.OverlayJobCategory_Container__C3ngs{
+    z-index: 500;
+    display: none;
+}
+
+.OverlayJobCategory_Container__C3ngs.on {
+    display: block;
+}
+
+.Explore_SubCategory__xIcAi{
+    display: none;
+}
+.Explore_SubCategory__xIcAi.on{
+    display: block;
+}
