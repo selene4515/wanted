@@ -803,7 +803,8 @@
     padding: 0;
 }
 .List_List_container__JnQMS>ul li {
-    width: 25%;
+    /* width: 25%; */
+    width: 240px;
     padding: 10px;
     list-style: none;
     display: inline-block;
@@ -941,4 +942,4 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
+} 

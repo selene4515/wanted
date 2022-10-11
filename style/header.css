@@ -104,10 +104,8 @@ img {
     height: 14px;
     object-fit: contain;
 }
-.header_div_logo > a > img{
-    width: 74.38px;
-    height: 17px;
-    object-fit: contain;
+.header_div_logo > a > i{
+    font-size: 17px;
 }
 
 .header_div_menu {

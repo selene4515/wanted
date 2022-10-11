@@ -1,932 +1,2117 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>개발 채용 정보 | 원티드</title>
-    <link href="https://image.wanted.co.kr/optimize?src=https://static.wanted.co.kr/favicon/144x144.png&w=60&q=90.icon"
-    rel="shortcut icon" type="image/x-icon">
+    <link
+      href="https://image.wanted.co.kr/optimize?src=https://static.wanted.co.kr/favicon/144x144.png&w=60&q=90.icon"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
 
-    <link href="./style/1bcb04118e14bbdc.css" rel="stylesheet">
-    <link href="./style/slick.css" rel="stylesheet">
-    <link href="./style/header.css" rel="stylesheet">
-    <link href="./style/main.css" rel="stylesheet">
-    <link href="./style/banner.css" rel="stylesheet">
-
-</head>
-<body>
+    <link href="./style/1bcb04118e14bbdc.css" rel="stylesheet" />
+    <link href="./style/slick.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link href="./style/sign.css" rel="stylesheet" />
+    <link href="./style/main.css" rel="stylesheet" />
+    <link href="./style/grid.css" rel="stylesheet" />
+    <link href="./style/banner.css" rel="stylesheet" />
+    <link href="./style/footer.css" rel="stylesheet" />
+    <link href="./style/header.css" rel="stylesheet" />
+  </head>
+  <body>
     <div>
-        <div class="header">
-            <div class="header_div">
-                <div class="header_div_logo">
-                    <button id="hambuger">
-                        <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=undefined&q=75">
-                    </button>
-                    <a href="./index.html">
-                        <img
-                            src="https://theme.zdassets.com/theme_assets/9309779/480a35976bf401a88dd7388d8f5c19d77227cd35.png">
-                    </a>
-                </div>
-                <ul class="header_div_menu">
-                    <li><a>채용</a></li>
-                    <li><a>이벤트</a></li>
-                    <li><a>직군별 연봉</a></li>
-                    <li><a>이력서</a></li>
-                    <li><a>커뮤니티<em><svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11"><g fill="none" fill-rule="evenodd" font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo" font-size="9" font-weight="500"><g fill="#36F"><g><g><g><g><g><g><text transform="translate(-931.000000, -13.000000) translate(224.000000, 7.000000) translate(210.000000, 6.000000) translate(350.000000, 0.000000) translate(147.000000, 0.000000)"><tspan x="0" y="8">New</tspan></text></g></g></g></g></g></g></g></g></svg></em></a></li>
-                    <li><a>프리랜서</a></li>
-                    <li><a>AI 합격예측<em><svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11"><g fill="none" fill-rule="evenodd" font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo" font-size="9" font-weight="500"><g fill="#36F"><g><g><g><g><g><g><text transform="translate(-931.000000, -13.000000) translate(224.000000, 7.000000) translate(210.000000, 6.000000) translate(350.000000, 0.000000) translate(147.000000, 0.000000)"><tspan x="0" y="8">Beta</tspan></text></g></g></g></g></g></g></g></g></svg></em></a></li>
-                </ul>
-                <div class="header_div_join">
-                    <ul>
-                        <li>
-                            <button class="searchBtn">
-                                <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
-                                    width="18" height="18" viewBox="0 0 18 18">
-                                    <defs>
-                                        <path id="qt2dnsql4a"
-                                            d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z">
-                                        </path>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <use fill="#333" fill-rule="nonzero" stroke="#333" stroke-width=".3"
-                                            xlink:href="#qt2dnsql4a"></use>
-                                    </g>
-                                </svg>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="joinBtn" type="button">
-                                회원가입/로그인
-                            </button>
-                        </li>
-                        <li class="leftDivision">
-                            <a class="dashboardBtn" href="#">기업 서비스</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="OverlayJobCategory_Container__C3ngs" role="presentation">
-                <div>
-                    <nav class="Explore_Container__QaOhW" aria-hidden="true">
-                        <section class="Explore_MainCategory__rpxri">
-                            <a href="/wdlist" class="" aria-label="" data-testid="category-all">
-                                <em><h2>직군 전체</h2></em>
-                            </a>
-                            <ul>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9" id="gaebal">
-                                    <a href="./second.html" class="" aria-label=""><em>개발</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/507" class="" aria-label=""><em>경영·비즈니스</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/523" class="" aria-label=""><em>마케팅·광고</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/511" class="" aria-label=""><em>디자인</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/530" class="" aria-label=""><em>영업</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/510" class="" aria-label=""><em>고객서비스·리테일</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/959" class="" aria-label=""><em>게임 제작</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/517" class="" aria-label=""><em>HR</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/524" class="" aria-label=""><em>미디어</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/513" class="" aria-label=""><em>엔지니어링·설계</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/508" class="" aria-label=""><em>금융</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/522" class="" aria-label=""><em>제조·생산</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/532" class="" aria-label=""><em>물류·무역</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/515" class="" aria-label=""><em>의료·제약·바이오</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/10101" class="" aria-label=""><em>교육</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/10057" class="" aria-label=""><em>식·음료</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/521" class="" aria-label=""><em>법률·법집행기관</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/509" class="" aria-label=""><em>건설·시설</em></a>
-                                </li>
-                                <li data-testid="category-item" class="Explore_CategoryItem__46TK9">
-                                    <a href="/wdlist/514" class="" aria-label=""><em>공공·복지</em></a>
-                                </li>
-                                <li class="Explore_GigsCategoryItem__l4LhT Explore_hasCurrentCategory__wxhIs">
-                                    <a href="https://www.wanted.co.kr/gigs/projects" class="Explore_GigsCategoryItem_link__OlnwE" aria-label="" target="_blank" rel="noopener noreferrer" data-attribute-id="jobCategoryMenu__banner__click">
-                                        <div class="Explore_GigsCategoryItem_banner__eRpF8">
-                                            <span>프리랜서</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="Explore_SubCategory__xIcAi">
-                            <ul style="width: 400px;"><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/" class="" aria-label="">개발 전체</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/872" class="" aria-label="">서버 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/873" class="" aria-label="">웹 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/10110" class="" aria-label="">소프트웨어 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/669" class="" aria-label="">프론트엔드 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/660" class="" aria-label="">자바 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/677" class="" aria-label="">안드로이드 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/899" class="" aria-label="">파이썬 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/678" class="" aria-label="">iOS 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/900" class="" aria-label="">C,C++ 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/895" class="" aria-label="">Node.js 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/655" class="" aria-label="">데이터 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/674" class="" aria-label="">DevOps / 시스템 관리자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/665" class="" aria-label="">시스템,네트워크 관리자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/1634" class="" aria-label="">머신러닝 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/1024" class="" aria-label="">데이터 사이언티스트</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/877" class="" aria-label="">개발 매니저</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/1025" class="" aria-label="">빅데이터 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/676" class="" aria-label="">QA,테스트 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/1026" class="" aria-label="">기술지원</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/671" class="" aria-label="">보안 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/876" class="" aria-label="">프로덕트 매니저</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/658" class="" aria-label="">임베디드 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/893" class="" aria-label="">PHP 개발자</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/1027" class="" aria-label="">블록체인 플랫폼 엔지니어</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/939" class="" aria-label="">웹 퍼블리셔</a><i class="icon-arrow_right"></i></li><li class="Explore_CategoryItem__46TK9"><a href="/wdlist/518/672" class="" aria-label="">하드웨어 엔지니어</a><i class="icon-arrow_right"></i></li></ul>
-                        </section>
-                    </nav>
-                </div>
-            </div>
-        </div>
-       <div style="height: 50px;"></div>
-       <div style="background: #fff;">
-            <article style="padding-top: 40px;" role="navigation">
-                <div class="jobTitle">
-                    <div class="jobTitle_div1">
-                        <button type="button">
-                            <span class="jobTitle_div1_span1">개발</span>
-                            <span class="jobTitle_div1_span2" role="button">
-                                <svg xmlns="https://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                                    <path fill="#767676" fill-rule="nonzero" d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="jobTitle_div2">
-                        <button type="button">
-                            <span class="jobTitle_div2_span1">개발 전체</span>
-                            <span class="jobTitle_div2_span2" role="button">
-                                <svg xmlns="https://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                                    <path fill="#767676" fill-rule="nonzero" d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </article>
-            <div class="jobList">
-                <div>
-                    <div class="jobList_">
-                        <div class="jobList_cate">
-                            <div class="jobList_cate_div1">
-                                <button type="button" class="jobList_cate_div1_btn">
-                                    <span class="jobList_cate_div1_btn_span1">지역<span>1</span></span>
-                                    <span class="jobList_cate_div1_btn_span2">한국</span>
-                                </button>
-                                <div class="jobList_cate_div1_div1">
-                                    <button type="button" class="jobList_cate_div1_btn">
-                                        <span class="jobList_cate_div1_btn_span1">경력</span>
-                                        <span class="jobList_cate_div1_btn_span2">전체</span>
-                                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                            <path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333333"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="jobList_cate_div1_div2">
-                                    <button type="button" class="jobList_cate_div1_btn">
-                                        <span class="jobList_cate_div1_btn_span1">기술스택</span>
-                                        <span class=" "></span>
-                                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                            <path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333333"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="jobList_cate_div2">
-                                <div class=" ">
-                                    <div class="jobList_cate_div2_div">
-                                        <button class="" type="button">
-                                            응답률순
-                                            <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                <path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333333"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <section class="jobList_section">
-                            <div class="slick-slider slick-initialized" dir="ltr">
-                                <div class="slick-list">
-                                    <div class="slick-track" style="width: 2912px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                                        <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" style="background: rgb(242, 251, 245);">
-                                                    연봉이 최고의 복지<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="연봉이 최고의 복지">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Work From Home" style="background: rgb(243, 249, 254);">
-                                                    재택근무<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="재택근무">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Low Turnover Rate" style="background: rgb(243, 242, 251);">
-                                                    퇴사율 10% 이하<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F7d3cdb3c-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="퇴사율 10% 이하">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Fast Growing" style="background: rgb(246, 248, 238);">
-                                                    급성장 중<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F37dacf86-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="급성장 중">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="4" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Military exempt" style="background: rgb(247, 242, 249);">
-                                                    병역특례<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F6eda33d2-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="병역특례">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Less than 50 employees" style="background: rgb(238, 250, 249);">
-                                                    50인 이하️<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F3a965d18-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75" alt="50인 이하️">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="50+ employees" style="background: rgb(239, 241, 251);">
-                                                    50인 이상️<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75" alt="50인 이상️">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="+ 5 yrs of experience" style="background: rgb(242, 251, 245);">
-                                                    업력 5년 이상<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75" alt="업력 5년 이상">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Flexible Hours" style="background: rgb(243, 249, 254);">
-                                                    유연근무<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F827f6146-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="유연근무">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Unlimited PTO" style="background: rgb(243, 242, 251);">
-                                                    자유로운 휴가<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F68dadb80-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="자유로운 휴가">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Bonuses" style="background: rgb(246, 248, 238);">
-                                                    일한만큼 받는 보상<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F472333e8-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="일한만큼 받는 보상">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Company Culture" style="background: rgb(247, 242, 249);">
-                                                    수평적 문화<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F78563d98-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="수평적 문화">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Emerging Industry" style="background: rgb(238, 250, 249);">
-                                                    요즘 뜨는 산업<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4e1b135a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="요즘 뜨는 산업">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div data-index="13" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none;">
-                                            <div>
-                                                <button type="button" class="TagListItem_TagListItem__3aCT9" data-attribute-id="userTag__filter__click" data-kind="add" data-tag="Free Meals" style="background: rgb(239, 241, 251);">
-                                                    식사·간식 제공<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F53ca893e-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="식사·간식 제공">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="button" class="NavButton_NavButton__j73pc NavButton_isNext__m3fGk" aria-label="next button">
-                                    <span class="SvgIcon_SvgIcon__root__8vwon">
-                                        <svg class="SvgIcon_SvgIcon__root__svg__DKYBi" viewBox="0 0 18 18">
-                                            <path d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </section>
-                    </div>
-                    <hr>
-                    <div class="jobList_bookm">
-                        <button type="button">
-                            <svg width="13" height="17" viewBox="0 0 13 17" style="color:#36f">
-                                <defs><path id="bookmarkIconFill" d="M6.25 13.21L.905 16.22c-.403.228-.905-.06-.905-.517V.596C0 .267.27 0 .605 0h11.29c.334 0 .605.267.605.596v15.107c0 .458-.502.745-.905.518L6.25 13.209z"></path></defs>
-                                <g fill="none" fill-rule="evenodd" transform="translate(.188)"><use fill="currentColor" xlink:href="#bookmarkIconFill"></use></g>
-                            </svg>
-                            <span>북마크 모아보기</span>
-                            <svg width="12" height="12" viewBox="0 0 12 12">
-                                <path fill="currentColor" d="M4.22 9.72a.75.75 0 001.06 1.06l4.25-4.25a.75.75 0 000-1.06L5.28 1.22a.75.75 0 00-1.06 1.06L7.94 6 4.22 9.72z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <h3>적극 채용 중인 회사</h3>
-                    <div class="Featured_sliderWrapper__nHmfc nextDisabled prevDisabled lessThanFive">
-                        <div class="slick-slider Featured_slider__Bnaji lessThanFive nextDisabled slick-initialized">
-                            <div class="slick-list">
-                                <div class="slick-track" style="width: 1060px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                                    <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 212px;">
-                                        <div>
-                                            <a href="/company/1160" class="Featured_sliderItem__FY8yb">
-                                                <header>
-                                                    <div class="companyBg undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1160%2Flky56fdnrepb0lpk__400_400.jpg&amp;w=400&amp;q=75&quot;);"></div>
-                                                </header>
-                                                <footer>
-                                                    <div class="logoCircle undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.2b4359c3.png&amp;w=100&amp;q=75&quot;); background-size: contain; background-color: rgb(255, 255, 255);"></div>
-                                                    <h4>피알앤디컴퍼니(헤이딜러)</h4>
-                                                    <h5>2개 포지션</h5>
-                                                </footer>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 212px;">
-                                        <div>
-                                            <a href="/company/10127" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="10127" data-company-name="알체라" data-ad-id="39715" data-marketing-case="topPicks">
-                                                <header>
-                                                    <div class="companyBg undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10127%2Feevirddqe8ytqdq0__400_400.jpg&amp;w=400&amp;q=75&quot;);"></div>
-                                                </header>
-                                                <footer>
-                                                    <div class="logoCircle undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.3da92f3a.jpg&amp;w=100&amp;q=75&quot;); background-size: contain; background-color: rgb(255, 255, 255);"></div>
-                                                    <h4>알체라</h4>
-                                                    <h5>17개 포지션</h5>
-                                                </footer>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 212px;">
-                                        <div>
-                                            <a href="/company/2979" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click">
-                                                <header>
-                                                    <div class="companyBg undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2979%2F5yxmitntevoiv20m__400_400.jpg&amp;w=400&amp;q=75&quot;);"></div>
-                                                </header>
-                                                <footer>
-                                                    <div class="logoCircle undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e6cf703b.jpg&amp;w=100&amp;q=75&quot;); background-size: contain; background-color: rgb(255, 255, 255);"></div>
-                                                    <h4>콜론디(심쿵)</h4>
-                                                    <h5>3개 포지션</h5>
-                                                </footer>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 212px;">
-                                        <div>
-                                            <a href="/company/31271" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="31271" data-company-name="남도마켓" data-ad-id="39318" data-marketing-case="topPicks">
-                                                <header>
-                                                    <div class="companyBg undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31271%2Fpgonpztecjecnkse__400_400.jpg&amp;w=400&amp;q=75&quot;);"></div>
-                                                </header>
-                                                <footer>
-                                                    <div class="logoCircle undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ddb2c630.jpg&amp;w=100&amp;q=75&quot;); background-size: contain; background-color: rgb(255, 255, 255);"></div>
-                                                    <h4>남도마켓</h4>
-                                                    <h5>3개 포지션</h5>
-                                                </footer>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div data-index="4" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 212px;">
-                                        <div>
-                                            <a href="/company/19651" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="19651" data-company-name="컨택스츠아이오(NFTBank)" data-ad-id="39338" data-marketing-case="topPicks">
-                                                <header>
-                                                    <div class="companyBg undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19651%2Fc8pcfksoy6pejwj5__400_400.jpg&amp;w=400&amp;q=75&quot;);"></div>
-                                                </header>
-                                                <footer>
-                                                    <div class="logoCircle undefined" style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.19f41bc1.jpg&amp;w=100&amp;q=75&quot;); background-size: contain; background-color: rgb(255, 255, 255);"></div>
-                                                    <h4>컨택스츠아이오(NFTBank)</h4>
-                                                    <h5>3개 포지션</h5>
-                                                </footer>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="List_List_container__JnQMS">
-                        <ul class="clearfix">
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">스마트컨트랙트 개발자 (Golang)</div>
-                                            <div class="job-card-company-name">온블록</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                서울<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="Card_className__u5rsb">
-                                    <a href="#" class="">
-                                        <header style="background-image: url(&quot;https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75&quot;);">
-                                            <button class="bookmarkBtn" type="button">
-                                                <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path>
-                                                    <path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                                                </svg>
-                                            </button>
-                                        </header>
-                                        <div class="body">
-                                            <div class="job-card-position">파이썬 풀스택 개발자</div>
-                                            <div class="job-card-company-name">에피넷</div>
-                                            <div class="Tooltip_container__AvBvM">
-                                                <button class="Tooltip_label__P9FMp" type="button">
-                                                    <div class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
-                                                        <span>응답률 매우 높음</span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="job-card-company-location">
-                                                경기<span class="addressDot">.</span><span>한국</span>
-                                            </div>
-                                            <div class="reward">채용보상금 1,000,000원</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <button class="RibbonBanner_cn__CfmF5 RibbonBanner_slideIn__dFd6L">
-                <div class="clearfix RibbonBanner_wrapper__ap_Cc">
-                    <div>
-                        <i class="RibbonBanner_icon__qCgf1 icon-joblist_bottombar_overtime"></i>
-                        <span class="RibbonBanner_bannerText___lCrp hidden-xs">이제 밤새워 채용 공고 보지 마세요.</span>
-                        <span class="RibbonBanner_bannerText___lCrp RibbonBanner_bannerMobileText__5_DId"><p>이제 밤새워 채용 공고 보지 마세요.</p></span>
-                    </div>
-                    <div class="RibbonBanner_buttonTextWrapper__a1XF3">
-                        <span>더 알아보기</span>
-                    </div>
-                </div>
-                <i class="icon-icon_match_btn_next visible-xs"></i>
+      <div class="header">
+        <div class="header_div">
+          <div class="header_div_logo">
+            <button id="hambuger">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=undefined&q=75"
+              />
             </button>
-       </div>
+            <a href="./index.html">
+              <i class="icon-logo_new"></i>
+            </a>
+          </div>
+          <ul class="header_div_menu">
+            <li><a>채용</a></li>
+            <li><a>이벤트</a></li>
+            <li><a>직군별 연봉</a></li>
+            <li><a>이력서</a></li>
+            <li>
+              <a
+                >커뮤니티<em
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="11"
+                    viewBox="0 0 18 11"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo"
+                      font-size="9"
+                      font-weight="500"
+                    >
+                      <g fill="#36F">
+                        <g>
+                          <g>
+                            <g>
+                              <g>
+                                <g>
+                                  <g>
+                                    <text
+                                      transform="translate(-931.000000, -13.000000) translate(224.000000, 7.000000) translate(210.000000, 6.000000) translate(350.000000, 0.000000) translate(147.000000, 0.000000)"
+                                    >
+                                      <tspan x="0" y="8">New</tspan>
+                                    </text>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg></em
+                ></a
+              >
+            </li>
+            <li><a>프리랜서</a></li>
+            <li>
+              <a
+                >AI 합격예측<em
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="11"
+                    viewBox="0 0 18 11"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo"
+                      font-size="9"
+                      font-weight="500"
+                    >
+                      <g fill="#36F">
+                        <g>
+                          <g>
+                            <g>
+                              <g>
+                                <g>
+                                  <g>
+                                    <text
+                                      transform="translate(-931.000000, -13.000000) translate(224.000000, 7.000000) translate(210.000000, 6.000000) translate(350.000000, 0.000000) translate(147.000000, 0.000000)"
+                                    >
+                                      <tspan x="0" y="8">Beta</tspan>
+                                    </text>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg></em
+                ></a
+              >
+            </li>
+          </ul>
+          <div class="header_div_join">
+            <ul>
+              <li>
+                <button class="searchBtn">
+                  <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    xmlns:xlink="https://www.w3.org/1999/xlink"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                  >
+                    <defs>
+                      <path
+                        id="qt2dnsql4a"
+                        d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"
+                      ></path>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <use
+                        fill="#333"
+                        fill-rule="nonzero"
+                        stroke="#333"
+                        stroke-width=".3"
+                        xlink:href="#qt2dnsql4a"
+                      ></use>
+                    </g>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="joinBtn" type="button">회원가입/로그인</button>
+              </li>
+              <li class="leftDivision">
+                <a class="dashboardBtn" href="#">기업 서비스</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="OverlayJobCategory_Container__C3ngs" role="presentation">
+          <div>
+            <nav class="Explore_Container__QaOhW" aria-hidden="true">
+              <section class="Explore_MainCategory__rpxri">
+                <a
+                  href="/wdlist"
+                  class=""
+                  aria-label=""
+                  data-testid="category-all"
+                >
+                  <em><h2>직군 전체</h2></em>
+                </a>
+                <ul>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                    id="gaebal"
+                  >
+                    <a href="./second.html" class="" aria-label=""
+                      ><em>개발</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/507" class="" aria-label=""
+                      ><em>경영·비즈니스</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/523" class="" aria-label=""
+                      ><em>마케팅·광고</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/511" class="" aria-label=""
+                      ><em>디자인</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/530" class="" aria-label=""
+                      ><em>영업</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/510" class="" aria-label=""
+                      ><em>고객서비스·리테일</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/959" class="" aria-label=""
+                      ><em>게임 제작</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/517" class="" aria-label=""><em>HR</em></a>
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/524" class="" aria-label=""
+                      ><em>미디어</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/513" class="" aria-label=""
+                      ><em>엔지니어링·설계</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/508" class="" aria-label=""
+                      ><em>금융</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/522" class="" aria-label=""
+                      ><em>제조·생산</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/532" class="" aria-label=""
+                      ><em>물류·무역</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/515" class="" aria-label=""
+                      ><em>의료·제약·바이오</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/10101" class="" aria-label=""
+                      ><em>교육</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/10057" class="" aria-label=""
+                      ><em>식·음료</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/521" class="" aria-label=""
+                      ><em>법률·법집행기관</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/509" class="" aria-label=""
+                      ><em>건설·시설</em></a
+                    >
+                  </li>
+                  <li
+                    data-testid="category-item"
+                    class="Explore_CategoryItem__46TK9"
+                  >
+                    <a href="/wdlist/514" class="" aria-label=""
+                      ><em>공공·복지</em></a
+                    >
+                  </li>
+                  <li
+                    class="Explore_GigsCategoryItem__l4LhT Explore_hasCurrentCategory__wxhIs"
+                  >
+                    <a
+                      href="https://www.wanted.co.kr/gigs/projects"
+                      class="Explore_GigsCategoryItem_link__OlnwE"
+                      aria-label=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-attribute-id="jobCategoryMenu__banner__click"
+                    >
+                      <div class="Explore_GigsCategoryItem_banner__eRpF8">
+                        <span>프리랜서</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section class="Explore_SubCategory__xIcAi">
+                <ul style="width: 400px">
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/" class="" aria-label="">개발 전체</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/872" class="" aria-label=""
+                      >서버 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/873" class="" aria-label=""
+                      >웹 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/10110" class="" aria-label=""
+                      >소프트웨어 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/669" class="" aria-label=""
+                      >프론트엔드 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/660" class="" aria-label=""
+                      >자바 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/677" class="" aria-label=""
+                      >안드로이드 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/899" class="" aria-label=""
+                      >파이썬 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/678" class="" aria-label=""
+                      >iOS 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/900" class="" aria-label=""
+                      >C,C++ 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/895" class="" aria-label=""
+                      >Node.js 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/655" class="" aria-label=""
+                      >데이터 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/674" class="" aria-label=""
+                      >DevOps / 시스템 관리자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/665" class="" aria-label=""
+                      >시스템,네트워크 관리자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/1634" class="" aria-label=""
+                      >머신러닝 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/1024" class="" aria-label=""
+                      >데이터 사이언티스트</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/877" class="" aria-label=""
+                      >개발 매니저</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/1025" class="" aria-label=""
+                      >빅데이터 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/676" class="" aria-label=""
+                      >QA,테스트 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/1026" class="" aria-label=""
+                      >기술지원</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/671" class="" aria-label=""
+                      >보안 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/876" class="" aria-label=""
+                      >프로덕트 매니저</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/658" class="" aria-label=""
+                      >임베디드 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/893" class="" aria-label=""
+                      >PHP 개발자</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/1027" class="" aria-label=""
+                      >블록체인 플랫폼 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/939" class="" aria-label=""
+                      >웹 퍼블리셔</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                  <li class="Explore_CategoryItem__46TK9">
+                    <a href="/wdlist/518/672" class="" aria-label=""
+                      >하드웨어 엔지니어</a
+                    ><i class="icon-arrow_right"></i>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div style="height: 50px"></div>
+      <div style="background: #fff">
+        <article style="padding-top: 40px" role="navigation">
+          <div class="jobTitle">
+            <div class="jobTitle_div1">
+              <button type="button">
+                <span class="jobTitle_div1_span1">개발</span>
+                <span class="jobTitle_div1_span2" role="button">
+                  <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                  >
+                    <path
+                      fill="#767676"
+                      fill-rule="nonzero"
+                      d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="jobTitle_div2">
+              <button type="button">
+                <span class="jobTitle_div2_span1">개발 전체</span>
+                <span class="jobTitle_div2_span2" role="button">
+                  <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                  >
+                    <path
+                      fill="#767676"
+                      fill-rule="nonzero"
+                      d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <div class="jobList">
+          <div>
+            <div class="jobList_">
+              <div class="jobList_cate">
+                <div class="jobList_cate_div1">
+                  <button type="button" class="jobList_cate_div1_btn">
+                    <span class="jobList_cate_div1_btn_span1"
+                      >지역<span>1</span></span
+                    >
+                    <span class="jobList_cate_div1_btn_span2">한국</span>
+                  </button>
+                  <div class="jobList_cate_div1_div1">
+                    <button type="button" class="jobList_cate_div1_btn">
+                      <span class="jobList_cate_div1_btn_span1">경력</span>
+                      <span class="jobList_cate_div1_btn_span2">전체</span>
+                      <svg
+                        width="8"
+                        height="7"
+                        viewBox="0 0 8 7"
+                        fill="none"
+                        xmlns="https://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
+                          fill="#333333"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="jobList_cate_div1_div2">
+                    <button type="button" class="jobList_cate_div1_btn">
+                      <span class="jobList_cate_div1_btn_span1">기술스택</span>
+                      <span class=" "></span>
+                      <svg
+                        width="8"
+                        height="7"
+                        viewBox="0 0 8 7"
+                        fill="none"
+                        xmlns="https://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
+                          fill="#333333"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="jobList_cate_div2">
+                  <div class=" ">
+                    <div class="jobList_cate_div2_div">
+                      <button class="" type="button">
+                        응답률순
+                        <svg
+                          width="8"
+                          height="7"
+                          viewBox="0 0 8 7"
+                          fill="none"
+                          xmlns="https://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
+                            fill="#333333"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <section class="jobList_section">
+                <div class="slick-slider slick-initialized" dir="ltr">
+                  <div class="slick-list">
+                    <div
+                      class="slick-track"
+                      style="
+                        width: 2912px;
+                        opacity: 1;
+                        transform: translate3d(0px, 0px, 0px);
+                      "
+                    >
+                      <div
+                        data-index="0"
+                        class="slick-slide slick-active slick-current"
+                        tabindex="-1"
+                        aria-hidden="false"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            style="background: rgb(242, 251, 245)"
+                          >
+                            연봉이 최고의 복지<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="연봉이 최고의 복지"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="1"
+                        class="slick-slide slick-active"
+                        tabindex="-1"
+                        aria-hidden="false"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Work From Home"
+                            style="background: rgb(243, 249, 254)"
+                          >
+                            재택근무<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="재택근무"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="2"
+                        class="slick-slide slick-active"
+                        tabindex="-1"
+                        aria-hidden="false"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Low Turnover Rate"
+                            style="background: rgb(243, 242, 251)"
+                          >
+                            퇴사율 10% 이하<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F7d3cdb3c-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="퇴사율 10% 이하"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="3"
+                        class="slick-slide slick-active"
+                        tabindex="-1"
+                        aria-hidden="false"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Fast Growing"
+                            style="background: rgb(246, 248, 238)"
+                          >
+                            급성장 중<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F37dacf86-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="급성장 중"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="4"
+                        class="slick-slide slick-active"
+                        tabindex="-1"
+                        aria-hidden="false"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Military exempt"
+                            style="background: rgb(247, 242, 249)"
+                          >
+                            병역특례<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F6eda33d2-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="병역특례"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="5"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Less than 50 employees"
+                            style="background: rgb(238, 250, 249)"
+                          >
+                            50인 이하️<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F3a965d18-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                              alt="50인 이하️"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="6"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="50+ employees"
+                            style="background: rgb(239, 241, 251)"
+                          >
+                            50인 이상️<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                              alt="50인 이상️"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="7"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="+ 5 yrs of experience"
+                            style="background: rgb(242, 251, 245)"
+                          >
+                            업력 5년 이상<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                              alt="업력 5년 이상"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="8"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Flexible Hours"
+                            style="background: rgb(243, 249, 254)"
+                          >
+                            유연근무<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F827f6146-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="유연근무"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="9"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Unlimited PTO"
+                            style="background: rgb(243, 242, 251)"
+                          >
+                            자유로운 휴가<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F68dadb80-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="자유로운 휴가"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="10"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Bonuses"
+                            style="background: rgb(246, 248, 238)"
+                          >
+                            일한만큼 받는 보상<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F472333e8-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="일한만큼 받는 보상"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="11"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Company Culture"
+                            style="background: rgb(247, 242, 249)"
+                          >
+                            수평적 문화<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F78563d98-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="수평적 문화"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="12"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Emerging Industry"
+                            style="background: rgb(238, 250, 249)"
+                          >
+                            요즘 뜨는 산업<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4e1b135a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="요즘 뜨는 산업"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        data-index="13"
+                        class="slick-slide"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="outline: none"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="TagListItem_TagListItem__3aCT9"
+                            data-attribute-id="userTag__filter__click"
+                            data-kind="add"
+                            data-tag="Free Meals"
+                            style="background: rgb(239, 241, 251)"
+                          >
+                            식사·간식 제공<img
+                              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F53ca893e-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                              alt="식사·간식 제공"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="NavButton_NavButton__j73pc NavButton_isNext__m3fGk"
+                    aria-label="next button"
+                  >
+                    <span class="SvgIcon_SvgIcon__root__8vwon">
+                      <svg
+                        class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                        viewBox="0 0 18 18"
+                      >
+                        <path
+                          d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </section>
+            </div>
+            <hr />
+            <div class="jobList_bookm">
+              <button type="button">
+                <svg
+                  width="13"
+                  height="17"
+                  viewBox="0 0 13 17"
+                  style="color: #36f"
+                >
+                  <defs>
+                    <path
+                      id="bookmarkIconFill"
+                      d="M6.25 13.21L.905 16.22c-.403.228-.905-.06-.905-.517V.596C0 .267.27 0 .605 0h11.29c.334 0 .605.267.605.596v15.107c0 .458-.502.745-.905.518L6.25 13.209z"
+                    ></path>
+                  </defs>
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    transform="translate(.188)"
+                  >
+                    <use
+                      fill="currentColor"
+                      xlink:href="#bookmarkIconFill"
+                    ></use>
+                  </g>
+                </svg>
+                <span>북마크 모아보기</span>
+                <svg width="12" height="12" viewBox="0 0 12 12">
+                  <path
+                    fill="currentColor"
+                    d="M4.22 9.72a.75.75 0 001.06 1.06l4.25-4.25a.75.75 0 000-1.06L5.28 1.22a.75.75 0 00-1.06 1.06L7.94 6 4.22 9.72z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <h3>적극 채용 중인 회사</h3>
+            <div
+              class="Featured_sliderWrapper__nHmfc nextDisabled prevDisabled lessThanFive"
+            >
+              <div
+                class="slick-slider Featured_slider__Bnaji lessThanFive nextDisabled slick-initialized"
+              >
+                <div class="slick-list">
+                  <div
+                    class="slick-track"
+                    style="
+                      width: 1060px;
+                      opacity: 1;
+                      transform: translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <div
+                      data-index="0"
+                      class="slick-slide slick-active slick-current"
+                      tabindex="-1"
+                      aria-hidden="false"
+                      style="outline: none; width: 212px"
+                    >
+                      <div>
+                        <a
+                          href="/company/1160"
+                          class="Featured_sliderItem__FY8yb"
+                        >
+                          <header>
+                            <div
+                              class="companyBg undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1160%2Flky56fdnrepb0lpk__400_400.jpg&amp;w=400&amp;q=75');
+                              "
+                            ></div>
+                          </header>
+                          <footer>
+                            <div
+                              class="logoCircle undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.2b4359c3.png&amp;w=100&amp;q=75');
+                                background-size: contain;
+                                background-color: rgb(255, 255, 255);
+                              "
+                            ></div>
+                            <h4>피알앤디컴퍼니(헤이딜러)</h4>
+                            <h5>2개 포지션</h5>
+                          </footer>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      data-index="1"
+                      class="slick-slide slick-active"
+                      tabindex="-1"
+                      aria-hidden="false"
+                      style="outline: none; width: 212px"
+                    >
+                      <div>
+                        <a
+                          href="/company/10127"
+                          class="Featured_sliderItem__FY8yb"
+                          aria-label="featured company card link"
+                          data-attribute-id="company__click"
+                          data-job-category-id="518"
+                          data-job-category="IT"
+                          data-job-role-id="all"
+                          data-job-role="all"
+                          data-company-id="10127"
+                          data-company-name="알체라"
+                          data-ad-id="39715"
+                          data-marketing-case="topPicks"
+                        >
+                          <header>
+                            <div
+                              class="companyBg undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10127%2Feevirddqe8ytqdq0__400_400.jpg&amp;w=400&amp;q=75');
+                              "
+                            ></div>
+                          </header>
+                          <footer>
+                            <div
+                              class="logoCircle undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.3da92f3a.jpg&amp;w=100&amp;q=75');
+                                background-size: contain;
+                                background-color: rgb(255, 255, 255);
+                              "
+                            ></div>
+                            <h4>알체라</h4>
+                            <h5>17개 포지션</h5>
+                          </footer>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      data-index="2"
+                      class="slick-slide slick-active"
+                      tabindex="-1"
+                      aria-hidden="false"
+                      style="outline: none; width: 212px"
+                    >
+                      <div>
+                        <a
+                          href="/company/2979"
+                          class="Featured_sliderItem__FY8yb"
+                          aria-label="featured company card link"
+                          data-attribute-id="company__click"
+                        >
+                          <header>
+                            <div
+                              class="companyBg undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2979%2F5yxmitntevoiv20m__400_400.jpg&amp;w=400&amp;q=75');
+                              "
+                            ></div>
+                          </header>
+                          <footer>
+                            <div
+                              class="logoCircle undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e6cf703b.jpg&amp;w=100&amp;q=75');
+                                background-size: contain;
+                                background-color: rgb(255, 255, 255);
+                              "
+                            ></div>
+                            <h4>콜론디(심쿵)</h4>
+                            <h5>3개 포지션</h5>
+                          </footer>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      data-index="3"
+                      class="slick-slide slick-active"
+                      tabindex="-1"
+                      aria-hidden="false"
+                      style="outline: none; width: 212px"
+                    >
+                      <div>
+                        <a
+                          href="/company/31271"
+                          class="Featured_sliderItem__FY8yb"
+                          aria-label="featured company card link"
+                          data-attribute-id="company__click"
+                          data-job-category-id="518"
+                          data-job-category="IT"
+                          data-job-role-id="all"
+                          data-job-role="all"
+                          data-company-id="31271"
+                          data-company-name="남도마켓"
+                          data-ad-id="39318"
+                          data-marketing-case="topPicks"
+                        >
+                          <header>
+                            <div
+                              class="companyBg undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31271%2Fpgonpztecjecnkse__400_400.jpg&amp;w=400&amp;q=75');
+                              "
+                            ></div>
+                          </header>
+                          <footer>
+                            <div
+                              class="logoCircle undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ddb2c630.jpg&amp;w=100&amp;q=75');
+                                background-size: contain;
+                                background-color: rgb(255, 255, 255);
+                              "
+                            ></div>
+                            <h4>남도마켓</h4>
+                            <h5>3개 포지션</h5>
+                          </footer>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      data-index="4"
+                      class="slick-slide slick-active"
+                      tabindex="-1"
+                      aria-hidden="false"
+                      style="outline: none; width: 212px"
+                    >
+                      <div>
+                        <a
+                          href="/company/19651"
+                          class="Featured_sliderItem__FY8yb"
+                          aria-label="featured company card link"
+                          data-attribute-id="company__click"
+                          data-job-category-id="518"
+                          data-job-category="IT"
+                          data-job-role-id="all"
+                          data-job-role="all"
+                          data-company-id="19651"
+                          data-company-name="컨택스츠아이오(NFTBank)"
+                          data-ad-id="39338"
+                          data-marketing-case="topPicks"
+                        >
+                          <header>
+                            <div
+                              class="companyBg undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19651%2Fc8pcfksoy6pejwj5__400_400.jpg&amp;w=400&amp;q=75');
+                              "
+                            ></div>
+                          </header>
+                          <footer>
+                            <div
+                              class="logoCircle undefined"
+                              style="
+                                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.19f41bc1.jpg&amp;w=100&amp;q=75');
+                                background-size: contain;
+                                background-color: rgb(255, 255, 255);
+                              "
+                            ></div>
+                            <h4>컨택스츠아이오(NFTBank)</h4>
+                            <h5>3개 포지션</h5>
+                          </footer>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="List_List_container__JnQMS">
+              <ul class="clearfix">
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="./second_detail.html" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          스마트컨트랙트 개발자 (Golang)
+                        </div>
+                        <div class="job-card-company-name">온블록</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          서울<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Card_className__u5rsb">
+                    <a href="#" class="">
+                      <header
+                        style="
+                          background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35335%2Fpjdodaahnx76gbf1__400_400.jpg&amp;w=400&amp;q=75');
+                        "
+                      >
+                        <button class="bookmarkBtn" type="button">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="https://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                              fill="white"
+                            ></path>
+                            <path
+                              d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                              fill="black"
+                              fill-opacity="0.25"
+                            ></path>
+                          </svg>
+                        </button>
+                      </header>
+                      <div class="body">
+                        <div class="job-card-position">
+                          파이썬 풀스택 개발자
+                        </div>
+                        <div class="job-card-company-name">에피넷</div>
+                        <div class="Tooltip_container__AvBvM">
+                          <button class="Tooltip_label__P9FMp" type="button">
+                            <div
+                              class="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                            >
+                              <span>응답률 매우 높음</span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="job-card-company-location">
+                          경기<span class="addressDot">.</span><span>한국</span>
+                        </div>
+                        <div class="reward">채용보상금 1,000,000원</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="RibbonBanner_cn__CfmF5 RibbonBanner_slideIn__dFd6L">
+          <div class="clearfix RibbonBanner_wrapper__ap_Cc">
+            <div>
+              <i
+                class="RibbonBanner_icon__qCgf1 icon-joblist_bottombar_overtime"
+              ></i>
+              <span class="RibbonBanner_bannerText___lCrp hidden-xs"
+                >이제 밤새워 채용 공고 보지 마세요.</span
+              >
+              <span
+                class="RibbonBanner_bannerText___lCrp RibbonBanner_bannerMobileText__5_DId"
+                ><p>이제 밤새워 채용 공고 보지 마세요.</p></span
+              >
+            </div>
+            <div class="RibbonBanner_buttonTextWrapper__a1XF3">
+              <span>더 알아보기</span>
+            </div>
+          </div>
+          <i class="icon-icon_match_btn_next visible-xs"></i>
+        </button>
+      </div>
     </div>
     <script type="text/javascript">
-        let gnb = document.querySelector("#hambuger")
-        let gnbElement = document.querySelector(".OverlayJobCategory_Container__C3ngs")
+      let gnb = document.querySelector("#hambuger");
+      let gnbElement = document.querySelector(
+        ".OverlayJobCategory_Container__C3ngs"
+      );
 
-        gnb.addEventListener("mouseover",() => {
-            gnbElement.classList.add("on")
-        })
+      gnb.addEventListener("mouseover", () => {
+        gnbElement.classList.add("on");
+      });
 
-        // let headerElement = document.querySelector(".main")
+      // let headerElement = document.querySelector(".main")
 
-        // headerElement.addEventListener("mouseover",(e) =>{
-        //      gnbElement.classList.remove("on")
-        // })
+      // headerElement.addEventListener("mouseover",(e) =>{
+      //      gnbElement.classList.remove("on")
+      // })
 
-        let gnb1 = document.querySelector("#gaebal")
-        let gnbElement1 = document.querySelector(".Explore_SubCategory__xIcAi")
+      let gnb1 = document.querySelector("#gaebal");
+      let gnbElement1 = document.querySelector(".Explore_SubCategory__xIcAi");
 
-        gnb1.addEventListener("mouseover",() => {
-            gnbElement1.classList.add("on")
-        })
+      gnb1.addEventListener("mouseover", () => {
+        gnbElement1.classList.add("on");
+      });
     </script>
-</body>
+    <script type="text/javascript">
+      let login = document.querySelector("#joinBtn");
+      let modal = document.querySelector(".Modal_root__aEM8D");
+
+      login.addEventListener("click", () => {
+        modal.classList.add("on");
+      });
+
+      let modalX = document.querySelector("#joinXBtn");
+
+      modalX.addEventListener("click", () => {
+        modal.classList.remove("on");
+      });
+    </script>
+  </body>
 </html>
