@@ -755,6 +755,7 @@
     border-top: none;
     border-radius: 0 0 3px 3px;
     position: relative;
+    box-sizing: border-box;
 }
 .Featured_sliderWrapper__nHmfc .Featured_slider__Bnaji .Featured_sliderItem__FY8yb>footer>.logoCircle {
     position: absolute;
@@ -804,7 +805,7 @@
 }
 .List_List_container__JnQMS>ul li {
     /* width: 25%; */
-    width: 240px;
+    width: 247.3px;
     padding: 10px;
     list-style: none;
     display: inline-block;

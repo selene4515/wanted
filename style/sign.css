@@ -61,7 +61,7 @@
 }
 [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon' !important;
-    speak: none;
+    speak-as: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -152,6 +152,7 @@
     outline: none;
     resize: none;
     font-family: Pretendard;
+    box-sizing: border-box;
 }
 .style_error__PioA9, .style_guidance__FT8Qs {
     bottom: 0;
