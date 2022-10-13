@@ -534,26 +534,18 @@
         </article>
         <div class="jobList">
           <div>
-            <div class="jobList_">
+            <div class="jobList_ jobList_t">
               <div class="jobList_cate">
                 <div class="jobList_cate_div1">
                   <button type="button" class="jobList_cate_div1_btn">
-                    <span class="jobList_cate_div1_btn_span1"
-                      >지역<span>1</span></span
-                    >
+                    <span class="jobList_cate_div1_btn_span1">지역<span>1</span></span>
                     <span class="jobList_cate_div1_btn_span2">한국</span>
                   </button>
                   <div class="jobList_cate_div1_div1">
                     <button type="button" class="jobList_cate_div1_btn">
                       <span class="jobList_cate_div1_btn_span1">경력</span>
                       <span class="jobList_cate_div1_btn_span2">전체</span>
-                      <svg
-                        width="8"
-                        height="7"
-                        viewBox="0 0 8 7"
-                        fill="none"
-                        xmlns="https://www.w3.org/2000/svg"
-                      >
+                      <svg width="8"  height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg">
                         <path
                           d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
                           fill="#333333"
@@ -954,7 +946,7 @@
                 </div>
               </section>
             </div>
-            <hr />
+            <hr class="fixedhr" />
             <div class="jobList_bookm">
               <button type="button">
                 <svg
@@ -2185,41 +2177,21 @@
       </div>
       <div role="presentation" class="Modal_modalOverlay__1sCXi false"></div>
     </div>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <!-- 스크롤시 상단픽스 -->
     <script type="text/javascript">
-      let gnb = document.querySelector("#hambuger");
-      let gnbElement = document.querySelector(
-        ".OverlayJobCategory_Container__C3ngs"
-      );
+      const content = document.querySelector('.fixedhr');
+      const wing = document.querySelector('.jobList_');
 
-      gnb.addEventListener("mouseover", () => {
-        gnbElement.classList.add("on");
-      });
+      // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
+      const contentTop = content.getBoundingClientRect().top + window.scrollY;
 
-      // let headerElement = document.querySelector(".main")
-
-      // headerElement.addEventListener("mouseover",(e) =>{
-      //      gnbElement.classList.remove("on")
-      // })
-
-      let gnb1 = document.querySelector("#gaebal");
-      let gnbElement1 = document.querySelector(".Explore_SubCategory__xIcAi");
-
-      gnb1.addEventListener("mouseover", () => {
-        gnbElement1.classList.add("on");
-      });
-    </script>
-    <script type="text/javascript">
-      let login = document.querySelector("#joinBtn");
-      let modal = document.querySelector(".Modal_root__aEM8D");
-
-      login.addEventListener("click", () => {
-        modal.classList.add("on");
-      });
-
-      let modalX = document.querySelector("#joinXBtn");
-
-      modalX.addEventListener("click", () => {
-        modal.classList.remove("on");
+      window.addEventListener('scroll', function(){
+        if(window.scrollY >= contentTop){
+          wing.classList.add('fixed');
+        }else{
+          wing.classList.remove('fixed');
+        }
       });
     </script>
   </body>
