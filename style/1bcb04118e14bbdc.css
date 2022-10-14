@@ -87,6 +87,13 @@
   padding: 0 20px;
   width: 100%;
 }
+/* 밍지수정 */
+.Explore_Container__QaOhW .Explore_MainCategory__rpxri a,
+.Explore_Container__QaOhW .Explore_MainCategory__rpxri button {
+  width: 200px;
+  box-sizing: border-box;
+}
+
 .Explore_Container__QaOhW .Explore_MainCategory__rpxri a:hover,
 .Explore_Container__QaOhW .Explore_MainCategory__rpxri button:hover {
   color: #36f;
@@ -115,6 +122,12 @@
   .Explore_GigsCategoryItem__l4LhT {
   width: 100%;
   padding: 8px 20px;
+}
+/* 밍지수정 */
+.Explore_Container__QaOhW
+  .Explore_MainCategory__rpxri
+  .Explore_GigsCategoryItem__l4LhT {
+  width: 120px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .Explore_Container__QaOhW
@@ -249,6 +262,15 @@
   width: 200px;
   padding: 0 20px;
 }
+/* 밍지수정 */
+.Explore_Container__QaOhW
+  .Explore_SubCategory__xIcAi
+  .Explore_CategoryItem__46TK9 {
+  align-items: baseline;
+  height: 40px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 767px) {
   .Explore_Container__QaOhW
     .Explore_SubCategory__xIcAi

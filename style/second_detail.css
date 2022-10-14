@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+.Tooltip_container__AvBvM,
+.Tooltip_label__P9FMp {
+  position: relative;
+}
+.Tooltip_label__P9FMp.not-clickable {
+  cursor: default;
+}
+.ResponseLevelLabel_container__dJphx {
+  border-radius: 2px;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  height: 19px;
+  line-height: 19px;
+  margin-top: 4px;
+  padding: 0 5px;
+}
+.ResponseLevelLabel_high__tXvE8 {
+  border: 1px solid #36f;
+  color: #36f;
+}
+.ResponseLevelLabel_container__dJphx > span {
+  position: relative;
+  line-height: 19px;
+  top: -1px;
+}
+.Tooltip_tooltipContent__6exdr {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  min-height: 40px;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  padding: 11px 12px;
+  background: #fff;
+  border: 1px solid #999;
+  z-index: 1;
+  display: none;
+  white-space: nowrap;
+  top: calc(100% + 4px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.JobWorkPlace_className__ra6rp {
+  margin: 40px 0;
+}
+.JobWorkPlace_className__ra6rp {
+  margin-top: 20px;
+}
+.JobWorkPlace_className__ra6rp > div {
+  margin-bottom: 20px;
+  display: flex;
+}
+.JobWorkPlace_className__ra6rp .body,
+.JobWorkPlace_className__ra6rp .header {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  vertical-align: text-top;
+}
+.JobWorkPlace_className__ra6rp .header {
+  color: #999;
+  width: 80px;
+  position: inherit;
+  box-shadow: none;
+}
+.JobWorkPlace_className__ra6rp .body {
+  color: #333;
+  width: calc(100% - 80px);
+}
+.NaverMap_NaverMap__6TuZG {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.NaverMap_NaverMap__6TuZG > img {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+.Button_Button__root__V1ie3 {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 64px;
+  padding: 0 27px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+.Button_Button__outlined__H2mkd {
+  color: #36f;
+  background-color: #fff;
+  border: 1px solid #36f;
+}
+.Button_Button__sizeMedium__k0A1w {
+  height: 40px;
+  font-size: 15px;
+}
+.Button_Button__label__1Kk0v {
+  width: 100%;
+  font-size: inherit;
+  font-weight: inherit;
+  display: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  color: inherit;
+}
+
+.icon-ic_favorite_black_24px:before {
+  content: "\e99b";
+}
