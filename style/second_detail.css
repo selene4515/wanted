@@ -132,3 +132,8 @@
 .icon-ic_favorite_black_24px:before {
   content: "\e99b";
 }
+
+.JobProcess_container__1HKdk.fixed {
+  position: fixed;
+  z-index: 2;
+}

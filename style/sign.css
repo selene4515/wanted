@@ -38,6 +38,9 @@
   max-height: calc(100vh - 150px);
   transform: translate(-50%, -50%);
 }
+.Modal_modalContent__0zuTn.style_wrapper__SO1vd.border-none::-webkit-scrollbar {
+  display: none;
+}
 .Modal_modalOverlay__1sCXi {
   position: fixed;
   left: 0;
@@ -258,7 +261,6 @@
   text-decoration: underline;
 }
 
-
 .style_wrapper__6RiUK {
   position: relative;
   padding-bottom: 22px;
@@ -271,7 +273,9 @@
 .style_body__A6XnO {
   margin-top: 11px;
 }
-.style_body__A6XnO input[type=email], .style_body__A6XnO input[type=password], .style_body__A6XnO input[type=text] {
+.style_body__A6XnO input[type="email"],
+.style_body__A6XnO input[type="password"],
+.style_body__A6XnO input[type="text"] {
   width: 100%;
   height: 50px;
   padding-right: 15px;
@@ -289,7 +293,8 @@
   outline: none;
   resize: none;
 }
-.style_error__PioA9, .style_guidance__FT8Qs {
+.style_error__PioA9,
+.style_guidance__FT8Qs {
   bottom: 0;
   margin-top: 6px;
   font-size: 12px;
@@ -316,7 +321,7 @@
   border: 1px solid #e1e2e3;
   color: #333;
 }
-.MobileInput_MobileInput_select__61tfM>select {
+.MobileInput_MobileInput_select__61tfM > select {
   position: absolute;
   top: 0;
   left: 0;
@@ -348,7 +353,7 @@
 .MobileInput_MobileInput_input__5mhzh {
   display: flex;
 }
-.MobileInput_MobileInput_input__5mhzh>input {
+.MobileInput_MobileInput_input__5mhzh > input {
   flex: 1 1;
 }
 .BtnGetCode_BtnGetCode__wR5FL {
@@ -362,7 +367,8 @@
   font-weight: 700;
   color: #ccc;
 }
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default;
 }
 .BtnGetCode_BtnGetCode__wR5FL.isKR {
@@ -383,11 +389,8 @@ button[disabled], html input[disabled] {
   margin-top: 10px;
 }
 .InputCode_InputCode_input__X4opi.disabled {
-  background-color: #f2f4f7!important;
+  background-color: #f2f4f7 !important;
 }
-
-
-
 
 .MobileInput_MobileInput__K9xQB .input-group-guidance {
   color: #36f;
@@ -427,19 +430,21 @@ button[disabled], html input[disabled] {
   font-size: 15px;
   color: #666;
 }
-.Agreement_checkboxAll__SkIo_>div:last-of-type {
+.Agreement_checkboxAll__SkIo_ > div:last-of-type {
   color: #333;
 }
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   line-height: normal;
 }
-.style_wrapper__TaLWc input[type=checkbox] {
+.style_wrapper__TaLWc input[type="checkbox"] {
   position: absolute;
   left: 1px;
   opacity: 0;
@@ -452,10 +457,10 @@ input[type="radio"], input[type="checkbox"] {
 .Agreement_checkbox__OGFNT:last-of-type {
   margin-top: 15px;
 }
-.Agreement_checkbox__OGFNT>div:last-of-type {
+.Agreement_checkbox__OGFNT > div:last-of-type {
   color: #939393;
 }
-.Agreement_checkbox__OGFNT>div:last-of-type span {
+.Agreement_checkbox__OGFNT > div:last-of-type span {
   color: #939393;
   padding-left: 5px;
 }
@@ -463,7 +468,7 @@ input[type="radio"], input[type="checkbox"] {
   float: right;
   font-size: 13px;
   line-height: 19px;
-  color: #767676!important;
+  color: #767676 !important;
 }
 .SetPassword_SetPassword_footer_btn__UrVb_ {
   position: sticky;
@@ -477,12 +482,12 @@ input[type="radio"], input[type="checkbox"] {
   width: 100%;
   height: 30px;
   display: block;
-  background: linear-gradient(180deg,hsla(0,0%,100%,0),#fff);
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff);
 }
 .SetPassword_SetPassword_footer_btn_wrapper__SRH1U {
   height: 70px;
 }
-.SetPassword_SetPassword_footer_btn__UrVb_>div {
+.SetPassword_SetPassword_footer_btn__UrVb_ > div {
   background-color: #fff;
 }
 .style_wrapper__IgK7U {
@@ -502,18 +507,16 @@ input[type="radio"], input[type="checkbox"] {
   color: #fff;
   cursor: pointer;
 }
-.SetPassword_SetPassword_footer_btn_wrapper__SRH1U>button {
-  margin-top: 0!important;
+.SetPassword_SetPassword_footer_btn_wrapper__SRH1U > button {
+  margin-top: 0 !important;
 }
-.style_wrapper__IgK7U.is-disabled, .style_wrapper__IgK7U[disabled] {
+.style_wrapper__IgK7U.is-disabled,
+.style_wrapper__IgK7U[disabled] {
   background-color: #f2f4f7;
   border-color: transparent;
   color: #cacaca;
   cursor: not-allowed;
 }
-
-
-
 
 .Modal_root__aEM8D {
   display: none;
@@ -522,12 +525,18 @@ input[type="radio"], input[type="checkbox"] {
   display: block;
 }
 
-.moh.off, .TextPanel_className__J3J2W.off, .InputPanel_wrapper__RXp1k.off{
+.moh.off,
+.TextPanel_className__J3J2W.off,
+.InputPanel_wrapper__RXp1k.off {
   display: none;
 }
-.moh1, .SetPassword_SetPassword_form__WK9NO, .SetPassword_SetPassword_footer_btn__UrVb_{
+.moh1,
+.SetPassword_SetPassword_form__WK9NO,
+.SetPassword_SetPassword_footer_btn__UrVb_ {
   display: none;
 }
-.moh1.on, .SetPassword_SetPassword_form__WK9NO.on, .SetPassword_SetPassword_footer_btn__UrVb_.on{
+.moh1.on,
+.SetPassword_SetPassword_form__WK9NO.on,
+.SetPassword_SetPassword_footer_btn__UrVb_.on {
   display: block;
 }

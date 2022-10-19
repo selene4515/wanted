@@ -128,7 +128,7 @@ table {
 /* 시작! */
 
 body {
-  font-family: Pretendard;
+  font-family: "Pretendard";
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -141,6 +141,7 @@ button {
   border: 0;
   background: none;
   cursor: pointer;
+  font-family: "Pretendard";
 }
 a,
 a:visited {
@@ -149,6 +150,16 @@ a:visited {
 }
 img {
   vertical-align: middle;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
 }
 
 .header {

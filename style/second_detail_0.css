@@ -2872,18 +2872,27 @@
   font-size: 13px;
   text-align: center;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+/* @media (min-width: 992px) and (max-width: 1199px) {
   .JobProcess_container__1HKdk {
     width: 340px;
     position: fixed;
     right: calc((100% - 1060px) / 2);
   }
-}
-@media (min-width: 1200px) {
+} */
+/* @media (min-width: 1200px) {
   .JobProcess_container__1HKdk {
     width: 340px;
     position: fixed;
     right: calc((100% - 1060px) / 2);
+  }
+} */
+/* 밍지추가 */
+@media (min-width: 1200px) {
+  .JobProcess_container__1HKdk {
+    width: 340px;
+    position: sticky;
+    height: fit-content;
+    margin-left: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3756,4 +3765,9 @@
 }
 .JobDetail_relativeWrapper__F9DT5 {
   position: relative;
+}
+/* 밍지추가 */
+.JobDetail_relativeWrapper__F9DT5 {
+  display: flex;
+  flex-direction: row;
 }

@@ -842,6 +842,7 @@
   list-style: none;
   display: inline-block;
   vertical-align: top;
+  box-sizing: content-box;
 }
 .Card_className__u5rsb header {
   padding-bottom: 75%;
