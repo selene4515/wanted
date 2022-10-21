@@ -1,4 +1,4 @@
-import { Link, useState } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   const names = [
@@ -23,22 +23,8 @@ const Category = () => {
     "공공·복지",
   ];
 
-  // 수정필요
-  const [hover, setHover] = useState(false);
-  const mouseOver = () => {
-    setHover(true);
-  };
-
   const nameList = names.map((name, index) => (
-    <li
-      key={index}
-      className={
-        { hover }
-          ? "Explore_SubCategory__xIcAi"
-          : "Explore_SubCategory__xIcAi_on"
-      }
-      onMouseOver={mouseOver}
-    >
+    <li key={index} className="Explore_CategoryItem__46TK9">
       <Link to="/gaebal">
         <em>{name}</em>
       </Link>

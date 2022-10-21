@@ -1,5 +1,12 @@
+import Header from "../components/header/Header";
+
 const GaebalDetailPage = () => {
-  return <div>개발디테일</div>;
+  return (
+    <div>
+      <Header />
+      개발디테일
+    </div>
+  );
 };
 
 export default GaebalDetailPage;

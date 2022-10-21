@@ -32,6 +32,7 @@ const CategorySub = () => {
     "안드로이드 개발자",
     "파이썬 개발자",
   ];
+
   const nameList = names.map((name, index) => (
     <li key={index} className="Explore_CategoryItem__46TK9">
       <Link to="/gaebal">{name}</Link>

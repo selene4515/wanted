@@ -1,0 +1,22 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+>
+  <g
+    fill="none"
+    fill-rule="evenodd"
+    stroke="#FFF"
+    stroke-width="2"
+  >
+    <rect
+      width="17.2"
+      height="14"
+      x="3.4"
+      y="5"
+      rx="3"
+    ></rect>
+    <path d="M3.2 5.6L12 12l8.8-6.4"></path>
+  </g>
+</svg>
