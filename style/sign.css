@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "icomoon";
   src: url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.eot?8et930");
   src: url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.eot?8et930#iefix")
@@ -14,7 +14,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-}
+} */
 
 .Modal_root__aEM8D {
   top: 0;
@@ -67,7 +67,7 @@
 .Header_Header__0d6dF .icon-logo_new {
   vertical-align: middle;
 }
-[class^="icon-"],
+/* [class^="icon-"],
 [class*=" icon-"] {
   font-family: "icomoon" !important;
   speak-as: none;
@@ -80,7 +80,7 @@
 }
 .icon-logo_new:before {
   content: "\e992";
-}
+} */
 .Header_Header__0d6dF a,
 .Header_Header__0d6dF button {
   position: absolute;

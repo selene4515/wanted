@@ -5,26 +5,24 @@ let gnbElement = document.querySelector(".OverlayJobCategory_Container__C3ngs");
 let gnb1 = document.querySelector("#gaebal");
 let gnbElement1 = document.querySelector(".Explore_SubCategory__xIcAi");
 
-
 gnb.addEventListener("mouseover", () => {
   gnbElement.classList.add("on");
 
   gnb1.addEventListener("mouseover", () => {
-    console.log('hover1');
+    console.log("hover1");
     gnbElement1.classList.add("on");
   });
 
-  gnbElement1.addEventListener("mouseleave", () =>{
+  gnbElement1.addEventListener("mouseleave", () => {
     gnbElement1.classList.remove("on");
-    gnbElement.classList.remove("on")
-  })
+    gnbElement.classList.remove("on");
+  });
   // gnbElement.addEventListener("mouseleave", () => {
   //   console.log('mouseOut');
   //   gnbElement.classList.remove("on")
   //   gnbElement1.classList.remove("on");
   // });
 });
-
 
 //회원가입,로그인 모달
 let login = document.querySelector("#joinBtn");
@@ -46,22 +44,24 @@ let loginmo1 = document.querySelector(".TextPanel_className__J3J2W");
 let loginmo2 = document.querySelector(".InputPanel_wrapper__RXp1k");
 let moh1 = document.querySelector(".moh1");
 let joinmo = document.querySelector(".SetPassword_SetPassword_form__WK9NO");
-let joinbtn = document.querySelector(".SetPassword_SetPassword_footer_btn__UrVb_");
+let joinbtn = document.querySelector(
+  ".SetPassword_SetPassword_footer_btn__UrVb_"
+);
 
-emailBtn.addEventListener("click",() => {
+emailBtn.addEventListener("click", () => {
   moh.classList.add("off");
   loginmo1.classList.add("off");
   loginmo2.classList.add("off");
   moh1.classList.add("on");
   joinmo.classList.add("on");
   joinbtn.classList.add("on");
-})
+});
 
 let modalX1 = document.querySelector("#joinXBtn1");
 
 modalX1.addEventListener("click", () => {
-
-  if(confirm("회원가입을 취소하시겠습니까?")){
+  // eslint-disable-next-line no-restricted-globals
+  if (confirm("회원가입을 취소하시겠습니까?")) {
     modal.classList.remove("on");
 
     moh.classList.remove("off");
@@ -70,10 +70,8 @@ modalX1.addEventListener("click", () => {
     moh1.classList.remove("on");
     joinmo.classList.remove("on");
     joinbtn.classList.remove("on");
-  }else{
-    
+  } else {
   }
-
 });
 
 // let checkBtn = document.querySelector(".checkBtn1");
