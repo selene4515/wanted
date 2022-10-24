@@ -1,0 +1,143 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+  z-index: 800;
+}
+
+.header_div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 87.72%;
+  max-width: 1060px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.header_div_logo button {
+  margin-top: -2px;
+  margin-right: 15px;
+}
+.header_div_logo > button > img {
+  width: 17px;
+  height: 14px;
+  object-fit: contain;
+}
+.header_div_logo > a > i {
+  font-size: 17px;
+}
+
+.header_div_menu {
+  height: inherit;
+  text-align: center;
+  margin: 0;
+}
+.header_div_menu li {
+  height: inherit;
+  display: inline-block;
+}
+.header_div_menu li:after {
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.header_div_menu li:hover {
+  border-bottom: 2px solid rgb(207, 204, 204);
+}
+.header_div_menu li a {
+  position: relative;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+}
+.header_div_menu li a em {
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  pointer-events: none;
+  font-style: normal;
+}
+
+.header_div_join > ul {
+  height: 100%;
+  margin: 0;
+}
+.header_div_join > ul li {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.header_div_join > ul li > * {
+  height: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  line-height: 1;
+}
+.header_div_join > ul li .searchBtn {
+  position: relative;
+  margin-top: 5px;
+}
+.header_div_join > ul li .joinBtn {
+  margin-right: 6px;
+  font-family: Pretendard;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+}
+.header_div_join > ul .leftDivision {
+  display: inline-flex;
+}
+.header_div_join > ul .leftDivision:before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  margin: auto 10px;
+}
+.header_div_join > ul li a {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.header_div_join > ul li .dashboardBtn {
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+
+.Explore_GigsCategoryItem_link__OlnwE {
+  width: 160px;
+}
+
+.OverlayJobCategory_Container__C3ngs {
+  display: none;
+}
+.OverlayJobCategory_Container__C3ng_on {
+  display: block;
+}
+
+.Explore_SubCategory__xIcAi {
+  display: none;
+}
+.Explore_SubCategory__xIcAi_on {
+  display: block;
+}
