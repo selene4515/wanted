@@ -1,27 +1,8 @@
 import { Link } from "react-router-dom";
+import dummy from "../../json/categoryName.json";
 
 const Category = () => {
-  const names = [
-    "개발",
-    "경영·비즈니스",
-    "마케팅·광고",
-    "디자인",
-    "영업",
-    "고객서비스·리테일",
-    "게임 제작",
-    "HR",
-    "미디어",
-    "엔지니어링·설계",
-    "금융",
-    "제조·생산",
-    "물류·무역",
-    "의료·제약·바이오",
-    "교육",
-    "식·음료",
-    "법률·법집행기관",
-    "건설·시설",
-    "공공·복지",
-  ];
+  const names = dummy.cateMain;
 
   const nameList = names.map((name) => (
     <li key={name} className="Explore_CategoryItem__46TK9">

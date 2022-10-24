@@ -1,37 +1,8 @@
 import { Link } from "react-router-dom";
+import dummy from "../../json/categoryName.json";
 
 const CategorySub = () => {
-  const names = [
-    "개발 전체",
-    "서버 개발자",
-    "웹 개발자",
-    "소프트웨어 엔지니어",
-    "프론트엔드 개발자",
-    "자바 개발자",
-    "안드로이드 개발자",
-    "파이썬 개발자",
-    "서버 개발자",
-    "웹 개발자",
-    "소프트웨어 엔지니어",
-    "프론트엔드 개발자",
-    "자바 개발자",
-    "안드로이드 개발자",
-    "파이썬 개발자",
-    "서버 개발자",
-    "웹 개발자",
-    "소프트웨어 엔지니어",
-    "프론트엔드 개발자",
-    "자바 개발자",
-    "안드로이드 개발자",
-    "파이썬 개발자",
-    "서버 개발자",
-    "웹 개발자",
-    "소프트웨어 엔지니어",
-    "프론트엔드 개발자",
-    "자바 개발자",
-    "안드로이드 개발자",
-    "파이썬 개발자",
-  ];
+  const names = dummy.cateSub;
 
   const nameList = names.map((name, index) => (
     <li key={index} className="Explore_CategoryItem__46TK9">
