@@ -1,0 +1,19 @@
+<svg viewBox="0 0 15 15">
+  <defs>
+    <path
+      id="al3je9dvha"
+      d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"
+    ></path>
+  </defs>
+  <g fill="currentColor" fill-rule="evenodd">
+    <g transform="translate(-575 -192)">
+      <use
+        fill="#FFF"
+        fill-rule="nonzero"
+        stroke="#FFF"
+        stroke-width=".3"
+        xlink:href="#al3je9dvha"
+      ></use>
+    </g>
+  </g>
+</svg>

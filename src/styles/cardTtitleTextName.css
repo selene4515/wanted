@@ -1,0 +1,65 @@
+.career_div_ul_divImg {
+  position: relative;
+  height: auto;
+  padding-bottom: 70%;
+  padding-left: 0;
+}
+.career_div_ul_divImg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  outline-offset: -1px;
+}
+.career_div_ul_pTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  margin: 17px 0 8px;
+}
+.career_div_ul_pText {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
+  color: #aaa;
+}
+.career_div_ul_divName {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+.career_div_ul_divName img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ececec;
+}
+.career_div_ul_divName p {
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #aaa;
+}
