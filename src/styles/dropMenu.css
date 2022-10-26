@@ -2623,12 +2623,12 @@ a {
   text-decoration: inherit;
   cursor: pointer;
 }
-a,
+/* a,
 a:active,
 a:hover,
 a:visited {
   color: inherit;
-}
+} */
 button {
   margin: 0;
   padding: 0;

@@ -56,5 +56,69 @@
       "icon": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90",
       "name": "딜리버리히어로 코리아 유재혁, 딜리버리히어로 코리아 이혜준"
     }
+  ],
+  "cardTag":[
+    {
+      "title":"LG전자ㅣ애플에서 8년은 일하는 방법을 가르쳐 준 시간",
+      "img": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&w=800&q=75",
+      "tag":"#개발 #IT/기술 #데이터"
+    },
+    {
+      "title":"LG전자ㅣ애플에서 8년은 일하는 방법을 가르쳐 준 시간",
+      "img": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&w=800&q=75",
+      "tag":"#개발 #IT/기술 #데이터"
+    },
+    {
+      "title":"LG전자ㅣ애플에서 8년은 일하는 방법을 가르쳐 준 시간",
+      "img": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&w=800&q=75",
+      "tag":"#개발 #IT/기술 #데이터"
+    },
+    {
+      "title":"LG전자ㅣ애플에서 8년은 일하는 방법을 가르쳐 준 시간",
+      "img": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&w=800&q=75",
+      "tag":"#개발 #IT/기술 #데이터"
+    }
+  ],
+  "cardVod":[
+    {
+      "img":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75",
+      "name":"전) 원티드랩 최보명",
+      "title":"포트폴리오를 부탁해!포트폴리오를 부탁해!",
+      "text":"[무료] 포트폴리오를 부탁해 by 원티드"
+    },
+    {
+      "img":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75",
+      "name":"전) 원티드랩 최보명",
+      "title":"포트폴리오를 부탁해!포트폴리오를 부탁해!",
+      "text":"[무료] 포트폴리오를 부탁해 by 원티드"
+    },
+    {
+      "img":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75",
+      "name":"전) 원티드랩 최보명",
+      "title":"포트폴리오를 부탁해!포트폴리오를 부탁해!",
+      "text":"[무료] 포트폴리오를 부탁해 by 원티드"
+    },
+    {
+      "img":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75",
+      "name":"전) 원티드랩 최보명",
+      "title":"포트폴리오를 부탁해!포트폴리오를 부탁해!",
+      "text":"[무료] 포트폴리오를 부탁해 by 원티드"
+    }
+  ],
+  "cardEvent":[
+    {
+      "img":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2421%2F7065bb13.jpg&w=1200&q=100",
+      "title":"[무료 라이브톡] 스타트업에 코칭 리더십이 꼭 필요한 이유!",
+      "icon1":"온라인",
+      "icon2":"네트워킹",
+      "date":""
+    },
+    {
+      "img":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2444%2Fee83ad13.jpg&w=1200&q=100",
+      "title":"프리온보딩 백엔드 코스",
+      "icon1":"오프라인",
+      "icon2":"교육",
+      "date":"2022.10.20(목)"
+    }
   ]
 }

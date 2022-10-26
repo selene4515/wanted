@@ -1,19 +1,26 @@
-import CardTitleTextName from "../components/common/CardTitleTextName";
+import { Link } from "react-router-dom";
+import CardTitleTextName from "../components/card/CardTitleTextName";
 import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 import ReactSlick from "../components/ReactSlick";
+import MenuSlider from "../components/common/MenuSlider";
+import Card4NameTitleText from "../components/card/Card4NameTitleText";
+import Card4TitleTag from "../components/card/Card4TitleTag";
+import Card2IconTitleDate from "../components/card/Card2IconTitleDate";
 import "../styles/banner.css";
 import "../styles/main.css";
 import dummy from "../json/cardText.json";
 import { ReactComponent as RoundQSvg } from "../svg/roundQ.svg";
-import MenuSlider from "../components/common/MenuSlider";
 import { ReactComponent as ArrowBottomSvg } from "../svg/arrowBottom.svg";
 import { ReactComponent as ArrowRightSvg } from "../svg/arrowRight.svg";
 import { ReactComponent as SurchSvg } from "../components/header/surchBtn.svg";
 import { ReactComponent as CheckSvg } from "../svg/check.svg";
-import { Link } from "react-router-dom";
 
 const MainPage = () => {
+  const cardTag = dummy.cardTag;
+  const cardVod = dummy.cardVod;
+  const cardEvent = dummy.cardEvent;
+
   const card = dummy.card;
   const cardList = card.map((cardText, index) => (
     <CardTitleTextName
@@ -60,11 +67,19 @@ const MainPage = () => {
         <div className="dirline">
           <hr />
         </div>
-        <section className="section4li">카드세션</section>
+        <Card4TitleTag
+          title="3분만에 읽는 Wanted+ 아티클"
+          titleSub="아티클"
+          cardContent={cardTag}
+        />
         <div className="dirline">
           <hr />
         </div>
-        <section className="section4li">카드세션</section>
+        <Card4NameTitleText
+          title="직장인을 위한 Wanted+ VOD"
+          titleSub="VOD"
+          cardVod={cardVod}
+        />
         <div className="blueBanner">
           <Link>
             <div className="blueBanner_line">
@@ -78,7 +93,11 @@ const MainPage = () => {
             </div>
           </Link>
         </div>
-        <section className="section2li">카드세션</section>
+        <Card2IconTitleDate
+          title="커리어 성장을 위한 맞춤 이벤트"
+          titleSub="이벤트"
+          cardEvent={cardEvent}
+        />
         <section className="subBanner">
           <div>
             <div className="subBanner_div">
