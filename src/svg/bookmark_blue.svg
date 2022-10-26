@@ -1,0 +1,16 @@
+<svg
+  width="13"
+  height="17"
+  viewBox="0 0 13 17"
+  style="color: #36f"
+>
+  <defs>
+    <path
+      id="bookmarkIconFill"
+      d="M6.25 13.21L.905 16.22c-.403.228-.905-.06-.905-.517V.596C0 .267.27 0 .605 0h11.29c.334 0 .605.267.605.596v15.107c0 .458-.502.745-.905.518L6.25 13.209z"
+    ></path>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(.188)">
+    <use fill="currentColor" xlink:href="#bookmarkIconFill"></use>
+  </g>
+</svg>

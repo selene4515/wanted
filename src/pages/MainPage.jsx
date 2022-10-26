@@ -3,7 +3,7 @@ import CardTitleTextName from "../components/card/CardTitleTextName";
 import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 import ReactSlick from "../components/ReactSlick";
-import MenuSlider from "../components/common/MenuSlider";
+import MenuSlider from "../components/slider/MenuSlider";
 import Card4NameTitleText from "../components/card/Card4NameTitleText";
 import Card4TitleTag from "../components/card/Card4TitleTag";
 import Card2IconTitleDate from "../components/card/Card2IconTitleDate";
