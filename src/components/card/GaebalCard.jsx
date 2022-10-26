@@ -7,7 +7,7 @@ const GaebalCard = (props) => {
   return (
     <li>
       <div className="Card_className__u5rsb">
-        <Link href="./second_detail.html" className="">
+        <Link to="/gaebalDetail" className="">
           <header
             style={{
               backgroundImage: `url(${backImg})`,

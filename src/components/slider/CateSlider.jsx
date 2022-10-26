@@ -16,7 +16,7 @@ const CateSlider = () => {
             <div
               data-index="0"
               className="slick-slide slick-active slick-current"
-              tabindex="-1"
+              tabIndex="-1"
               aria-hidden="false"
               style={{ outline: "none" }}
             >
@@ -37,7 +37,7 @@ const CateSlider = () => {
             <div
               data-index="1"
               className="slick-slide slick-active"
-              tabindex="-1"
+              tabIndex="-1"
               aria-hidden="false"
               style={{ outline: "none" }}
             >
@@ -58,7 +58,7 @@ const CateSlider = () => {
             <div
               data-index="2"
               className="slick-slide slick-active"
-              tabindex="-1"
+              tabIndex="-1"
               aria-hidden="false"
               style={{ outline: "none" }}
             >

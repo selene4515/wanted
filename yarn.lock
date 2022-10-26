@@ -1617,6 +1617,11 @@
     "estree-walker" "^1.0.1"
     "picomatch" "^2.2.2"
 
+"@rooks/use-boundingclientrect@^4.11.2":
+  "integrity" "sha512-IsRgEWZLlmY8paD1TRtaZ1+LNBTIXSP6ad5L52nPqjGU1k97mUXQX5QaE6947Slz9jaXnkWTFhH4pKWhMyX+8Q=="
+  "resolved" "https://registry.npmjs.org/@rooks/use-boundingclientrect/-/use-boundingclientrect-4.11.2.tgz"
+  "version" "4.11.2"
+
 "@rushstack/eslint-patch@^1.1.0":
   "integrity" "sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg=="
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz"
@@ -7362,7 +7367,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8":
+"react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8.0  || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -7476,7 +7481,7 @@
     "lodash.debounce" "^4.0.8"
     "resize-observer-polyfill" "^1.5.0"
 
-"react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.8":
+"react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0  || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.8", "react@>=16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -7721,6 +7726,14 @@
   "version" "2.79.1"
   optionalDependencies:
     "fsevents" "~2.3.2"
+
+"rooks@^7.4.1":
+  "integrity" "sha512-QWMv9edHcjUgO/f8nzsxARwresV171zB7CZOh1MwaZ4gBXqCx61Z7GLA6wKTdz8H/L4kJGzXly5hiZwbi8YGOQ=="
+  "resolved" "https://registry.npmjs.org/rooks/-/rooks-7.4.1.tgz"
+  "version" "7.4.1"
+  dependencies:
+    "lodash.debounce" "^4.0.8"
+    "raf" "^3.4.1"
 
 "run-parallel@^1.1.9":
   "integrity" "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA=="

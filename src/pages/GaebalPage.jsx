@@ -8,6 +8,8 @@ import CateSlider from "../components/slider/CateSlider";
 import { Link } from "react-router-dom";
 import dummy from "../json/cardCompeny.json";
 import GaebalCard from "../components/card/GaebalCard";
+import BannerBottom from "../components/common/BannerBottom";
+import { useState, useEffect } from "react";
 
 const GaebalPage = () => {
   const cardCompanyData = dummy.cardCompeny;
@@ -58,6 +60,27 @@ const GaebalPage = () => {
     />
   ));
 
+  // const content = document.querySelector(".fixedhr");
+  // const contentTop = content.getBoundingClientRect().top + window.scrollY;
+
+  const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
+  const [ScrollActive, setScrollActive] = useState(false);
+  function handleScroll() {
+    if (ScrollY > 255) {
+      setScrollY(window.pageYOffset);
+      setScrollActive(true);
+    } else {
+      setScrollY(window.pageYOffset);
+      setScrollActive(false);
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
   return (
     <div>
       <Header />
@@ -84,7 +107,11 @@ const GaebalPage = () => {
         </article>
         <div className="jobList">
           <div>
-            <div className="jobList_ jobList_t">
+            <div
+              className={
+                ScrollActive ? "jobList_ jobList_t fixed" : "jobList_ jobList_t"
+              }
+            >
               <div className="jobList_cate">
                 <div className="jobList_cate_div1">
                   <button type="button" className="jobList_cate_div1_btn">
@@ -154,27 +181,7 @@ const GaebalPage = () => {
             </div>
           </div>
         </div>
-
-        {/* <button className="RibbonBanner_cn__CfmF5 RibbonBanner_slideIn__dFd6L">
-          <div className="clearfix RibbonBanner_wrapper__ap_Cc">
-            <div>
-              <i
-                className="RibbonBanner_icon__qCgf1 icon-joblist_bottombar_overtime"
-              ></i>
-              <span className="RibbonBanner_bannerText___lCrp hidden-xs"
-                >이제 밤새워 채용 공고 보지 마세요.</span
-              >
-              <span
-                className="RibbonBanner_bannerText___lCrp RibbonBanner_bannerMobileText__5_DId"
-                ><p>이제 밤새워 채용 공고 보지 마세요.</p></span
-              >
-            </div>
-            <div className="RibbonBanner_buttonTextWrapper__a1XF3">
-              <span>더 알아보기</span>
-            </div>
-          </div>
-          <i className="icon-icon_match_btn_next visible-xs"></i>
-        </button> */}
+        <BannerBottom />
       </div>
     </div>
   );
