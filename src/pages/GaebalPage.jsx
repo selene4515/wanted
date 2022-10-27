@@ -7,11 +7,13 @@ import { ReactComponent as BookmarkBlueSvg } from "../svg/bookmark_blue.svg";
 import CateSlider from "../components/slider/CateSlider";
 import { Link } from "react-router-dom";
 import dummy from "../json/cardCompeny.json";
-import GaebalCard from "../components/card/GaebalCard";
 import BannerBottom from "../components/common/BannerBottom";
 import { useState, useEffect } from "react";
+import CardList from "../components/card/CardList";
 
 const GaebalPage = () => {
+  const cardGaebalData = dummy.cardGaebal;
+
   const cardCompanyData = dummy.cardCompeny;
   const cardCompanyList = cardCompanyData.map((cardText, index) => (
     <div
@@ -46,23 +48,8 @@ const GaebalPage = () => {
     </div>
   ));
 
-  const cardGaebalData = dummy.cardGaebal;
-  const cardGaebalList = cardGaebalData.map((cardText, index) => (
-    <GaebalCard
-      key={index}
-      backImg={cardText.backImg}
-      title={cardText.title}
-      name={cardText.name}
-      olo={cardText.olo}
-      city={cardText.city}
-      nara={cardText.nara}
-      money={cardText.money}
-    />
-  ));
-
   // const content = document.querySelector(".fixedhr");
   // const contentTop = content.getBoundingClientRect().top + window.scrollY;
-
   const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
   const [ScrollActive, setScrollActive] = useState(false);
   function handleScroll() {
@@ -176,9 +163,7 @@ const GaebalPage = () => {
                 </div>
               </div>
             </div>
-            <div className="List_List_container__JnQMS">
-              <ul className="clearfix">{cardGaebalList}</ul>
-            </div>
+            <CardList cardGaebalData={cardGaebalData} />
           </div>
         </div>
         <BannerBottom />
