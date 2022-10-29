@@ -6,9 +6,15 @@ import "../styles/second_detail.css";
 import { Link } from "react-router-dom";
 import CardList from "../components/card/CardList";
 import dummy from "../json/cardCompeny.json";
+import { ReactComponent as RoundExSvg } from "../svg/roundEx.svg";
+import { RenderAfterNavermapsLoaded, NaverMap } from "react-naver-maps";
+// import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
 
 const GaebalDetailPage = () => {
   const cardGaebalData = dummy.cardGaebal;
+
+  // const navermaps = document.naver.maps;
+
   return (
     <div>
       <Header />
@@ -514,10 +520,23 @@ const GaebalDetailPage = () => {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    <img
-                      alt="Map with company address"
-                      src="https://naveropenapi.apigw.ntruss.com/map-static/v2/raster-cors?w=700&h=254&markers=type:d|size:mid|pos:126.9729133 37.5511247|color:red&scale=2&X-NCP-APIGW-API-KEY-ID=z7e7ujba1u"
-                    />
+                    <RenderAfterNavermapsLoaded ncpClientId={"ss4pkyxi3m"}>
+                      <NaverMap
+                        mapDivId={"maps-getting-started-uncontrolled"} // default: react-naver-map
+                        style={{
+                          width: "100%",
+                          height: "254px",
+                        }}
+                        defaultCenter={{ lat: 37.5508, lng: 126.9727 }}
+                        defaultZoom={17}
+                      >
+                        {/* <Marker
+                          key={1}
+                          position={new navermaps.LatLng(37.5508, 126.9727)}
+                          animation={2}
+                        /> */}
+                      </NaverMap>
+                    </RenderAfterNavermapsLoaded>
                   </Link>
                 </section>
               </div>
@@ -542,24 +561,7 @@ const GaebalDetailPage = () => {
               <section>
                 <div className="StealingWarning_StealingWarning_content__Ik3sn">
                   <div className="WarningHeader_WarningHeader__F1ikW">
-                    <svg
-                      className=""
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <g fill="currentColor" fill-rule="evenodd">
-                        <path
-                          fill-rule="nonzero"
-                          d="M15.266 20.658A9.249 9.249 0 0112 21.25a9.25 9.25 0 010-18.5 9.21 9.21 0 016.54 2.71A9.217 9.217 0 0121.25 12a9.213 9.213 0 01-2.71 6.54.75.75 0 101.061 1.062A10.713 10.713 0 0022.75 12c0-2.89-1.146-5.599-3.149-7.601A10.717 10.717 0 0012 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75c1.31 0 2.591-.235 3.794-.688a.75.75 0 10-.528-1.404z"
-                        ></path>
-                        <path d="M13 16a1 1 0 11-2 0 1 1 0 012 0"></path>
-                        <path
-                          fill-rule="nonzero"
-                          d="M11.25 7v5a.75.75 0 101.5 0V7a.75.75 0 10-1.5 0z"
-                        ></path>
-                      </g>
-                    </svg>
+                    <RoundExSvg />
                     <div className="WarningHeader_WarningHeader_content__Yb7yY">
                       <h5 className="WarningHeader_WarningHeader_content_h5__QbAwc">
                         본 채용정보는 원티드랩의 동의없이 무단전재, 재배포,

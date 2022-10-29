@@ -1,7 +1,15 @@
 import { ReactComponent as ShareBtnSvg } from "../../svg/shareBtn.svg";
 import { ReactComponent as BookmarkBlueLineSvg } from "../../svg/bookmark_blueLine.svg";
+import { useNavigate } from "react-router-dom";
 
 const AsideStiky = () => {
+  const nav = useNavigate();
+
+  const GiWon = () => {
+    alert("지원하기 페이지로 이동!");
+    nav("/gabalDetailGiwon");
+  };
+
   return (
     <aside className="JobProcess_container__1HKdk" style={{ top: 70 }}>
       <div className="BeforeApplication_container__ABvqo">
@@ -40,7 +48,11 @@ const AsideStiky = () => {
               </button>
             </div>
             <div className="ApplyBtn_container_item__QPFuo">
-              <button className="ApplyBtn_button__BT821" type="button">
+              <button
+                className="ApplyBtn_button__BT821"
+                type="button"
+                onClick={GiWon}
+              >
                 지원하기
               </button>
             </div>

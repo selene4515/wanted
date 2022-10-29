@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 const GaebalCard = (props) => {
   const backImg = props.backImg;
+  const url = props.name;
+  const moneyc = props.money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
   return (
     <li>
       <div className="Card_className__u5rsb">
-        <Link to="/gaebalDetail" className="">
+        <Link to={{ pathname: `/gaebal/${url}` }} className="">
           <header
             style={{
               backgroundImage: `url(${backImg})`,
@@ -32,7 +34,7 @@ const GaebalCard = (props) => {
               <span className="addressDot">.</span>
               <span>{props.nara}</span>
             </div>
-            <div className="reward">채용보상금 {props.money}원</div>
+            <div className="reward">채용보상금 {moneyc}원</div>
           </div>
         </Link>
       </div>
