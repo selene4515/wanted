@@ -2,14 +2,13 @@ import Header from "../components/header/Header";
 import "../styles/main.css";
 import { ReactComponent as ArrowRighBluetSvg } from "../svg/arrowRight_blue.svg";
 import { ReactComponent as ArrowBottomGraySvg } from "../svg/arrowBottom_gray.svg";
-import { ReactComponent as ArrowPullBottomSvg } from "../svg/arrowPullBottom.svg";
 import { ReactComponent as BookmarkBlueSvg } from "../svg/bookmark_blue.svg";
-import CateSlider from "../components/slider/CateSlider";
 import { Link } from "react-router-dom";
 import dummy from "../json/cardCompeny.json";
 import BannerBottom from "../components/common/BannerBottom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CardList from "../components/card/CardList";
+import JobList from "../components/common/JobList";
 
 const GaebalPage = () => {
   const cardGaebalData = dummy.cardGaebal;
@@ -48,25 +47,7 @@ const GaebalPage = () => {
     </div>
   ));
 
-  // const content = document.querySelector(".fixedhr");
-  // const contentTop = content.getBoundingClientRect().top + window.scrollY;
-  const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
   const [ScrollActive, setScrollActive] = useState(false);
-  function handleScroll() {
-    if (ScrollY > 255) {
-      setScrollY(window.pageYOffset);
-      setScrollActive(true);
-    } else {
-      setScrollY(window.pageYOffset);
-      setScrollActive(false);
-    }
-  }
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
 
   return (
     <div>
@@ -94,50 +75,10 @@ const GaebalPage = () => {
         </article>
         <div className="jobList">
           <div>
-            <div
-              className={
-                ScrollActive ? "jobList_ jobList_t fixed" : "jobList_ jobList_t"
-              }
-            >
-              <div className="jobList_cate">
-                <div className="jobList_cate_div1">
-                  <button type="button" className="jobList_cate_div1_btn">
-                    <span className="jobList_cate_div1_btn_span1">
-                      지역<span>1</span>
-                    </span>
-                    <span className="jobList_cate_div1_btn_span2">한국</span>
-                  </button>
-                  <div className="jobList_cate_div1_div1">
-                    <button type="button" className="jobList_cate_div1_btn">
-                      <span className="jobList_cate_div1_btn_span1">경력</span>
-                      <span className="jobList_cate_div1_btn_span2">전체</span>
-                      <ArrowPullBottomSvg />
-                    </button>
-                  </div>
-                  <div className="jobList_cate_div1_div2">
-                    <button type="button" className="jobList_cate_div1_btn">
-                      <span className="jobList_cate_div1_btn_span1">
-                        기술스택
-                      </span>
-                      <span className=" "></span>
-                      <ArrowPullBottomSvg />
-                    </button>
-                  </div>
-                </div>
-                <div className="jobList_cate_div2">
-                  <div className=" ">
-                    <div className="jobList_cate_div2_div">
-                      <button className="" type="button">
-                        응답률순
-                        <ArrowPullBottomSvg />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <CateSlider />
-            </div>
+            <JobList
+              ScrollActive={ScrollActive}
+              setScrollActive={setScrollActive}
+            />
             <hr className="fixedhr" />
             <div className="jobList_bookm">
               <button type="button">
