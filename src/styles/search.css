@@ -1,0 +1,52 @@
+.SearchInput_SearchInput__w9KeD {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background: #fff;
+  border-bottom: 1px solid #e1e2e3;
+  z-index: 1;
+}
+.SearchInput_SearchKeywordText__ASPNj {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  font-size: 48px;
+  line-height: 2;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.Search_Search__PUJPw {
+  position: relative;
+  max-width: 1060px;
+  margin-top: 30px;
+}
+.Search_Search__PUJPw {
+  width: 87.72%;
+  margin: 60px auto 80px;
+}
+.Search_sectionContainer__UaVWv {
+  padding-bottom: 60px;
+}
+.Search_searchLabel__fOBpt {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 18px;
+  color: #333;
+}
+.SearchJobList_jobListLabel__Zn4Bh {
+  margin-bottom: 8px;
+}
+.Search_searchLabel__fOBpt > span {
+  margin-left: 10px;
+  font-weight: 400;
+}

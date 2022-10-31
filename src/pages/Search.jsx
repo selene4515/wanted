@@ -1,16 +1,31 @@
 import React from "react";
 import JobList from "../components/common/JobList";
 import Header from "../components/header/Header";
+import CardList from "../components/card/CardList";
+import dummy from "../json/cardCompeny.json";
+import "../styles/search.css";
+import { useState } from "react";
 
 const Search = () => {
+  const cardGaebalData = dummy.cardGaebal;
+
+  const [clickSearchBtn, setClickSearchBtn] = useState(false);
+  const SearchBarOn = () => {
+    setClickSearchBtn(true);
+  };
   return (
     <>
-      <Header />
-      <div style={{ background: "#fff" }}>
+      <Header
+        clickSearchBtn={clickSearchBtn}
+        setClickSearchBtn={setClickSearchBtn}
+        SearchBarOn={SearchBarOn}
+      />
+      <div>
         <div className="SearchInput_SearchInput__w9KeD">
           <button
             type="button"
             className="SearchInput_SearchKeywordText__ASPNj"
+            onClick={SearchBarOn}
           >
             원티드
           </button>
@@ -22,6 +37,7 @@ const Search = () => {
             </h2>
             <div className="SearchJobList_jobListContainer__sv6Hw">
               <JobList />
+              <CardList cardGaebalData={cardGaebalData} />
             </div>
           </div>
         </div>

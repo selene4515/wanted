@@ -2,11 +2,22 @@ import { ReactComponent as SearchSvg } from "./surchBtn.svg";
 import "../../styles/dropMenu.css";
 import { Link } from "react-router-dom";
 
-const SearchBar = ({ clickSearchBtn, setClickSearchBtn }) => {
-  const ClickSearchBtn = setClickSearchBtn;
+const SearchBar = ({
+  clickSearchBtn,
+  setClickSearchBtn,
+  clickSearchBtn0,
+  setClickSearchBtn0,
+}) => {
+  const SetClickSearchBtn = setClickSearchBtn;
+  const SetClickSearchBtn0 = setClickSearchBtn0;
 
   const SearchBarOff = () => {
-    ClickSearchBtn(false);
+    if (clickSearchBtn === true) {
+      SetClickSearchBtn(false);
+    }
+    if (clickSearchBtn0 === true) {
+      SetClickSearchBtn0(false);
+    }
   };
 
   return (

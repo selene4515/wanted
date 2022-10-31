@@ -11,7 +11,7 @@ import CategorySub from "./CategorySub";
 import LoginModal from "./LoginModal";
 import SearchBar from "./SearchBar";
 
-const Header = () => {
+const Header = ({ clickSearchBtn, setClickSearchBtn, SearchBarOn }) => {
   const [hoverMenu, setHoverMenu] = useState(true);
   const [hoverSub, setHoverSub] = useState(true);
   const mouseOverMenu = () => {
@@ -32,9 +32,13 @@ const Header = () => {
   const modalOn = () => {
     setClickModal(true);
   };
-  const [clickSearchBtn, setClickSearchBtn] = useState(false);
-  const SearchBarOn = () => {
+
+  SearchBarOn = () => {
     setClickSearchBtn(true);
+  };
+  const [clickSearchBtn0, setClickSearchBtn0] = useState(false);
+  const SearchBarOn0 = () => {
+    setClickSearchBtn0(true);
   };
 
   return (
@@ -89,7 +93,7 @@ const Header = () => {
           <div className="header_div_join">
             <ul>
               <li>
-                <button className="searchBtn" onClick={SearchBarOn}>
+                <button className="searchBtn" onClick={SearchBarOn0}>
                   <SurchSvg />
                 </button>
               </li>
@@ -110,6 +114,12 @@ const Header = () => {
           <SearchBar
             clickSearchBtn={clickSearchBtn}
             setClickSearchBtn={setClickSearchBtn}
+          />
+        )}
+        {clickSearchBtn0 && (
+          <SearchBar
+            clickSearchBtn0={clickSearchBtn0}
+            setClickSearchBtn0={setClickSearchBtn0}
           />
         )}
       </div>

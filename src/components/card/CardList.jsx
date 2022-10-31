@@ -15,7 +15,7 @@ const CardList = (props) => {
     />
   ));
   return (
-    <div className="List_List_container__JnQMS">
+    <div className="List_List_container__JnQMS" style={{ textAlign: "center" }}>
       <ul className="clearfix">{cardGaebalList}</ul>
     </div>
   );
