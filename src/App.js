@@ -3,7 +3,7 @@ import MainPage from "./pages/MainPage";
 import GaebalPage from "./pages/GaebalPage";
 import GaebalDetailPage from "./pages/GaebalDetailPage";
 import GaebalDetailGiwonPage from "./pages/GaebalDetailGiwonPage";
-import Search from "./pages/Search";
+import SearchPage from "./pages/SearchPage";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <Route path="/gaebal" element={<GaebalPage />} />
       <Route path="/gaebal/:id" element={<GaebalDetailPage />} />
       <Route path="/gabalDetailGiwon" element={<GaebalDetailGiwonPage />} />
-      <Route path="/search" element={<Search />} />
+      <Route path="/search" element={<SearchPage />} />
     </Routes>
   );
 };

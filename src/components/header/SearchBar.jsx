@@ -1,30 +1,51 @@
 import { ReactComponent as SearchSvg } from "./surchBtn.svg";
 import "../../styles/dropMenu.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const SearchBar = ({
-  clickSearchBtn,
-  setClickSearchBtn,
-  clickSearchBtn0,
-  setClickSearchBtn0,
-}) => {
-  const SetClickSearchBtn = setClickSearchBtn;
-  const SetClickSearchBtn0 = setClickSearchBtn0;
+const SearchBar = (props) => {
+  const SetClickSearchBtn = props.setClickSearchBtn;
+  const SetClickSearchBtn0 = props.setClickSearchBtn0;
 
   const SearchBarOff = () => {
-    if (clickSearchBtn === true) {
+    if (props.clickSearchBtn === true) {
       SetClickSearchBtn(false);
     }
-    if (clickSearchBtn0 === true) {
+    if (props.clickSearchBtn0 === true) {
       SetClickSearchBtn0(false);
+    }
+  };
+
+  const nav = useNavigate();
+  const [keyword, setKeyword] = useState("");
+  const onChangeKeyword = (e) => {
+    setKeyword(e.target.value);
+  };
+  const searchEnter = (e) => {
+    console.log(keyword);
+    nav("/search");
+    setKeyword("");
+  };
+
+  const onKeyPress = (e) => {
+    if (e.key === "Enter") {
+      searchEnter();
     }
   };
 
   return (
     <div className="SearchBar_SearchBar__JODCp">
       <div className="SearchBar_SearchBar_container__kpoXq">
-        <form role="presentation" action=".">
-          <input type="search" placeholder="#태그, 회사, 포지션 검색" />
+        <form>
+          <input
+            type="search"
+            placeholder="#태그, 회사, 포지션 검색"
+            value={keyword}
+            onChange={onChangeKeyword}
+            onKeyPress={onKeyPress}
+          />
+          {/* 새로고침방지 imput */}
+          <input type="text" style={{ display: "none" }} />
           <SearchSvg className="SearchBar_SearchBar_searchIcon__I9wXL" />
           <button type="button" className="SearchBar_SearchBar_close__SpKxI">
             <svg width="24" height="24" viewBox="0 0 24 24">
@@ -43,8 +64,6 @@ const SearchBar = ({
             <Link
               href="/tag_search"
               className="RecentSearchResults_rightSideButton__6OgA6"
-              aria-label=""
-              data-attribute-id="search__goCompanyTag"
             >
               기업태그 홈 이동하기
               <svg width="12" height="12" viewBox="0 0 12 12">
