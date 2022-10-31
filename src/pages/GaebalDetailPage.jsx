@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 import CardList from "../components/card/CardList";
 import dummy from "../json/cardCompeny.json";
 import { ReactComponent as RoundExSvg } from "../svg/roundEx.svg";
-import { RenderAfterNavermapsLoaded, NaverMap } from "react-naver-maps";
-// import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
+import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
 
 const GaebalDetailPage = () => {
   const cardGaebalData = dummy.cardGaebal;
 
-  // const navermaps = document.naver.maps;
+  const navermaps = window.naver.maps;
+  console.log(navermaps);
 
   return (
     <div>
@@ -530,11 +530,10 @@ const GaebalDetailPage = () => {
                         defaultCenter={{ lat: 37.5508, lng: 126.9727 }}
                         defaultZoom={17}
                       >
-                        {/* <Marker
-                          key={1}
+                        <Marker
                           position={new navermaps.LatLng(37.5508, 126.9727)}
                           animation={2}
-                        /> */}
+                        />
                       </NaverMap>
                     </RenderAfterNavermapsLoaded>
                   </Link>

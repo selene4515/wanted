@@ -17,6 +17,31 @@ const LoginModal = ({ clickModal, setClickModal }) => {
     setClickModal2(true);
   };
 
+  // const [email, setEmail] = useState("");
+  // const [emailValid, setEmailValid] = useState(false);
+  // const [notAllow, setNotAllow] = useState(false);
+  // useEffect(() => {
+  //   if (emailValid) {
+  //     setNotAllow(false);
+  //     return;
+  //   }
+
+  //   return () => {
+  //     second;
+  //   };
+  // }, [third]);
+
+  // const handleEmail = (e) => {
+  //   setEmail(e.target.value);
+  //   const regex =
+  //     /^(([^<>()[].,;:\s@"]+(.[^<>()[].,;:\s@"]+))|(".+"))@(([^<>()[].,;:\s@"]+.)+[^<>()[].,;:\s@"]{2,})$/i;
+  //   if (regex.test(e.target.value)) {
+  //     setEmailValid(true);
+  //   } else {
+  //     setEmailValid(false);
+  //   }
+  // };
+
   return (
     <div>
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">
@@ -88,7 +113,14 @@ const LoginModal = ({ clickModal, setClickModal }) => {
                 />
               </div>
               <div className="style_guidance__FT8Qs input-group-guidance"></div>
+              <p
+                color="var(--theme-palette-colors-red-400)"
+                className="css-1u2lazp"
+              >
+                올바른 이메일을 입력해주세요.
+              </p>
             </div>
+
             <div className="InputPanel_buttons__w391m">
               <button
                 type="button"

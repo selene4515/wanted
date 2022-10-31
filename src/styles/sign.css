@@ -520,6 +520,17 @@ input[type="checkbox"] {
   cursor: not-allowed;
 }
 
+.css-1u2lazp {
+  color: #fe415c;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.0192em;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
 .Modal_root__aEM8D.on {
   display: block;
 }

@@ -15,6 +15,7 @@ import { ReactComponent as ArrowBottomSvg } from "../svg/arrowBottom.svg";
 import { ReactComponent as ArrowRightSvg } from "../svg/arrowRight.svg";
 import { ReactComponent as SurchSvg } from "../components/header/surchBtn.svg";
 import { ReactComponent as CheckSvg } from "../svg/check.svg";
+import ScrollToTop from "../components/common/ScrollToTop";
 
 const MainPage = () => {
   const cardTag = dummy.cardTag;
@@ -35,6 +36,7 @@ const MainPage = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <Header />
       <main className="main">
         <ReactSlick />

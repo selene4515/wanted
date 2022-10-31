@@ -141,3 +141,10 @@
 .Explore_SubCategory__xIcAi_on {
   display: block;
 }
+
+.SearchBar {
+  display: block;
+}
+.SearchBar.off {
+  display: none;
+}

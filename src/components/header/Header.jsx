@@ -9,6 +9,7 @@ import { ReactComponent as SurchSvg } from "./surchBtn.svg";
 import Category from "./Category";
 import CategorySub from "./CategorySub";
 import LoginModal from "./LoginModal";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [hoverMenu, setHoverMenu] = useState(true);
@@ -30,6 +31,10 @@ const Header = () => {
   const [clickModal, setClickModal] = useState(false);
   const modalOn = () => {
     setClickModal(true);
+  };
+  const [clickSearchBtn, setClickSearchBtn] = useState(false);
+  const SearchBarOn = () => {
+    setClickSearchBtn(true);
   };
 
   return (
@@ -84,7 +89,7 @@ const Header = () => {
           <div className="header_div_join">
             <ul>
               <li>
-                <button className="searchBtn">
+                <button className="searchBtn" onClick={SearchBarOn}>
                   <SurchSvg />
                 </button>
               </li>
@@ -101,6 +106,12 @@ const Header = () => {
             </ul>
           </div>
         </div>
+        {clickSearchBtn && (
+          <SearchBar
+            clickSearchBtn={clickSearchBtn}
+            setClickSearchBtn={setClickSearchBtn}
+          />
+        )}
       </div>
       <div
         className={
