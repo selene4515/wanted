@@ -48,6 +48,16 @@ const GaebalPage = () => {
   ));
 
   const [ScrollActive, setScrollActive] = useState(false);
+  const [ScrollY, setScrollY] = useState(0);
+  function handleScroll() {
+    if (ScrollY > 255) {
+      setScrollY(window.pageYOffset);
+      setScrollActive(true);
+    } else {
+      setScrollY(window.pageYOffset);
+      setScrollActive(false);
+    }
+  }
 
   return (
     <div>
@@ -75,10 +85,7 @@ const GaebalPage = () => {
         </article>
         <div className="jobList">
           <div>
-            <JobList
-              ScrollActive={ScrollActive}
-              setScrollActive={setScrollActive}
-            />
+            <JobList ScrollActive={ScrollActive} handleScroll={handleScroll} />
             <hr className="fixedhr" />
             <div className="jobList_bookm">
               <button type="button">

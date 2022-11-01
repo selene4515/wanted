@@ -5,6 +5,7 @@
 .Tooltip_container__AvBvM,
 .Tooltip_label__P9FMp {
   position: relative;
+  text-align: initial;
 }
 .Tooltip_label__P9FMp.not-clickable {
   cursor: default;

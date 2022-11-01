@@ -1,18 +1,8 @@
 import { ReactComponent as ArrowPullBottomSvg } from "../../svg/arrowPullBottom.svg";
 import CateSlider from "../slider/CateSlider";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-const JobList = ({ ScrollActive, setScrollActive }) => {
-  const [ScrollY, setScrollY] = useState(0);
-  function handleScroll() {
-    if (ScrollY > 255) {
-      setScrollY(window.pageYOffset);
-      setScrollActive(true);
-    } else {
-      setScrollY(window.pageYOffset);
-      setScrollActive(false);
-    }
-  }
+const JobList = ({ ScrollActive, handleScroll }) => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {

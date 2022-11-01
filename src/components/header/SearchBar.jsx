@@ -1,7 +1,6 @@
 import { ReactComponent as SearchSvg } from "./surchBtn.svg";
 import "../../styles/dropMenu.css";
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const SearchBar = (props) => {
   const SetClickSearchBtn = props.setClickSearchBtn;
@@ -17,14 +16,20 @@ const SearchBar = (props) => {
   };
 
   const nav = useNavigate();
-  const [keyword, setKeyword] = useState("");
-  const onChangeKeyword = (e) => {
-    setKeyword(e.target.value);
-  };
+  const location = useLocation();
+  const PonChangeKeyword = props.onChangeKeyword;
+  const Pkeyword = props.keyword;
+  const PsetKeyword = props.setKeyword;
+
   const searchEnter = (e) => {
-    console.log(keyword);
-    nav("/search");
-    setKeyword("");
+    console.log(Pkeyword);
+
+    if (location.pathname === "/search") {
+      SearchBarOff();
+    } else {
+      nav("/search");
+    }
+    PsetKeyword("");
   };
 
   const onKeyPress = (e) => {
@@ -40,11 +45,11 @@ const SearchBar = (props) => {
           <input
             type="search"
             placeholder="#태그, 회사, 포지션 검색"
-            value={keyword}
-            onChange={onChangeKeyword}
+            value={Pkeyword}
+            onChange={PonChangeKeyword}
             onKeyPress={onKeyPress}
           />
-          {/* 새로고침방지 imput */}
+          {/* 새로고침방지 input */}
           <input type="text" style={{ display: "none" }} />
           <SearchSvg className="SearchBar_SearchBar_searchIcon__I9wXL" />
           <button type="button" className="SearchBar_SearchBar_close__SpKxI">

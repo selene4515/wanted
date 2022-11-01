@@ -11,7 +11,7 @@ import CategorySub from "./CategorySub";
 import LoginModal from "./LoginModal";
 import SearchBar from "./SearchBar";
 
-const Header = ({ clickSearchBtn, setClickSearchBtn, SearchBarOn }) => {
+const Header = (props) => {
   const [hoverMenu, setHoverMenu] = useState(true);
   const [hoverSub, setHoverSub] = useState(true);
   const mouseOverMenu = () => {
@@ -33,13 +33,17 @@ const Header = ({ clickSearchBtn, setClickSearchBtn, SearchBarOn }) => {
     setClickModal(true);
   };
 
-  SearchBarOn = () => {
-    setClickSearchBtn(true);
-  };
+  const PclickSearchBtn = props.clickSearchBtn;
+  const PsetClickSearchBtn = props.setClickSearchBtn;
+
   const [clickSearchBtn0, setClickSearchBtn0] = useState(false);
   const SearchBarOn0 = () => {
     setClickSearchBtn0(true);
   };
+
+  const PonChangeKeyword = props.onChangeKeyword;
+  const Pkeyword = props.keyword;
+  const PsetKeyword = props.setKeyword;
 
   return (
     <>
@@ -110,16 +114,22 @@ const Header = ({ clickSearchBtn, setClickSearchBtn, SearchBarOn }) => {
             </ul>
           </div>
         </div>
-        {clickSearchBtn && (
+        {PclickSearchBtn && (
           <SearchBar
-            clickSearchBtn={clickSearchBtn}
-            setClickSearchBtn={setClickSearchBtn}
+            clickSearchBtn={PclickSearchBtn}
+            setClickSearchBtn={PsetClickSearchBtn}
+            onChangeKeyword={PonChangeKeyword}
+            keyword={Pkeyword}
+            setKeyword={PsetKeyword}
           />
         )}
         {clickSearchBtn0 && (
           <SearchBar
             clickSearchBtn0={clickSearchBtn0}
             setClickSearchBtn0={setClickSearchBtn0}
+            onChangeKeyword={PonChangeKeyword}
+            keyword={Pkeyword}
+            setKeyword={PsetKeyword}
           />
         )}
       </div>
