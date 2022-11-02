@@ -6,7 +6,7 @@ import dummy from "../json/cardCompeny.json";
 import "../styles/search.css";
 import { useState } from "react";
 
-const Search = () => {
+const Search = (props) => {
   const cardGaebalData = dummy.cardGaebal;
 
   const [clickSearchBtn, setClickSearchBtn] = useState(false);
@@ -14,19 +14,15 @@ const Search = () => {
     setClickSearchBtn(true);
   };
 
-  const [keyword, setKeyword] = useState("");
-  const onChangeKeyword = (e) => {
-    setKeyword(e.target.value);
-  };
   return (
     <>
       <Header
         clickSearchBtn={clickSearchBtn}
         setClickSearchBtn={setClickSearchBtn}
         SearchBarOn={SearchBarOn}
-        onChangeKeyword={onChangeKeyword}
-        keyword={keyword}
-        setKeyword={setKeyword}
+        onChangeKeyword={props.onChangeKeyword}
+        keyword={props.keyword}
+        setKeyword={props.setKeyword}
       />
       <div>
         <div className="SearchInput_SearchInput__w9KeD">
@@ -35,7 +31,7 @@ const Search = () => {
             className="SearchInput_SearchKeywordText__ASPNj"
             onClick={SearchBarOn}
           >
-            {keyword ? keyword : "원티드"}
+            {props.keyword ? props.keyword : "검색어를 입력하세요"}
           </button>
         </div>
         <div className="Search_Search__PUJPw">

@@ -10,7 +10,7 @@ import { useState } from "react";
 import CardList from "../components/card/CardList";
 import JobList from "../components/common/JobList";
 
-const GaebalPage = () => {
+const GaebalPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;
 
   const cardCompanyData = dummy.cardCompeny;
@@ -61,7 +61,11 @@ const GaebalPage = () => {
 
   return (
     <div>
-      <Header />
+      <Header
+        onChangeKeyword={props.onChangeKeyword}
+        keyword={props.keyword}
+        setKeyword={props.setKeyword}
+      />
       <div style={{ background: "#fff" }}>
         <article style={{ paddingTop: 40 }} role="navigation">
           <div className="jobTitle">

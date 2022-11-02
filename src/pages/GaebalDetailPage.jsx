@@ -9,15 +9,18 @@ import dummy from "../json/cardCompeny.json";
 import { ReactComponent as RoundExSvg } from "../svg/roundEx.svg";
 import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
 
-const GaebalDetailPage = () => {
+const GaebalDetailPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;
 
   const navermaps = window.naver.maps;
-  console.log(navermaps);
 
   return (
     <div>
-      <Header />
+      <Header
+        onChangeKeyword={props.onChangeKeyword}
+        keyword={props.keyword}
+        setKeyword={props.setKeyword}
+      />
       <div className="JobDetail_cn__WezJh">
         <div className="JobDetail_contentWrapper__DQDB6">
           <div className="JobDetail_relativeWrapper__F9DT5">

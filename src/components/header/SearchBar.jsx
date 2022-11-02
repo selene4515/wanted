@@ -17,23 +17,16 @@ const SearchBar = (props) => {
 
   const nav = useNavigate();
   const location = useLocation();
-
-  const PsetKeyword = props.setKeyword;
-
   const searchEnter = (e) => {
-    console.log(props.keyword);
-
     if (location.pathname === "/search") {
       SearchBarOff();
     } else {
       nav("/search");
     }
-    PsetKeyword("");
   };
-
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
-      searchEnter();
+      props.keyword ? searchEnter() : alert("검색어를 입력해주세요!");
     }
   };
 
@@ -47,6 +40,7 @@ const SearchBar = (props) => {
             value={props.keyword}
             onChange={props.onChangeKeyword}
             onKeyPress={onKeyPress}
+            autoFocus
           />
           {/* 새로고침방지 input */}
           <input type="text" style={{ display: "none" }} />

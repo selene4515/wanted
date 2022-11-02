@@ -38,9 +38,9 @@ const Header = (props) => {
 
   const [clickSearchBtn0, setClickSearchBtn0] = useState(false);
   const SearchBarOn0 = () => {
+    props.setKeyword("");
     setClickSearchBtn0(true);
   };
-
   return (
     <>
       <div className="header_">
@@ -116,7 +116,6 @@ const Header = (props) => {
             setClickSearchBtn={PsetClickSearchBtn}
             onChangeKeyword={props.onChangeKeyword}
             keyword={props.keyword}
-            setKeyword={props.setKeyword}
           />
         )}
         {clickSearchBtn0 && (
@@ -125,7 +124,6 @@ const Header = (props) => {
             setClickSearchBtn0={setClickSearchBtn0}
             onChangeKeyword={props.onChangeKeyword}
             keyword={props.keyword}
-            setKeyword={props.setKeyword}
           />
         )}
       </div>

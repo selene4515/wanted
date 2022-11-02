@@ -17,7 +17,7 @@ import { ReactComponent as SurchSvg } from "../components/header/surchBtn.svg";
 import { ReactComponent as CheckSvg } from "../svg/check.svg";
 import ScrollToTop from "../components/common/ScrollToTop";
 
-const MainPage = () => {
+const MainPage = (props) => {
   const cardTag = dummy.cardTag;
   const cardVod = dummy.cardVod;
   const cardEvent = dummy.cardEvent;
@@ -37,7 +37,11 @@ const MainPage = () => {
   return (
     <div>
       <ScrollToTop />
-      <Header />
+      <Header
+        onChangeKeyword={props.onChangeKeyword}
+        keyword={props.keyword}
+        setKeyword={props.setKeyword}
+      />
       <main className="main">
         <ReactSlick />
         <section className="career">
