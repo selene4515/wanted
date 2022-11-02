@@ -17,12 +17,11 @@ const SearchBar = (props) => {
 
   const nav = useNavigate();
   const location = useLocation();
-  const PonChangeKeyword = props.onChangeKeyword;
-  const Pkeyword = props.keyword;
+
   const PsetKeyword = props.setKeyword;
 
   const searchEnter = (e) => {
-    console.log(Pkeyword);
+    console.log(props.keyword);
 
     if (location.pathname === "/search") {
       SearchBarOff();
@@ -45,8 +44,8 @@ const SearchBar = (props) => {
           <input
             type="search"
             placeholder="#태그, 회사, 포지션 검색"
-            value={Pkeyword}
-            onChange={PonChangeKeyword}
+            value={props.keyword}
+            onChange={props.onChangeKeyword}
             onKeyPress={onKeyPress}
           />
           {/* 새로고침방지 input */}
