@@ -1,6 +1,6 @@
 import GaebalCard from "./GaebalCard";
 
-const CardList = (props) => {
+const CardFilterList = (props) => {
   const cardGaebalD = props.cardGaebalData;
 
   const filtered = cardGaebalD
@@ -30,4 +30,4 @@ const CardList = (props) => {
   );
 };
 
-export default CardList;
+export default CardFilterList;

@@ -6,7 +6,7 @@ import dummy from "../json/cardCompeny.json";
 import "../styles/search.css";
 import { useState } from "react";
 
-const Search = (props) => {
+const SearchPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;
   const [count, setCount] = useState(0);
 
@@ -55,4 +55,4 @@ const Search = (props) => {
   );
 };
 
-export default Search;
+export default SearchPage;
