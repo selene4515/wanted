@@ -8,7 +8,7 @@ import { ReactComponent as BetaSvg } from "./beta.svg";
 import { ReactComponent as SurchSvg } from "./surchBtn.svg";
 import Category from "./Category";
 import CategorySub from "./CategorySub";
-import LoginModal from "./LoginModal";
+import ModalBase from "./ModalBase";
 import SearchBar from "./SearchBar";
 
 const Header = (props) => {
@@ -29,8 +29,13 @@ const Header = (props) => {
   };
 
   const [clickModal, setClickModal] = useState(false);
+  const [onModal, setOnModal] = useState(0);
   const modalOn = () => {
     setClickModal(true);
+  };
+  const modalOff = () => {
+    setClickModal(false);
+    setOnModal(0);
   };
 
   const PclickSearchBtn = props.clickSearchBtn;
@@ -163,13 +168,16 @@ const Header = (props) => {
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
-      <div
-        className={
-          clickModal ? "Modal_root__aEM8D on" : "Modal_root__aEM8D off"
-        }
-      >
-        <LoginModal clickModal={clickModal} setClickModal={setClickModal} />
-      </div>
+
+      {clickModal && (
+        <div className="Modal_root__aEM8D">
+          <ModalBase
+            modalOff={modalOff}
+            onModal={onModal}
+            setOnModal={setOnModal}
+          />
+        </div>
+      )}
     </>
   );
 };

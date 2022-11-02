@@ -1,4 +1,5 @@
 import GaebalCard from "./GaebalCard";
+import { useEffect } from "react";
 
 const CardFilterList = (props) => {
   const cardGaebalD = props.cardGaebalData;
@@ -21,7 +22,9 @@ const CardFilterList = (props) => {
     ));
 
   const setCount = props.setCount;
-  setCount(filtered.length);
+  useEffect(() => {
+    setCount(filtered.length);
+  }, [setCount, filtered]);
 
   return (
     <div className="List_List_container__JnQMS" style={{ textAlign: "center" }}>
