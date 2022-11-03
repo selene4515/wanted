@@ -184,7 +184,7 @@ const GaebalDetailPage = (props) => {
               </section>
               <div className="JobContent_descriptionWrapper__SM4UD">
                 <section className="JobDescription_JobDescription__VWfcb">
-                  <p>
+                  <div>
                     <span>
                       ＜서비스 소개＞
                       <br />
@@ -272,9 +272,9 @@ const GaebalDetailPage = (props) => {
                       https://platum.kr/archives/158548
                     </Link>
                     <span></span>
-                  </p>
+                  </div>
                   <h6>주요업무</h6>
-                  <p>
+                  <div>
                     <span>
                       ✓ 블루비커와 함께 한국을 넘어 글로벌 무대에서도 메디컬
                       커뮤니케이션을 혁신 할 "웹 프론트 개발자"를 모십니다!
@@ -291,9 +291,9 @@ const GaebalDetailPage = (props) => {
                       <br />• 사용언어: React.js, Next.js, Redux
                       <br />• 개발환경 및 도구: Github, Postman, Azure Cloud
                     </span>
-                  </p>
+                  </div>
                   <h6>자격요건</h6>
-                  <p>
+                  <div>
                     <span>
                       【자격요건】
                       <br />• 웹 개발경력이 4년 이상이신 분<br />• React
@@ -303,9 +303,9 @@ const GaebalDetailPage = (props) => {
                       커뮤니케이션에 능숙하신 분<br />• 성장하는 스타트업에서
                       함께 의미 있는 결과를 만들어 나가고 싶으신 분
                     </span>
-                  </p>
+                  </div>
                   <h6>우대사항</h6>
-                  <p>
+                  <div>
                     <span>
                       【우대사항】
                       <br />• 요구사항을 파악하여 데이터 모델과 설계가 가능하신
@@ -313,9 +313,9 @@ const GaebalDetailPage = (props) => {
                       커뮤니케이션이 가능하신 분<br />• 주니어 개발자를 리딩하고
                       멘토링 가능하신 분
                     </span>
-                  </p>
+                  </div>
                   <h6>혜택 및 복지</h6>
-                  <p>
+                  <div>
                     <span>
                       【복지 및 혜택】
                       <br />
@@ -487,9 +487,9 @@ const GaebalDetailPage = (props) => {
                       모든 전형에서 가능한 빠른 피드백을 드리고자
                       노력하겠습니다.
                     </span>
-                  </p>
+                  </div>
                   <h6>기술스택 ・ 툴</h6>
-                  <p>
+                  <div>
                     <div className="JobDescription_JobDescription_skill_wrapper__9EdFE">
                       <div className="SkillItem_SkillItem__E2WtM">Git</div>
                       <div className="SkillItem_SkillItem__E2WtM">Azure</div>
@@ -503,7 +503,7 @@ const GaebalDetailPage = (props) => {
                       <div className="SkillItem_SkillItem__E2WtM">Redux</div>
                       <div className="SkillItem_SkillItem__E2WtM">Next.js</div>
                     </div>
-                  </p>
+                  </div>
                 </section>
                 <hr className="JobContent_divider__Nwppc" />
                 <section className="JobWorkPlace_className__ra6rp">

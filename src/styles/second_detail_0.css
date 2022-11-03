@@ -913,20 +913,20 @@
   }
 }
 .JobDescription_JobDescription__VWfcb h6,
-.JobDescription_JobDescription__VWfcb p {
+.JobDescription_JobDescription__VWfcb > div {
   color: #333;
   font-size: 16px;
   line-height: 1.75;
 }
 @media (max-width: 767px) {
   .JobDescription_JobDescription__VWfcb h6,
-  .JobDescription_JobDescription__VWfcb p {
+  .JobDescription_JobDescription__VWfcb > div {
     line-height: 1.63;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .JobDescription_JobDescription__VWfcb h6,
-  .JobDescription_JobDescription__VWfcb p {
+  .JobDescription_JobDescription__VWfcb > div {
     line-height: 1.63;
   }
 }
@@ -934,7 +934,7 @@
   margin: 20px 0 0;
   font-weight: 600;
 }
-.JobDescription_JobDescription__VWfcb p {
+.JobDescription_JobDescription__VWfcb > div {
   color: #333;
   font-weight: 400;
   word-wrap: break-word;
