@@ -1,11 +1,35 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
+import { ReactComponent as CheckWhiteSvg } from "../../svg/check_white.svg";
 
 const ModalSign = ({ modalOff }) => {
   const signOff = () => {
     if (window.confirm("회원가입을 취소하시겠습니까?")) {
       modalOff();
     }
+  };
+
+  const [checkBoxAll, setCheckBoxAll] = useState(false);
+  const [checkBox1, setCheckBox1] = useState(false);
+  const [checkBox2, setCheckBox2] = useState(false);
+
+  const ckBoxClickAll = () => {
+    if (checkBoxAll) {
+      setCheckBoxAll(false);
+      setCheckBox1(false);
+      setCheckBox2(false);
+    } else {
+      setCheckBoxAll(true);
+      setCheckBox1(true);
+      setCheckBox2(true);
+    }
+  };
+  const ckBoxClick1 = () => {
+    checkBox1 ? setCheckBox1(false) : setCheckBox1(true);
+  };
+  const ckBoxClick2 = () => {
+    checkBox2 ? setCheckBox2(false) : setCheckBox2(true);
   };
 
   return (
@@ -122,35 +146,42 @@ const ModalSign = ({ modalOff }) => {
             <div className="style_guidance__FT8Qs input-group-guidance"></div>
           </div>
           <div className="Agreement_wrapper__1RTfh">
-            <div className="style_wrapper__TaLWc Agreement_checkboxAll__SkIo_">
-              <div className="style_check__svLur">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M18.75 21.75H5.25a3 3 0 0 1-3-3V5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v13.5a3 3 0 0 1-3 3zm0-1.5a1.5 1.5 0 0 0 1.5-1.5V5.25a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 1.5 1.5h13.5z"
-                  ></path>
-                </svg>
-              </div>
+            <div
+              className="style_wrapper__TaLWc Agreement_checkboxAll__SkIo_"
+              onClick={ckBoxClickAll}
+            >
+              {checkBoxAll ? (
+                <div className="css-1cqbzed">
+                  <span className="css-1ihsymv">
+                    <CheckWhiteSvg />
+                  </span>
+                </div>
+              ) : (
+                <div className="css-slacj2"></div>
+              )}
               <div className="style_label__CZv3V">
                 <input type="checkbox" name="allAgreement" />
                 전체 동의
               </div>
             </div>
-            <div className="style_wrapper__TaLWc Agreement_checkbox__OGFNT">
-              <div className="style_check__svLur">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M18.75 21.75H5.25a3 3 0 0 1-3-3V5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v13.5a3 3 0 0 1-3 3zm0-1.5a1.5 1.5 0 0 0 1.5-1.5V5.25a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 1.5 1.5h13.5z"
-                  ></path>
-                </svg>
-              </div>
+            <div
+              className="style_wrapper__TaLWc Agreement_checkbox__OGFNT"
+              onClick={ckBoxClick1}
+            >
+              {checkBox1 ? (
+                <div className="css-1cqbzed">
+                  <span className="css-1ihsymv">
+                    <CheckWhiteSvg />
+                  </span>
+                </div>
+              ) : (
+                <div className="css-slacj2"></div>
+              )}
               <div className="style_label__CZv3V">
                 <input type="checkbox" name="acceptPrivacy" />
                 개인정보 수집 및 이용 동의<span>(필수)</span>
                 <Link
                   href="https://help.wanted.co.kr/hc/ko/articles/360040127872"
-                  rel="noopener noreferrer"
                   target="_blank"
                   className="Agreement_link__qZ81b"
                 >
@@ -158,21 +189,24 @@ const ModalSign = ({ modalOff }) => {
                 </Link>
               </div>
             </div>
-            <div className="style_wrapper__TaLWc Agreement_checkbox__OGFNT">
-              <div className="style_check__svLur">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M18.75 21.75H5.25a3 3 0 0 1-3-3V5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v13.5a3 3 0 0 1-3 3zm0-1.5a1.5 1.5 0 0 0 1.5-1.5V5.25a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 1.5 1.5h13.5z"
-                  ></path>
-                </svg>
-              </div>
+            <div
+              className="style_wrapper__TaLWc Agreement_checkbox__OGFNT"
+              onClick={ckBoxClick2}
+            >
+              {checkBox2 ? (
+                <div className="css-1cqbzed">
+                  <span className="css-1ihsymv">
+                    <CheckWhiteSvg />
+                  </span>
+                </div>
+              ) : (
+                <div className="css-slacj2"></div>
+              )}
               <div className="style_label__CZv3V">
                 <input type="checkbox" name="acceptEventEmail" />
                 이벤트 소식 등 알림 정보 받기
                 <Link
                   href="https://help.wanted.co.kr/hc/ko/articles/360040540111"
-                  rel="noopener noreferrer"
                   target="_blank"
                   className="Agreement_link__qZ81b"
                 >

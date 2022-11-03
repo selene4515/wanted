@@ -399,6 +399,7 @@ html input[disabled] {
   flex: 1 1;
   font-size: 15px;
   color: #666;
+  margin-left: 10px;
 }
 .Agreement_checkboxAll__SkIo_ > div:last-of-type {
   color: #333;
@@ -521,4 +522,43 @@ input[type="checkbox"] {
 }
 .css-1k928vt span {
   color: #36f;
+}
+.css-slacj2 {
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #ececec;
+}
+.css-1cqbzed {
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #36f;
+}
+.css-1ihsymv {
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.css-1h47l4s {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  font-size: inherit;
 }
