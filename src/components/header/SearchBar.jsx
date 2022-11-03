@@ -1,6 +1,7 @@
 import { ReactComponent as SearchSvg } from "./surchBtn.svg";
 import "../../styles/dropMenu.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const SearchBar = (props) => {
   const SetClickSearchBtn = props.setClickSearchBtn;
@@ -15,18 +16,22 @@ const SearchBar = (props) => {
     }
   };
 
+  const [query, setQuery] = useState("");
+  const onChangeKeyword = (e) => {
+    setQuery(e.target.value);
+  };
+
   const nav = useNavigate();
   const location = useLocation();
   const searchEnter = (e) => {
+    nav(`/search?query=${query}`);
     if (location.pathname === "/search") {
       SearchBarOff();
-    } else {
-      nav("/search");
     }
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
-      props.keyword ? searchEnter() : alert("검색어를 입력해주세요!");
+      query ? searchEnter() : alert("검색어를 입력해주세요!");
     }
   };
 
@@ -37,8 +42,8 @@ const SearchBar = (props) => {
           <input
             type="search"
             placeholder="#태그, 회사, 포지션 검색"
-            value={props.keyword}
-            onChange={props.onChangeKeyword}
+            value={query}
+            onChange={onChangeKeyword}
             onKeyPress={onKeyPress}
             autoFocus
           />

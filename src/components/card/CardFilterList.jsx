@@ -6,7 +6,7 @@ const CardFilterList = (props) => {
 
   const filtered = cardGaebalD
     .filter((cardText) =>
-      cardText.title.toUpperCase().includes(props.keyword.toUpperCase())
+      cardText.title.toUpperCase().includes(props.query.toUpperCase())
     )
     .map((cardText, index) => (
       <GaebalCard

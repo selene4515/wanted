@@ -5,6 +5,7 @@ import CardFilterList from "../components/card/CardFilterList";
 import dummy from "../json/cardCompeny.json";
 import "../styles/search.css";
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 const SearchPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;
@@ -15,15 +16,16 @@ const SearchPage = (props) => {
     setClickSearchBtn(true);
   };
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get("query");
+
+  console.log(query);
   return (
     <>
       <Header
         clickSearchBtn={clickSearchBtn}
         setClickSearchBtn={setClickSearchBtn}
         SearchBarOn={SearchBarOn}
-        onChangeKeyword={props.onChangeKeyword}
-        keyword={props.keyword}
-        setKeyword={props.setKeyword}
       />
       <div>
         <div className="SearchInput_SearchInput__w9KeD">
@@ -32,7 +34,7 @@ const SearchPage = (props) => {
             className="SearchInput_SearchKeywordText__ASPNj"
             onClick={SearchBarOn}
           >
-            {props.keyword ? props.keyword : "검색어를 입력하세요"}
+            {query ? query : "검색어를 입력하세요"}
           </button>
         </div>
         <div className="Search_Search__PUJPw">
@@ -44,7 +46,7 @@ const SearchPage = (props) => {
               <JobList />
               <CardFilterList
                 cardGaebalData={cardGaebalData}
-                keyword={props.keyword}
+                query={query}
                 setCount={setCount}
               />
             </div>
