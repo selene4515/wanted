@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
+import { useEffect } from "react";
 
-const PwModal = ({ modalOff, userinfo, email }) => {
+const PwModal = (props) => {
   const pwOff = () => {
     if (window.confirm("로그인을 취소하시겠습니까?")) {
-      modalOff();
+      props.modalOff();
     }
   };
+  const setNotAllow = props.setNotAllow;
+  useEffect(() => {
+    if (props.emailValid && props.pwValid) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [props.emailValid, props.pwValid, setNotAllow]);
 
-  const [password, setPassword] = useState("");
-  const onChangePw = (e) => {
-    setPassword(e.target.value);
-  };
-  const searchEnter = (e) => {
-    if (filtered.length === 1) {
-      modalOff();
-      alert("로그인되었습니다!");
+  const onClickConfirmButton = () => {
+    if (props.email === props.User.email && props.pw === props.User.pw) {
+      alert("로그인에 성공했습니다.");
+      props.modalOff();
     } else {
-      alert("비밀번호가 틀립니다!");
-      setPassword("");
+      alert("비밀번호가 틀렸습니다.");
     }
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
-      password && searchEnter();
+      props.pw && onClickConfirmButton();
     }
   };
-  const user = userinfo.user;
-  const filtered = user.filter((item) =>
-    item.pw.toLowerCase().includes(password.toLowerCase())
-  );
+
   return (
     <div>
       <div className="ModalHeader Header_Header__0d6dF moh">
@@ -54,8 +54,8 @@ const PwModal = ({ modalOff, userinfo, email }) => {
                 type="password"
                 placeholder="비밀번호를 입력해 주세요."
                 id="password"
-                onChange={onChangePw}
-                value={password}
+                onChange={props.handlePw}
+                value={props.pw}
                 onKeyPress={onKeyPress}
                 autoFocus
               />
@@ -65,7 +65,8 @@ const PwModal = ({ modalOff, userinfo, email }) => {
             <button
               type="button"
               className="style_wrapper__IgK7U email-login-button"
-              onClick={searchEnter}
+              onClick={onClickConfirmButton}
+              disabled={props.notAllow}
             >
               다음
             </button>

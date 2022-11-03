@@ -1,36 +1,37 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { ReactComponent as EmailIcon } from "./emailIcon.svg";
+import { useEffect } from "react";
 
-const ModalLogin = ({ modalOff, setOnModal, userinfo, email, setEmail }) => {
-  const onChangeEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const searchEnter = (e) => {
-    if (filtered.length === 1) {
-      setOnModal(1);
+const ModalLogin = (props) => {
+  const setNotAllow = props.setNotAllow;
+  useEffect(() => {
+    if (props.emailValid) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [props.emailValid, props.pwValid, setNotAllow]);
+
+  const searchEnter = () => {
+    if (props.email === props.User.email) {
+      props.setOnModal(1);
     } else {
-      setOnModal(2);
+      props.setOnModal(2);
     }
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
-      email && searchEnter();
+      props.email && searchEnter();
     }
   };
 
-  const user = userinfo.user;
-  const filtered = user.filter((item) =>
-    item.email.toLowerCase().includes(email.toLowerCase())
-  );
-
-  console.log(filtered.length);
   return (
     <div>
       <div className="ModalHeader Header_Header__0d6dF moh">
         <i className="icon-logo_new"></i>
         <Link>
-          <button type="button" onClick={modalOff}>
+          <button type="button" onClick={props.modalOff}>
             <CloseBtnSvg />
           </button>
         </Link>
@@ -60,19 +61,22 @@ const ModalLogin = ({ modalOff, setOnModal, userinfo, email, setEmail }) => {
                 type="email"
                 placeholder="이메일을 입력해 주세요."
                 id="email"
-                onChange={onChangeEmail}
-                value={email}
+                onChange={props.handleEmail}
+                value={props.email}
                 onKeyPress={onKeyPress}
                 autoFocus
               />
             </div>
             <div className="style_guidance__FT8Qs input-group-guidance"></div>
-            <p
-              color="var(--theme-palette-colors-red-400)"
-              className="css-1u2lazp"
-            >
-              올바른 이메일을 입력해주세요.
-            </p>
+
+            {!props.emailValid && props.email.length > 0 && (
+              <p
+                color="var(--theme-palette-colors-red-400)"
+                className="css-1u2lazp"
+              >
+                올바른 이메일을 입력해주세요.
+              </p>
+            )}
           </div>
 
           <div className="InputPanel_buttons__w391m">
@@ -80,6 +84,7 @@ const ModalLogin = ({ modalOff, setOnModal, userinfo, email, setEmail }) => {
               type="button"
               className="style_wrapper__IgK7U email-login-button"
               onClick={searchEnter}
+              disabled={props.notAllow}
             >
               <EmailIcon />
               이메일로 계속하기
