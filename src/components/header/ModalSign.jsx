@@ -37,11 +37,9 @@ const ModalSign = (props) => {
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">
         <div className="ModalHeader Header_Header__0d6dF moh1">
           회원가입
-          <Link>
-            <button type="button" onClick={signOff}>
-              <CloseBtnSvg />
-            </button>
-          </Link>
+          <button type="button" onClick={signOff}>
+            <CloseBtnSvg />
+          </button>
         </div>
         <div
           id="MODAL_BODY"

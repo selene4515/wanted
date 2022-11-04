@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { useEffect } from "react";
 
 const PwModal = (props) => {
+  const pwOff = () => {
+    props.modalOff();
+  };
+
   const setNotAllow = props.setNotAllow;
   useEffect(() => {
     if (props.emailValid && props.pwValid) {
@@ -20,9 +23,7 @@ const PwModal = (props) => {
       alert("비밀번호가 틀렸습니다.");
     }
   };
-  const pwOff = () => {
-    props.modalOff();
-  };
+
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
       props.pw && onClickConfirmButton();
@@ -34,11 +35,9 @@ const PwModal = (props) => {
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">
         <div className="ModalHeader Header_Header__0d6dF moh">
           이메일로 로그인
-          <Link>
-            <button type="button" onClick={pwOff}>
-              <CloseBtnSvg />
-            </button>
-          </Link>
+          <button type="button" onClick={pwOff}>
+            <CloseBtnSvg />
+          </button>
         </div>
         <div
           id="MODAL_BODY"

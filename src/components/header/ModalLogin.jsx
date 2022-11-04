@@ -31,11 +31,9 @@ const ModalLogin = (props) => {
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">
         <div className="ModalHeader Header_Header__0d6dF moh">
           <i className="icon-logo_new"></i>
-          <Link>
-            <button type="button" onClick={props.modalOff}>
-              <CloseBtnSvg />
-            </button>
-          </Link>
+          <button type="button" onClick={props.modalOff}>
+            <CloseBtnSvg />
+          </button>
         </div>
         <div
           id="MODAL_BODY"
@@ -71,12 +69,7 @@ const ModalLogin = (props) => {
               <div className="style_guidance__FT8Qs input-group-guidance"></div>
 
               {!props.emailValid && props.email.length > 0 && (
-                <p
-                  color="var(--theme-palette-colors-red-400)"
-                  className="css-1u2lazp"
-                >
-                  올바른 이메일을 입력해주세요.
-                </p>
+                <p className="css-1u2lazp">올바른 이메일을 입력해주세요.</p>
               )}
             </div>
 
