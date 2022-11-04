@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { ReactComponent as CheckWhiteSvg } from "../../svg/check_white.svg";
 
-const ModalSign = ({ modalOff }) => {
-  const signOff = () => {
+const ModalSign = ({ setOnModal }) => {
+  const modalOff = () => {
     if (window.confirm("회원가입을 취소하시겠습니까?")) {
-      modalOff();
+      setOnModal(0);
     }
   };
 
@@ -37,7 +37,7 @@ const ModalSign = ({ modalOff }) => {
       <div className="ModalHeader Header_Header__0d6dF moh1">
         회원가입
         <Link>
-          <button type="button" onClick={signOff}>
+          <button type="button" onClick={modalOff}>
             <CloseBtnSvg />
           </button>
         </Link>

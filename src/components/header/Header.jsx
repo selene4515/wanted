@@ -28,22 +28,13 @@ const Header = (props) => {
     setHoverSub(true);
   };
 
-  const [clickModal, setClickModal] = useState(false);
   const [onModal, setOnModal] = useState(0);
   const modalOn = () => {
-    setClickModal(true);
+    setOnModal(1);
   };
-  const modalOff = () => {
-    setClickModal(false);
-    setOnModal(0);
-  };
-
-  const PclickSearchBtn = props.clickSearchBtn;
-  const PsetClickSearchBtn = props.setClickSearchBtn;
 
   const [clickSearchBtn0, setClickSearchBtn0] = useState(false);
   const SearchBarOn0 = () => {
-    props.setKeyword("");
     setClickSearchBtn0(true);
   };
   return (
@@ -115,20 +106,16 @@ const Header = (props) => {
             </ul>
           </div>
         </div>
-        {PclickSearchBtn && (
+        {props.clickSearchBtn && (
           <SearchBar
-            clickSearchBtn={PclickSearchBtn}
-            setClickSearchBtn={PsetClickSearchBtn}
-            onChangeKeyword={props.onChangeKeyword}
-            keyword={props.keyword}
+            clickSearchBtn={props.clickSearchBtn}
+            setClickSearchBtn={props.setClickSearchBtn}
           />
         )}
         {clickSearchBtn0 && (
           <SearchBar
             clickSearchBtn0={clickSearchBtn0}
             setClickSearchBtn0={setClickSearchBtn0}
-            onChangeKeyword={props.onChangeKeyword}
-            keyword={props.keyword}
           />
         )}
       </div>
@@ -169,14 +156,8 @@ const Header = (props) => {
       </div>
       <div style={{ height: "50px" }}></div>
 
-      {clickModal && (
-        <div className="Modal_root__aEM8D">
-          <ModalBase
-            modalOff={modalOff}
-            onModal={onModal}
-            setOnModal={setOnModal}
-          />
-        </div>
+      {!(onModal === 0) && (
+        <ModalBase onModal={onModal} setOnModal={setOnModal} />
       )}
     </>
   );

@@ -3,9 +3,10 @@ import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { useEffect } from "react";
 
 const PwModal = (props) => {
-  const pwOff = () => {
+  const setOnModal = props.setOnModal;
+  const modalOff = () => {
     if (window.confirm("로그인을 취소하시겠습니까?")) {
-      props.modalOff();
+      setOnModal(0);
     }
   };
   const setNotAllow = props.setNotAllow;
@@ -20,7 +21,7 @@ const PwModal = (props) => {
   const onClickConfirmButton = () => {
     if (props.email === props.User.email && props.pw === props.User.pw) {
       alert("로그인에 성공했습니다.");
-      props.modalOff();
+      setOnModal(0);
     } else {
       alert("비밀번호가 틀렸습니다.");
     }
@@ -36,7 +37,7 @@ const PwModal = (props) => {
       <div className="ModalHeader Header_Header__0d6dF moh">
         이메일로 로그인
         <Link>
-          <button type="button" onClick={pwOff}>
+          <button type="button" onClick={modalOff}>
             <CloseBtnSvg />
           </button>
         </Link>

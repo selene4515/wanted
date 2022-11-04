@@ -3,7 +3,7 @@ import ModalSign from "./ModalSign";
 import ModalPw from "./ModalPw";
 import { useState } from "react";
 
-const ModalBase = ({ modalOff, onModal, setOnModal }) => {
+const ModalBase = ({ onModal, setOnModal }) => {
   const User = { email: "wanted@gmail.com", pw: "min1234!!" };
 
   const [email, setEmail] = useState("");
@@ -36,11 +36,10 @@ const ModalBase = ({ modalOff, onModal, setOnModal }) => {
   };
 
   return (
-    <div>
+    <div className="Modal_root__aEM8D">
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">
-        {onModal === 0 && (
+        {onModal === 1 && (
           <ModalLogin
-            modalOff={modalOff}
             setOnModal={setOnModal}
             email={email}
             handleEmail={handleEmail}
@@ -50,9 +49,9 @@ const ModalBase = ({ modalOff, onModal, setOnModal }) => {
             setNotAllow={setNotAllow}
           />
         )}
-        {onModal === 1 && (
+        {onModal === 2 && (
           <ModalPw
-            modalOff={modalOff}
+            setOnModal={setOnModal}
             email={email}
             pw={pw}
             handlePw={handlePw}
@@ -63,7 +62,7 @@ const ModalBase = ({ modalOff, onModal, setOnModal }) => {
             pwValid={pwValid}
           />
         )}
-        {onModal === 2 && <ModalSign modalOff={modalOff} />}
+        {onModal === 3 && <ModalSign setOnModal={setOnModal} />}
       </div>
       <div
         role="presentation"

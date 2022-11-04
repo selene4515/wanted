@@ -4,6 +4,11 @@ import { ReactComponent as EmailIcon } from "./emailIcon.svg";
 import { useEffect } from "react";
 
 const ModalLogin = (props) => {
+  const setOnModal = props.setOnModal;
+  const modalOff = () => {
+    setOnModal(0);
+  };
+
   const setNotAllow = props.setNotAllow;
   useEffect(() => {
     if (props.emailValid) {
@@ -11,13 +16,13 @@ const ModalLogin = (props) => {
       return;
     }
     setNotAllow(true);
-  }, [props.emailValid, props.pwValid, setNotAllow]);
+  }, [props.emailValid, setNotAllow]);
 
   const searchEnter = () => {
     if (props.email === props.User.email) {
-      props.setOnModal(1);
+      setOnModal(2);
     } else {
-      props.setOnModal(2);
+      setOnModal(3);
     }
   };
   const onKeyPress = (e) => {
@@ -31,7 +36,7 @@ const ModalLogin = (props) => {
       <div className="ModalHeader Header_Header__0d6dF moh">
         <i className="icon-logo_new"></i>
         <Link>
-          <button type="button" onClick={props.modalOff}>
+          <button type="button" onClick={modalOff}>
             <CloseBtnSvg />
           </button>
         </Link>
