@@ -8,7 +8,9 @@ import { ReactComponent as BetaSvg } from "./beta.svg";
 import { ReactComponent as SurchSvg } from "./surchBtn.svg";
 import Category from "./Category";
 import CategorySub from "./CategorySub";
-import ModalBase from "./ModalBase";
+import ModalLogin from "./ModalLogin";
+import ModalSign from "./ModalSign";
+import ModalPw from "./ModalPw";
 import SearchBar from "./SearchBar";
 
 const Header = (props) => {
@@ -28,14 +30,50 @@ const Header = (props) => {
     setHoverSub(true);
   };
 
-  const [clickModal, setClickModal] = useState(false);
-  const modalOn = () => {
-    setClickModal(true);
-  };
-
+  //서치바 오픈
   const [clickSearchBtn0, setClickSearchBtn0] = useState(false);
   const SearchBarOn0 = () => {
     setClickSearchBtn0(true);
+  };
+
+  //로그인 유효성 검사
+  const User = { email: "wanted@gmail.com", pw: "min1234!!" };
+
+  const [email, setEmail] = useState("");
+  const [pw, setPw] = useState("");
+  const [emailValid, setEmailValid] = useState(false);
+  const [pwValid, setPwValid] = useState(false);
+  const [notAllow, setNotAllow] = useState(true);
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+
+    const regex =
+      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i; // eslint-disable-line
+    if (regex.test(e.target.value)) {
+      setEmailValid(true);
+    } else {
+      setEmailValid(false);
+    }
+  };
+  const handlePw = (e) => {
+    setPw(e.target.value);
+    const regex =
+      /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/; // eslint-disable-line
+    if (regex.test(e.target.value)) {
+      setPwValid(true);
+    } else {
+      setPwValid(false);
+    }
+  };
+
+  //로그인 모달창 on/off
+  const [onModal, setOnModal] = useState(0);
+  const modalOn = () => {
+    setOnModal(1);
+  };
+  const modalOff = () => {
+    setOnModal(0);
   };
   return (
     <>
@@ -155,7 +193,32 @@ const Header = (props) => {
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
-      {clickModal && <ModalBase setClickModal={setClickModal} />}
+      {onModal === 1 && (
+        <ModalLogin
+          modalOff={modalOff}
+          setOnModal={setOnModal}
+          email={email}
+          handleEmail={handleEmail}
+          emailValid={emailValid}
+          User={User}
+          notAllow={notAllow}
+          setNotAllow={setNotAllow}
+        />
+      )}
+      {onModal === 2 && (
+        <ModalPw
+          modalOff={modalOff}
+          email={email}
+          pw={pw}
+          handlePw={handlePw}
+          User={User}
+          notAllow={notAllow}
+          setNotAllow={setNotAllow}
+          emailValid={emailValid}
+          pwValid={pwValid}
+        />
+      )}
+      {onModal === 3 && <ModalSign modalOff={modalOff} />}
     </>
   );
 };
