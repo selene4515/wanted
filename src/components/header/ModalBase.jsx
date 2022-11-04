@@ -3,7 +3,7 @@ import ModalSign from "./ModalSign";
 import ModalPw from "./ModalPw";
 import { useState } from "react";
 
-const ModalBase = ({ modalOff, onModal, setOnModal }) => {
+const ModalBase = ({ setClickModal }) => {
   const User = { email: "wanted@gmail.com", pw: "min1234!!" };
 
   const [email, setEmail] = useState("");
@@ -35,6 +35,12 @@ const ModalBase = ({ modalOff, onModal, setOnModal }) => {
     }
   };
 
+  const [onModal, setOnModal] = useState(0);
+  const modalOff = () => {
+    setClickModal(false);
+    setOnModal(0);
+  };
+  console.log("modalbase");
   return (
     <div>
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">

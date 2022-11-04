@@ -17,9 +17,7 @@ const SearchPage = (props) => {
   };
 
   const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get("query");
-
-  console.log(query);
+  const query = searchParams.get("query") ?? "";
   return (
     <>
       <Header

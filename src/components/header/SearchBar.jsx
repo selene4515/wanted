@@ -34,7 +34,7 @@ const SearchBar = (props) => {
       query ? searchEnter() : alert("검색어를 입력해주세요!");
     }
   };
-
+  console.log("search ");
   return (
     <div className="SearchBar_SearchBar__JODCp">
       <div className="SearchBar_SearchBar_container__kpoXq">

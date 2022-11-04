@@ -25,7 +25,7 @@ const ModalLogin = (props) => {
       props.email && searchEnter();
     }
   };
-
+  console.log("login ");
   return (
     <div>
       <div className="ModalHeader Header_Header__0d6dF moh">
