@@ -42,7 +42,7 @@
   background: #fff;
   border: 1px solid #999;
   z-index: 1;
-  display: none;
+  display: block;
   white-space: nowrap;
   top: calc(100% + 4px);
   left: 50%;

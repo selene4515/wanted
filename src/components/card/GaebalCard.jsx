@@ -1,11 +1,12 @@
 import { ReactComponent as BookmarkNoneSvg } from "../../svg/bookmark_none.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const GaebalCard = (props) => {
   const backImg = props.backImg;
   const url = props.name;
   const moneyc = props.money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
+  const [isHovering, setIsHovering] = useState(false);
   return (
     <li>
       <div className="Card_className__u5rsb">
@@ -24,9 +25,18 @@ const GaebalCard = (props) => {
             <div className="job-card-company-name">{props.name}</div>
             <div className="Tooltip_container__AvBvM">
               <button className="Tooltip_label__P9FMp" type="button">
-                <div className="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP">
+                <div
+                  className="ResponseLevelLabel_container__dJphx ResponseLevelLabel_veryHigh__3ArDP"
+                  onMouseOver={() => setIsHovering(true)}
+                  onMouseOut={() => setIsHovering(false)}
+                >
                   <span>{props.olo}</span>
                 </div>
+                {isHovering && (
+                  <div className="Tooltip_tooltipContent__6exdr">
+                    {props.tip}
+                  </div>
+                )}
               </button>
             </div>
             <div className="job-card-company-location">

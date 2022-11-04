@@ -9,6 +9,7 @@ const CardList = (props) => {
       title={cardText.title}
       name={cardText.name}
       olo={cardText.olo}
+      tip={cardText.tip}
       city={cardText.city}
       nara={cardText.nara}
       money={cardText.money}
