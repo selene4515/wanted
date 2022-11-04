@@ -42,7 +42,7 @@ const ModalBase = ({ setClickModal }) => {
   };
   console.log("modalbase");
   return (
-    <div>
+    <div className="Modal_root__aEM8D">
       <div className="Modal_modalContent__0zuTn style_wrapper__SO1vd border-none">
         {onModal === 0 && (
           <ModalLogin

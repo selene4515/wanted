@@ -155,7 +155,6 @@ const Header = (props) => {
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
-
       {clickModal && <ModalBase setClickModal={setClickModal} />}
     </>
   );
