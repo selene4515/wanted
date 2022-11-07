@@ -97,6 +97,48 @@
   line-height: 1.42857143;
   color: #333333;
 }
+.header_div_join > ul li .notiButton {
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.header_div_join > ul .profileBox {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5px;
+}
+.header_div_join > ul li .profileButton {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: top;
+  padding: 0;
+  margin-right: 11px;
+}
+.header_div_join > ul li .profileButton .avatarBorder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #e1e2e3;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.header_div_join > ul li .profileButton .avatarBorder.showMenuPopover {
+  border: 1px solid #36f;
+}
+.header_div_join > ul li .profileButton .avatarBorder > div {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .header_div_join > ul .leftDivision {
   display: inline-flex;
 }
@@ -122,6 +164,41 @@
   padding: 0 10px;
   margin-left: 15px;
   font-weight: 400;
+}
+.MenuPopover_menuContainer__vUynN {
+  position: absolute;
+  top: 100%;
+  right: -27px;
+  margin-top: 13px;
+  padding: 0 !important;
+  display: block;
+  transform: translate(50%, 8px);
+}
+.MenuPopover_desktop__QcuKl {
+  padding-top: 14px;
+}
+.MenuPopover_desktop__QcuKl li:nth-child(2):after,
+.MenuPopover_desktop__QcuKl li:nth-child(6):after {
+  content: "";
+  display: block;
+  margin: 9px 7px;
+  height: 1px;
+  background-color: #ececec;
+}
+.MenuPopover_desktop__QcuKl li:last-child {
+  border: 0;
+  margin-top: 9px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  height: 50px !important;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #ececec;
+}
+.MenuPopover_desktop__QcuKl li a.is-logout,
+.MenuPopover_desktop__QcuKl li button.is-logout {
+  height: 50px;
+  width: 100%;
+  color: #333;
 }
 
 .Explore_GigsCategoryItem_link__OlnwE {

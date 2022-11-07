@@ -44,5 +44,9 @@
   },
   "devDependencies": {
     "@types/navermaps": "^3.0.17"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/selene4515/wanted.git",
+  "author": "ming <44185091+selene4515@users.noreply.github.com>",
+  "license": "MIT"
 }

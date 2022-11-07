@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../styles/header.css";
 import "../../styles/dropMenu.css";
 import "../../styles/sign.css";
 import { ReactComponent as NewSvg } from "./new.svg";
 import { ReactComponent as BetaSvg } from "./beta.svg";
 import { ReactComponent as SurchSvg } from "./surchBtn.svg";
+import { ReactComponent as BellSvg } from "./bell.svg";
 import Category from "./Category";
 import CategorySub from "./CategorySub";
 import ModalLogin from "./ModalLogin";
@@ -40,9 +41,7 @@ const Header = (props) => {
   const User = { email: "wanted@gmail.com", pw: "min1234!!" };
 
   const [email, setEmail] = useState("");
-  const [pw, setPw] = useState("");
   const [emailValid, setEmailValid] = useState(false);
-  const [pwValid, setPwValid] = useState(false);
   const [notAllow, setNotAllow] = useState(true);
 
   const handleEmail = (e) => {
@@ -56,15 +55,22 @@ const Header = (props) => {
       setEmailValid(false);
     }
   };
-  const handlePw = (e) => {
-    setPw(e.target.value);
-    const regex =
-      /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/; // eslint-disable-line
-    if (regex.test(e.target.value)) {
-      setPwValid(true);
-    } else {
-      setPwValid(false);
-    }
+
+  //로그인 로그아웃
+  let sessionStorage = window.sessionStorage;
+
+  const [savedEmail, setSavedEmail] = useState("");
+  const [savedPw, setSavedPw] = useState("");
+
+  useEffect(() => {
+    setSavedEmail(sessionStorage.getItem("email"));
+    setSavedPw(sessionStorage.getItem("pw"));
+  }, [setSavedEmail, setSavedPw, sessionStorage]);
+
+  const LogoutHandler = () => {
+    setSavedEmail(sessionStorage.setItem("email", ""));
+    setSavedPw(sessionStorage.setItem("pw", ""));
+    window.location.reload();
   };
 
   //로그인 모달창 on/off
@@ -75,6 +81,17 @@ const Header = (props) => {
   const modalOff = () => {
     setOnModal(0);
   };
+
+  //프로필 버튼 클릭시
+  const [profileOn, setProfileOn] = useState(false);
+  const ProfileHandler = () => {
+    if (profileOn === false) {
+      setProfileOn(true);
+    } else {
+      setProfileOn(false);
+    }
+  };
+
   return (
     <>
       <div className="header_">
@@ -125,23 +142,124 @@ const Header = (props) => {
             </li>
           </ul>
           <div className="header_div_join">
-            <ul>
-              <li>
-                <button className="searchBtn" onClick={SearchBarOn0}>
-                  <SurchSvg />
-                </button>
-              </li>
-              <li>
-                <button className="joinBtn" type="button" onClick={modalOn}>
-                  회원가입/로그인
-                </button>
-              </li>
-              <li className="leftDivision">
-                <Link to="/" className="dashboardBtn">
-                  기업 서비스
-                </Link>
-              </li>
-            </ul>
+            {savedEmail === "" ? (
+              <ul>
+                <li>
+                  <button className="searchBtn" onClick={SearchBarOn0}>
+                    <SurchSvg />
+                  </button>
+                </li>
+                <li>
+                  <button className="joinBtn" type="button" onClick={modalOn}>
+                    회원가입/로그인
+                  </button>
+                </li>
+                <li className="leftDivision">
+                  <Link to="/" className="dashboardBtn">
+                    기업 서비스
+                  </Link>
+                </li>
+              </ul>
+            ) : (
+              <ul>
+                <li>
+                  <button className="searchBtn" onClick={SearchBarOn0}>
+                    <SurchSvg />
+                  </button>
+                </li>
+                <li className="">
+                  <button type="button" className="notiButton">
+                    <BellSvg />
+                  </button>
+                </li>
+                <li className="profileBox">
+                  <button
+                    type="button"
+                    className="profileButton"
+                    onClick={ProfileHandler}
+                  >
+                    <div
+                      className={
+                        profileOn
+                          ? "avatarBorder showMenuPopover"
+                          : "avatarBorder"
+                      }
+                    >
+                      <div
+                        className="avatarImage"
+                        style={{
+                          backgroundImage:
+                            "url('https://static.wanted.co.kr/oneid-user/profile_default.png'),url('https://static.wanted.co.kr/images/profile_default.png')",
+                        }}
+                      ></div>
+                    </div>
+                  </button>
+                  {profileOn && (
+                    <div className="MenuPopover_menuContainer__vUynN">
+                      <div className="MenuPopover_menuWrapper__Sju5Y">
+                        <ul className="MenuPopover_list__BzAsJ MenuPopover_desktop__QcuKl">
+                          <li className="">
+                            <Link href="#" className="">
+                              <span>MY 원티드</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/profile/matching" className="">
+                              <span>프로필</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/status/applications" className="">
+                              <span>지원 현황</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/profile/status" className="">
+                              <span>제안받기 현황</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/profile/likes" className="">
+                              <span>좋아요</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/profile/bookmarks" className="">
+                              <span>북마크</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/referral" className="">
+                              <span>추천</span>
+                            </Link>
+                          </li>
+                          <li className="">
+                            <Link href="/profile/point" className="">
+                              <span>포인트</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              className="is-logout"
+                              onClick={LogoutHandler}
+                            >
+                              <span>로그아웃</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="MenuPopover_bubblePoint__q6Ypq"></div>
+                    </div>
+                  )}
+                </li>
+                <li className="leftDivision">
+                  <Link to="/" className="dashboardBtn">
+                    기업 서비스
+                  </Link>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
         {props.clickSearchBtn && (
@@ -209,13 +327,10 @@ const Header = (props) => {
         <ModalPw
           modalOff={modalOff}
           email={email}
-          pw={pw}
-          handlePw={handlePw}
+          emailValid={emailValid}
           User={User}
           notAllow={notAllow}
           setNotAllow={setNotAllow}
-          emailValid={emailValid}
-          pwValid={pwValid}
         />
       )}
       {onModal === 3 && <ModalSign modalOff={modalOff} />}

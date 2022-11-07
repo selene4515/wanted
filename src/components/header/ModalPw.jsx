@@ -1,23 +1,42 @@
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const PwModal = (props) => {
   const pwOff = () => {
     props.modalOff();
   };
 
+  let sessionStorage = window.sessionStorage;
+
+  const [pw, setPw] = useState("");
+  const [pwValid, setPwValid] = useState(false);
+
+  const handlePw = (e) => {
+    setPw(e.target.value);
+    const regex =
+      /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/; // eslint-disable-line
+    if (regex.test(e.target.value)) {
+      setPwValid(true);
+    } else {
+      setPwValid(false);
+    }
+  };
+
   const setNotAllow = props.setNotAllow;
   useEffect(() => {
-    if (props.emailValid && props.pwValid) {
+    if (props.emailValid && pwValid) {
       setNotAllow(false);
       return;
     }
     setNotAllow(true);
-  }, [props.emailValid, props.pwValid, setNotAllow]);
+  }, [props.emailValid, pwValid, setNotAllow]);
 
   const onClickConfirmButton = () => {
-    if (props.email === props.User.email && props.pw === props.User.pw) {
+    if (props.email === props.User.email && pw === props.User.pw) {
+      sessionStorage.setItem("email", props.email);
+      sessionStorage.setItem("pw", pw);
       alert("로그인에 성공했습니다.");
+      window.location.reload();
       props.modalOff();
     } else {
       alert("비밀번호가 틀렸습니다.");
@@ -26,7 +45,7 @@ const PwModal = (props) => {
 
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
-      props.pw && onClickConfirmButton();
+      pw && onClickConfirmButton();
     }
   };
 
@@ -52,8 +71,8 @@ const PwModal = (props) => {
                   type="password"
                   placeholder="비밀번호를 입력해 주세요."
                   id="password"
-                  onChange={props.handlePw}
-                  value={props.pw}
+                  onChange={handlePw}
+                  value={pw}
                   onKeyPress={onKeyPress}
                   autoFocus
                 />
