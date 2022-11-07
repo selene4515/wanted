@@ -15,7 +15,6 @@ import { ReactComponent as ArrowBottomSvg } from "../svg/arrowBottom.svg";
 import { ReactComponent as ArrowRightSvg } from "../svg/arrowRight.svg";
 import { ReactComponent as SurchSvg } from "../components/header/surchBtn.svg";
 import { ReactComponent as CheckSvg } from "../svg/check.svg";
-import ScrollToTop from "../components/common/ScrollToTop";
 
 const MainPage = (props) => {
   const cardTag = dummy.cardTag;
@@ -36,12 +35,7 @@ const MainPage = (props) => {
 
   return (
     <div>
-      <ScrollToTop />
-      <Header
-        onChangeKeyword={props.onChangeKeyword}
-        keyword={props.keyword}
-        setKeyword={props.setKeyword}
-      />
+      <Header />
       <main className="main">
         <ReactSlick />
         <section className="career">

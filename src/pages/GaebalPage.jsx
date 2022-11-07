@@ -61,11 +61,7 @@ const GaebalPage = (props) => {
 
   return (
     <div>
-      <Header
-        onChangeKeyword={props.onChangeKeyword}
-        keyword={props.keyword}
-        setKeyword={props.setKeyword}
-      />
+      <Header />
       <div style={{ background: "#fff" }}>
         <article style={{ paddingTop: 40 }} role="navigation">
           <div className="jobTitle">

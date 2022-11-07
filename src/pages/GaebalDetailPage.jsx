@@ -16,11 +16,7 @@ const GaebalDetailPage = (props) => {
 
   return (
     <div>
-      <Header
-        onChangeKeyword={props.onChangeKeyword}
-        keyword={props.keyword}
-        setKeyword={props.setKeyword}
-      />
+      <Header />
       <div className="JobDetail_cn__WezJh">
         <div className="JobDetail_contentWrapper__DQDB6">
           <div className="JobDetail_relativeWrapper__F9DT5">

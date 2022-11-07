@@ -23,7 +23,6 @@ const SearchPage = (props) => {
       <Header
         clickSearchBtn={clickSearchBtn}
         setClickSearchBtn={setClickSearchBtn}
-        SearchBarOn={SearchBarOn}
       />
       <div>
         <div className="SearchInput_SearchInput__w9KeD">
