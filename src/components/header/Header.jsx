@@ -224,7 +224,7 @@ const Header = (props) => {
                             </Link>
                           </li>
                           <li className="">
-                            <Link href="/profile/bookmarks" className="">
+                            <Link to="/bookmarks" className="">
                               <span>북마크</span>
                             </Link>
                           </li>
