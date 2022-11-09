@@ -1,4 +1,5 @@
 import { ReactComponent as BookmarkNoneSvg } from "../../svg/bookmark_none.svg";
+import { ReactComponent as BookmarkBlueSvg } from "../../svg/bookmark_blue_whiteLine.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

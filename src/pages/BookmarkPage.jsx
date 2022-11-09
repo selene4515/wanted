@@ -1,7 +1,10 @@
 import Header from "../components/header/Header";
 import "../styles/profile.css";
+import dummy from "../json/cardCompeny.json";
+import CardList from "../components/card/CardList";
 
 const BookmarkPage = (props) => {
+  const cardGaebalData = dummy.cardGaebal;
   return (
     <div>
       <Header />
@@ -11,7 +14,9 @@ const BookmarkPage = (props) => {
             <p>북마크</p>
           </h2>
         </nav>
-        <div className="Bookmark_container__3HsyN"></div>
+        <div className="Bookmark_container__3HsyN">
+          <CardList cardGaebalData={cardGaebalData} />
+        </div>
       </div>
     </div>
   );
