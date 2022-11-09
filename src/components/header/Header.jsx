@@ -68,8 +68,8 @@ const Header = (props) => {
   }, [setSavedEmail, setSavedPw, sessionStorage]);
 
   const LogoutHandler = () => {
-    setSavedEmail(sessionStorage.setItem("email", ""));
-    setSavedPw(sessionStorage.setItem("pw", ""));
+    setSavedEmail(sessionStorage.removeItem("email"));
+    setSavedPw(sessionStorage.removeItem("pw"));
     window.location.reload();
   };
 
@@ -142,25 +142,7 @@ const Header = (props) => {
             </li>
           </ul>
           <div className="header_div_join">
-            {savedEmail === "" ? (
-              <ul>
-                <li>
-                  <button className="searchBtn" onClick={SearchBarOn0}>
-                    <SurchSvg />
-                  </button>
-                </li>
-                <li>
-                  <button className="joinBtn" type="button" onClick={modalOn}>
-                    회원가입/로그인
-                  </button>
-                </li>
-                <li className="leftDivision">
-                  <Link to="/" className="dashboardBtn">
-                    기업 서비스
-                  </Link>
-                </li>
-              </ul>
-            ) : (
+            {savedEmail ? (
               <ul>
                 <li>
                   <button className="searchBtn" onClick={SearchBarOn0}>
@@ -252,6 +234,24 @@ const Header = (props) => {
                       <div className="MenuPopover_bubblePoint__q6Ypq"></div>
                     </div>
                   )}
+                </li>
+                <li className="leftDivision">
+                  <Link to="/" className="dashboardBtn">
+                    기업 서비스
+                  </Link>
+                </li>
+              </ul>
+            ) : (
+              <ul>
+                <li>
+                  <button className="searchBtn" onClick={SearchBarOn0}>
+                    <SurchSvg />
+                  </button>
+                </li>
+                <li>
+                  <button className="joinBtn" type="button" onClick={modalOn}>
+                    회원가입/로그인
+                  </button>
                 </li>
                 <li className="leftDivision">
                   <Link to="/" className="dashboardBtn">
