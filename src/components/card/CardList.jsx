@@ -2,9 +2,9 @@ import GaebalCard from "./GaebalCard";
 
 const CardList = (props) => {
   const cardGaebalD = props.cardGaebalData;
-  const cardGaebalList = cardGaebalD.map((cardText, index) => (
+  const cardGaebalList = cardGaebalD.map((cardText) => (
     <GaebalCard
-      key={index}
+      key={cardText.id}
       backImg={cardText.backImg}
       title={cardText.title}
       name={cardText.name}

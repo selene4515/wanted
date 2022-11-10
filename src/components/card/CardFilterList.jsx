@@ -8,9 +8,9 @@ const CardFilterList = (props) => {
     .filter((cardText) =>
       cardText.title.toUpperCase().includes(props.query.toUpperCase())
     )
-    .map((cardText, index) => (
+    .map((cardText) => (
       <GaebalCard
-        key={index}
+        key={cardText.id}
         backImg={cardText.backImg}
         title={cardText.title}
         name={cardText.name}

@@ -33,6 +33,7 @@
   ],
   "cardGaebal": [
     {
+      "id":"001",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -43,6 +44,7 @@
       "money": "1000000"
     },
     {
+      "id":"002",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -53,6 +55,7 @@
       "money": "1000000"
     },
     {
+      "id":"003",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -63,6 +66,7 @@
       "money": "1000000"
     },
     {
+      "id":"004",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -73,6 +77,7 @@
       "money": "1000000"
     },
     {
+      "id":"005",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -83,6 +88,7 @@
       "money": "1000000"
     },
     {
+      "id":"006",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -93,6 +99,7 @@
       "money": "1000000"
     },
     {
+      "id":"007",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -103,6 +110,7 @@
       "money": "1000000"
     },
     {
+      "id":"008",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -113,6 +121,7 @@
       "money": "1000000"
     },
     {
+      "id":"009",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -123,6 +132,7 @@
       "money": "1000000"
     },
     {
+      "id":"010",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -133,6 +143,7 @@
       "money": "1000000"
     },
     {
+      "id":"011",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -143,6 +154,7 @@
       "money": "1000000"
     },
     {
+      "id":"012",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -153,6 +165,7 @@
       "money": "1000000"
     },
     {
+      "id":"013",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -163,6 +176,7 @@
       "money": "1000000"
     },
     {
+      "id":"014",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -173,6 +187,7 @@
       "money": "1000000"
     },
     {
+      "id":"015",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -183,6 +198,7 @@
       "money": "1000000"
     },
     {
+      "id":"016",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -193,6 +209,7 @@
       "money": "1000000"
     },
     {
+      "id":"017",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -203,6 +220,7 @@
       "money": "1000000"
     },
     {
+      "id":"018",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -213,6 +231,7 @@
       "money": "1000000"
     },
     {
+      "id":"019",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -223,6 +242,7 @@
       "money": "1000000"
     },
     {
+      "id":"020",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -233,6 +253,7 @@
       "money": "1000000"
     },
     {
+      "id":"021",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -243,6 +264,7 @@
       "money": "1000000"
     },
     {
+      "id":"022",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -253,6 +275,7 @@
       "money": "1000000"
     },
     {
+      "id":"023",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -263,6 +286,7 @@
       "money": "1000000"
     },
     {
+      "id":"024",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -273,6 +297,7 @@
       "money": "1000000"
     },
     {
+      "id":"025",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -283,6 +308,7 @@
       "money": "1000000"
     },
     {
+      "id":"026",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -293,6 +319,7 @@
       "money": "1000000"
     },
     {
+      "id":"027",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -303,6 +330,7 @@
       "money": "1000000"
     },
     {
+      "id":"028",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -313,6 +341,7 @@
       "money": "1000000"
     },
     {
+      "id":"029",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -323,6 +352,7 @@
       "money": "1000000"
     },
     {
+      "id":"030",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -333,6 +363,7 @@
       "money": "1000000"
     },
     {
+      "id":"031",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -343,6 +374,7 @@
       "money": "1000000"
     },
     {
+      "id":"032",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -353,6 +385,7 @@
       "money": "1000000"
     },
     {
+      "id":"033",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -363,6 +396,7 @@
       "money": "1000000"
     },
     {
+      "id":"034",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -373,6 +407,7 @@
       "money": "1000000"
     },
     {
+      "id":"035",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -383,6 +418,7 @@
       "money": "1000000"
     },
     {
+      "id":"036",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -393,6 +429,7 @@
       "money": "1000000"
     },
     {
+      "id":"037",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
@@ -403,6 +440,7 @@
       "money": "1000000"
     },
     {
+      "id":"038",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
       "title": "Nest.js 서버 개발자",
       "name": "디엔소프트",
@@ -413,6 +451,7 @@
       "money": "1000000"
     },
     {
+      "id":"039",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
       "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
       "name": "파인디지털",
@@ -423,32 +462,13 @@
       "money": "1000000"
     },
     {
+      "id":"040",
       "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4088%2Foueptcfbm51jzaj2__400_400.jpg&w=400&q=75",
       "title": "스마트컨트랙트 개발자 (Golang)",
       "name": "온블록",
       "olo": "응답률 매우 높음",
       "tip": "지원 후 응답받을 확률이 95% 이상입니다.",
       "city": "서울",
-      "nara": "한국",
-      "money": "1000000"
-    },
-    {
-      "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
-      "title": "Nest.js 서버 개발자",
-      "name": "디엔소프트",
-      "olo": "응답률 매우 높음",
-      "tip": "지원 후 응답받을 확률이 95% 이상입니다.",
-      "city": "서울",
-      "nara": "한국",
-      "money": "1000000"
-    },
-    {
-      "backImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4376%2Fcpqpzlymnr0tfec6__400_400.jpg&w=400&q=75",
-      "title": "블랙박스 임베디드 리눅스 개발 (S/W개발)",
-      "name": "파인디지털",
-      "olo": "응답률 매우 높음",
-      "tip": "지원 후 응답받을 확률이 95% 이상입니다.",
-      "city": "경기",
       "nara": "한국",
       "money": "1000000"
     }
