@@ -57,7 +57,7 @@ const Header = (props) => {
   };
 
   //로그인 로그아웃
-  let sessionStorage = window.sessionStorage;
+  let sessionStorage = window.localStorage;
 
   const [savedEmail, setSavedEmail] = useState("");
   const [savedPw, setSavedPw] = useState("");

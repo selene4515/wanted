@@ -6,7 +6,7 @@ const PwModal = (props) => {
     props.modalOff();
   };
 
-  let sessionStorage = window.sessionStorage;
+  let sessionStorage = window.localStorage;
 
   const [pw, setPw] = useState("");
   const [pwValid, setPwValid] = useState(false);
