@@ -8,6 +8,14 @@ const GaebalCard = (props) => {
   const url = props.name;
   const moneyc = props.money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   const [isHovering, setIsHovering] = useState(false);
+
+  const [bookmark, setBookmark] = useState(false);
+  const onClickBookmark = (e) => {
+    e.preventDefault();
+    //로그인 안되어있으면 로그인창으로 if()
+    bookmark ? setBookmark(false) : setBookmark(true);
+  };
+
   return (
     <li>
       <div className="Card_className__u5rsb">
@@ -17,8 +25,12 @@ const GaebalCard = (props) => {
               backgroundImage: `url(${backImg})`,
             }}
           >
-            <button className="bookmarkBtn" type="button">
-              <BookmarkNoneSvg />
+            <button
+              className="bookmarkBtn"
+              type="button"
+              onClick={onClickBookmark}
+            >
+              {bookmark ? <BookmarkBlueSvg /> : <BookmarkNoneSvg />}
             </button>
           </header>
           <div className="body">
