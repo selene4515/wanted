@@ -1,19 +1,10 @@
+// import { useSelector } from "react-redux";
 import GaebalCard from "./GaebalCard";
 
-const CardList = ({ cardGaebalData }) => {
+const CardListBookmark = ({ cardGaebalData }) => {
   const cardGaebalD = cardGaebalData;
   const cardGaebalList = cardGaebalD.map((cardText) => (
-    <GaebalCard
-      key={cardText.id}
-      backImg={cardText.backImg}
-      title={cardText.title}
-      name={cardText.name}
-      olo={cardText.olo}
-      tip={cardText.tip}
-      city={cardText.city}
-      nara={cardText.nara}
-      money={cardText.money}
-    />
+    <GaebalCard cardText={cardText} />
   ));
   return (
     <div className="List_List_container__JnQMS" style={{ textAlign: "center" }}>
@@ -22,4 +13,4 @@ const CardList = ({ cardGaebalData }) => {
   );
 };
 
-export default CardList;
+export default CardListBookmark;

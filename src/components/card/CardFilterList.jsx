@@ -8,18 +8,7 @@ const CardFilterList = (props) => {
     .filter((cardText) =>
       cardText.title.toUpperCase().includes(props.query.toUpperCase())
     )
-    .map((cardText) => (
-      <GaebalCard
-        key={cardText.id}
-        backImg={cardText.backImg}
-        title={cardText.title}
-        name={cardText.name}
-        olo={cardText.olo}
-        city={cardText.city}
-        nara={cardText.nara}
-        money={cardText.money}
-      />
-    ));
+    .map((cardText) => <GaebalCard cardText={cardText} />);
 
   const setCount = props.setCount;
   useEffect(() => {

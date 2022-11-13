@@ -3,17 +3,7 @@ import GaebalCard from "./GaebalCard";
 const CardList = (props) => {
   const cardGaebalD = props.cardGaebalData;
   const cardGaebalList = cardGaebalD.map((cardText) => (
-    <GaebalCard
-      key={cardText.id}
-      backImg={cardText.backImg}
-      title={cardText.title}
-      name={cardText.name}
-      olo={cardText.olo}
-      tip={cardText.tip}
-      city={cardText.city}
-      nara={cardText.nara}
-      money={cardText.money}
-    />
+    <GaebalCard cardText={cardText} />
   ));
   return (
     <div className="List_List_container__JnQMS" style={{ textAlign: "center" }}>
