@@ -1,10 +1,11 @@
 import Header from "../components/header/Header";
 import "../styles/profile.css";
-import dummy from "../json/cardCompeny.json";
-import CardListBookmark from "../components/card/CardListBookmark";
+import { useSelector } from "react-redux";
+import GaebalCard from "../components/card/GaebalCard";
 
-const BookmarkPage = (props) => {
-  const cardGaebalData = dummy.cardGaebal;
+const BookmarkPage = () => {
+  const mark = useSelector((store) => store.bookmark);
+  const marklist = mark.map((cardText) => <GaebalCard cardText={cardText} />);
 
   return (
     <div>
@@ -16,7 +17,9 @@ const BookmarkPage = (props) => {
           </h2>
         </nav>
         <div className="Bookmark_container__3HsyN">
-          <CardListBookmark cardGaebalData={cardGaebalData} />
+          <div className="List_List_container__JnQMS">
+            <ul className="clearfix">{marklist}</ul>
+          </div>
         </div>
       </div>
     </div>

@@ -2,8 +2,8 @@ import { ReactComponent as BookmarkNoneSvg } from "../../svg/bookmark_none.svg";
 import { ReactComponent as BookmarkBlueSvg } from "../../svg/bookmark_blue_whiteLine.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { addBookmark } from "../../reducers/bookmark";
+import { useDispatch } from "react-redux";
+import { addBookmark } from "../../reducers/bookmark";
 
 const GaebalCard = ({ cardText }) => {
   const backImg = cardText.backImg;
@@ -14,12 +14,13 @@ const GaebalCard = ({ cardText }) => {
   const [isHovering, setIsHovering] = useState(false);
 
   const [bookmark, setBookmark] = useState(false);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const onClickBookmark = (e) => {
     e.preventDefault();
     //로그인 안되어있으면 로그인창으로 if()
+
     bookmark ? setBookmark(false) : setBookmark(true);
-    // dispatch(addBookmark(cardText.key));
+    dispatch(addBookmark(cardText));
   };
 
   return (
