@@ -1,7 +1,7 @@
-export const addBookmark = (cardText) => {
+export const addBookmark = (item) => {
   return {
     type: "ADD",
-    cardText: cardText,
+    payload: item,
   };
 };
 
@@ -15,9 +15,9 @@ export const deleteBookmark = (items) => {
 const bookmark = (state = [], action) => {
   switch (action.type) {
     case "ADD":
-      return [...state, action.cardText];
+      return [...state, action.payload];
     case "DELETE":
-      return [...action.payload];
+      return state.filter((item) => item !== action.payload);
 
     default:
       return state;

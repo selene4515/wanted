@@ -11,8 +11,8 @@ const BookmarkPage = () => {
     <div>
       <Header />
       <div className="Container_Profile___7hTY">
-        <nav role="presentation" class="Nav_Nav__mBpI5">
-          <h2 class="Nav_Nav_title__4b9t6">
+        <nav role="presentation" className="Nav_Nav__mBpI5">
+          <h2 className="Nav_Nav_title__4b9t6">
             <p>북마크</p>
           </h2>
         </nav>

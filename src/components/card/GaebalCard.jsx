@@ -1,11 +1,12 @@
 import { ReactComponent as BookmarkNoneSvg } from "../../svg/bookmark_none.svg";
 import { ReactComponent as BookmarkBlueSvg } from "../../svg/bookmark_blue_whiteLine.svg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBookmark } from "../../reducers/bookmark";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addBookmark, deleteBookmark } from "../../reducers/bookmark";
 
 const GaebalCard = ({ cardText }) => {
+  const myId = cardText.id;
   const backImg = cardText.backImg;
   const url = cardText.name;
   const moneyc = cardText.money
@@ -19,9 +20,20 @@ const GaebalCard = ({ cardText }) => {
     e.preventDefault();
     //로그인 안되어있으면 로그인창으로 if()
 
-    bookmark ? setBookmark(false) : setBookmark(true);
-    dispatch(addBookmark(cardText));
+    if (bookmark === false) {
+      setBookmark(true);
+      dispatch(addBookmark(cardText));
+    } else {
+      setBookmark(false);
+      dispatch(deleteBookmark(cardText));
+    }
   };
+
+  const mark = useSelector((store) => store.bookmark);
+  useEffect(() => {
+    const isBookmark = mark.find((item) => item.id === myId);
+    if (isBookmark) setBookmark(true);
+  }, [myId, mark, setBookmark]);
 
   return (
     <li>
