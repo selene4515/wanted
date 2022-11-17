@@ -14,6 +14,7 @@ import ModalLogin from "./ModalLogin";
 import ModalSign from "./ModalSign";
 import ModalPw from "./ModalPw";
 import SearchBar from "./SearchBar";
+import ProfileStyled from "../../styled-components/ProfileStyled";
 
 const Header = (props) => {
   const [hoverMenu, setHoverMenu] = useState(true);
@@ -174,21 +175,7 @@ const Header = (props) => {
                       className="profileButton"
                       onClick={ProfileHandler}
                     >
-                      <div
-                        className={
-                          profileOn
-                            ? "avatarBorder showMenuPopover"
-                            : "avatarBorder"
-                        }
-                      >
-                        <div
-                          className="avatarImage"
-                          style={{
-                            backgroundImage:
-                              "url('https://static.wanted.co.kr/oneid-user/profile_default.png'),url('https://static.wanted.co.kr/images/profile_default.png')",
-                          }}
-                        ></div>
-                      </div>
+                      <ProfileStyled profileOn={profileOn} />
                     </button>
                     {profileOn && (
                       <div className="MenuPopover_menuContainer__vUynN">

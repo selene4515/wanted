@@ -19,6 +19,7 @@
     "redux": "^4.2.0",
     "rooks": "^7.4.1",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

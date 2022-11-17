@@ -230,28 +230,6 @@
   padding: 0;
   margin-right: 11px;
 }
-.header_div_join > ul li .profileButton .avatarBorder {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid #e1e2e3;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.header_div_join > ul li .profileButton .avatarBorder.showMenuPopover {
-  border: 1px solid #36f;
-}
-.header_div_join > ul li .profileButton .avatarBorder > div {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-position: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .header_div_join > ul .leftDivision {
   display: inline-flex;
 }
