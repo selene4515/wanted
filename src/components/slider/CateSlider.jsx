@@ -1,8 +1,48 @@
-import React from "react";
+import styled from "styled-components";
+
+const JobListSection = styled.section`
+  max-width: 66.25rem;
+  margin: 0 auto;
+
+  & > div {
+    width: 100%;
+    margin-bottom: 0;
+  }
+`;
+
+const ColorDiv = styled.div`
+  outline: "none";
+`;
+
+const ColorButton = styled.button`
+  background: ${(props) => props.color || "blue"};
+
+  position: relative;
+  height: 32px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid transparent;
+  font-family: Pretendard;
+
+  & > img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+  }
+`;
 
 const CateSlider = () => {
   return (
-    <section className="jobList_section">
+    <JobListSection className="jobList_section">
       <div className="slick-slider slick-initialized" dir="ltr">
         <div className="slick-list">
           <div
@@ -13,213 +53,106 @@ const CateSlider = () => {
               transform: "translate3d(0px, 0px, 0px)",
             }}
           >
-            <div
-              data-index="0"
-              className="slick-slide slick-active slick-current"
-              tabIndex="-1"
-              aria-hidden="false"
-              style={{ outline: "none" }}
-            >
+            <ColorDiv className="slick-slide slick-active slick-current">
               <div>
-                <button
-                  type="button"
-                  className="TagListItem_TagListItem__3aCT9"
-                  style={{ background: "rgb(242, 251, 245)" }}
-                >
+                <ColorButton type="button" color="rgb(242, 251, 245)">
                   연봉이 최고의 복지
                   <img
                     src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
                     alt="연봉이 최고의 복지"
                   />
-                </button>
+                </ColorButton>
               </div>
-            </div>
-            <div
-              data-index="1"
-              className="slick-slide slick-active"
-              tabIndex="-1"
-              aria-hidden="false"
-              style={{ outline: "none" }}
-            >
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
               <div>
-                <button
-                  type="button"
-                  className="TagListItem_TagListItem__3aCT9"
-                  style={{ background: "rgb(243, 249, 254)" }}
-                >
+                <ColorButton type="button" color="rgb(243, 249, 254)">
                   재택근무
                   <img
                     src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
                     alt="재택근무"
                   />
-                </button>
+                </ColorButton>
               </div>
-            </div>
-            <div
-              data-index="2"
-              className="slick-slide slick-active"
-              tabIndex="-1"
-              aria-hidden="false"
-              style={{ outline: "none" }}
-            >
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
               <div>
-                <button
-                  type="button"
-                  className="TagListItem_TagListItem__3aCT9"
-                  style={{ background: "rgb(243, 242, 251)" }}
-                >
+                <ColorButton type="button" color="rgb(243, 242, 251)">
                   퇴사율 10% 이하
                   <img
                     src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F7d3cdb3c-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
                     alt="퇴사율 10% 이하"
                   />
-                </button>
+                </ColorButton>
               </div>
-            </div>
-            {/* <div
-                      data-index="3"
-                      className="slick-slide slick-active"
-                      tabindex="-1"
-                      aria-hidden="false"
-                      style="outline: none"
-                    >
-                      <div>
-                        <button
-                          type="button"
-                          className="TagListItem_TagListItem__3aCT9"
-                          data-attribute-id="userTag__filter__click"
-                          data-kind="add"
-                          data-tag="Fast Growing"
-                          style="background: rgb(246, 248, 238)"
-                        >
-                          급성장 중
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F37dacf86-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                            alt="급성장 중"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      data-index="4"
-                      className="slick-slide slick-active"
-                      tabindex="-1"
-                      aria-hidden="false"
-                      style="outline: none"
-                    >
-                      <div>
-                        <button
-                          type="button"
-                          className="TagListItem_TagListItem__3aCT9"
-                          data-attribute-id="userTag__filter__click"
-                          data-kind="add"
-                          data-tag="Military exempt"
-                          style="background: rgb(247, 242, 249)"
-                        >
-                          병역특례
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F6eda33d2-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                            alt="병역특례"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      data-index="5"
-                      className="slick-slide"
-                      tabindex="-1"
-                      aria-hidden="true"
-                      style="outline: none"
-                    >
-                      <div>
-                        <button
-                          type="button"
-                          className="TagListItem_TagListItem__3aCT9"
-                          data-attribute-id="userTag__filter__click"
-                          data-kind="add"
-                          data-tag="Less than 50 employees"
-                          style="background: rgb(238, 250, 249)"
-                        >
-                          50인 이하️
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F3a965d18-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
-                            alt="50인 이하️"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      data-index="6"
-                      className="slick-slide"
-                      tabindex="-1"
-                      aria-hidden="true"
-                      style="outline: none"
-                    >
-                      <div>
-                        <button
-                          type="button"
-                          className="TagListItem_TagListItem__3aCT9"
-                          data-attribute-id="userTag__filter__click"
-                          data-kind="add"
-                          data-tag="50+ employees"
-                          style="background: rgb(239, 241, 251)"
-                        >
-                          50인 이상️
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
-                            alt="50인 이상️"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      data-index="7"
-                      className="slick-slide"
-                      tabindex="-1"
-                      aria-hidden="true"
-                      style="outline: none"
-                    >
-                      <div>
-                        <button
-                          type="button"
-                          className="TagListItem_TagListItem__3aCT9"
-                          data-attribute-id="userTag__filter__click"
-                          data-kind="add"
-                          data-tag="+ 5 yrs of experience"
-                          style="background: rgb(242, 251, 245)"
-                        >
-                          업력 5년 이상
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
-                            alt="업력 5년 이상"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      data-index="8"
-                      className="slick-slide"
-                      tabindex="-1"
-                      aria-hidden="true"
-                      style="outline: none"
-                    >
-                      <div>
-                        <button
-                          type="button"
-                          className="TagListItem_TagListItem__3aCT9"
-                          data-attribute-id="userTag__filter__click"
-                          data-kind="add"
-                          data-tag="Flexible Hours"
-                          style="background: rgb(243, 249, 254)"
-                        >
-                          유연근무
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F827f6146-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                            alt="유연근무"
-                          />
-                        </button>
-                      </div>
-                    </div>
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
+              <div>
+                <ColorButton type="button" color="rgb(246, 248, 238)">
+                  급성장 중
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F37dacf86-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                    alt="급성장 중"
+                  />
+                </ColorButton>
+              </div>
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
+              <div>
+                <ColorButton type="button" color="rgb(247, 242, 249)">
+                  병역특례
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F6eda33d2-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                    alt="병역특례"
+                  />
+                </ColorButton>
+              </div>
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
+              <div>
+                <ColorButton type="button" color="rgb(238, 250, 249)">
+                  50인 이하️
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F3a965d18-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                    alt="50인 이하️"
+                  />
+                </ColorButton>
+              </div>
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
+              <div>
+                <ColorButton type="button" color="rgb(239, 241, 251)">
+                  50인 이상️
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                    alt="50인 이상️"
+                  />
+                </ColorButton>
+              </div>
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
+              <div>
+                <ColorButton type="button" color="rgb(242, 251, 245)">
+                  업력 5년 이상
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                    alt="업력 5년 이상"
+                  />
+                </ColorButton>
+              </div>
+            </ColorDiv>
+            <ColorDiv className="slick-slide slick-active">
+              <div>
+                <ColorButton type="button" color="rgb(243, 249, 254)">
+                  유연근무
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F827f6146-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                    alt="유연근무"
+                  />
+                </ColorButton>
+              </div>
+            </ColorDiv>
+            {/* 
                     <div
                       data-index="9"
                       className="slick-slide"
@@ -345,7 +278,6 @@ const CateSlider = () => {
         <button
           type="button"
           className="NavButton_NavButton__j73pc NavButton_isNext__m3fGk"
-          aria-label="next button"
         >
           <span className="SvgIcon_SvgIcon__root__8vwon">
             <svg
@@ -357,7 +289,7 @@ const CateSlider = () => {
           </span>
         </button>
       </div>
-    </section>
+    </JobListSection>
   );
 };
 

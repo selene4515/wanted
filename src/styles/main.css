@@ -282,23 +282,7 @@
   content: "";
   clear: both;
 }
-.jobList_ {
-  margin-bottom: 25px;
-  padding-top: 10px;
-}
-.jobList_.fixed {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  border-bottom: 1px solid #36f;
-  background: #fff;
-  z-index: 2;
-  padding: 20px 0 25px !important;
-}
-.jobList_.jobList_t {
-  top: 50px;
-}
+
 .jobList_cate {
   display: flex;
   flex-direction: row;
@@ -391,36 +375,6 @@
   margin: 25px auto;
   background-color: rgba(236, 236, 236, 0.7);
   border: none;
-}
-.jobList_section {
-  max-width: 1060px;
-  margin: 0 auto;
-}
-.jobList_section > div {
-  width: 100%;
-  margin-bottom: 0;
-}
-.TagListItem_TagListItem__3aCT9 {
-  position: relative;
-  height: 32px;
-  padding: 8px 14px;
-  border-radius: 20px;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 8px;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #333;
-  border: 1px solid transparent;
-  font-family: Pretendard;
-}
-.TagListItem_TagListItem__3aCT9 > img {
-  width: 16px;
-  height: 16px;
-  margin-left: 5px;
 }
 .NavButton_NavButton__j73pc {
   position: absolute;

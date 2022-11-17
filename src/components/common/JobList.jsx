@@ -1,6 +1,27 @@
 import { ReactComponent as ArrowPullBottomSvg } from "../../svg/arrowPullBottom.svg";
 import CateSlider from "../slider/CateSlider";
 import { useEffect } from "react";
+import styled, { css } from "styled-components";
+
+const JobListStyled = styled.div`
+  margin-bottom: 25px;
+  padding-top: 10px;
+
+  ${(props) =>
+    props.ScrollActive &&
+    css`
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      border-bottom: 1px solid #36f;
+      background: #fff;
+      z-index: 2;
+      padding: 20px 0 25px !important;
+    `}
+
+  top: 50px;
+`;
 
 const JobList = ({ ScrollActive, handleScroll }) => {
   useEffect(() => {
@@ -9,12 +30,9 @@ const JobList = ({ ScrollActive, handleScroll }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+
   return (
-    <div
-      className={
-        ScrollActive ? "jobList_ jobList_t fixed" : "jobList_ jobList_t"
-      }
-    >
+    <JobListStyled className="jobList_ jobList_t" ScrollActive={ScrollActive}>
       <div className="jobList_cate">
         <div className="jobList_cate_div1">
           <button type="button" className="jobList_cate_div1_btn">
@@ -51,7 +69,7 @@ const JobList = ({ ScrollActive, handleScroll }) => {
       </div>
       <hr />
       <CateSlider />
-    </div>
+    </JobListStyled>
   );
 };
 
