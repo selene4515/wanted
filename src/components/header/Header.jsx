@@ -286,19 +286,19 @@ const Header = (props) => {
               )}
             </div>
           </div>
-          {props.clickSearchBtn && (
-            <SearchBar
-              clickSearchBtn={props.clickSearchBtn}
-              setClickSearchBtn={props.setClickSearchBtn}
-            />
-          )}
-          {clickSearchBtn0 && (
-            <SearchBar
-              clickSearchBtn0={clickSearchBtn0}
-              setClickSearchBtn0={setClickSearchBtn0}
-            />
-          )}
         </div>
+        {props.clickSearchBtn && (
+          <SearchBar
+            clickSearchBtn={props.clickSearchBtn}
+            setClickSearchBtn={props.setClickSearchBtn}
+          />
+        )}
+        {clickSearchBtn0 && (
+          <SearchBar
+            clickSearchBtn0={clickSearchBtn0}
+            setClickSearchBtn0={setClickSearchBtn0}
+          />
+        )}
       </div>
       <div
         className={
