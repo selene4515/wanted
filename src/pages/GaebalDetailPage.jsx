@@ -8,11 +8,14 @@ import CardList from "../components/card/CardList";
 import dummy from "../json/cardCompeny.json";
 import { ReactComponent as RoundExSvg } from "../svg/roundEx.svg";
 import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
+import { useState } from "react";
 
 const GaebalDetailPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;
 
   const navermaps = window.naver.maps;
+
+  const [isHovering, setIsHovering] = useState(false);
 
   return (
     <div>
@@ -75,12 +78,18 @@ const GaebalDetailPage = (props) => {
                         className="Tooltip_label__P9FMp not-clickable"
                         type="button"
                       >
-                        <div className="ResponseLevelLabel_container__dJphx ResponseLevelLabel_high__tXvE8">
+                        <div
+                          className="ResponseLevelLabel_container__dJphx ResponseLevelLabel_high__tXvE8"
+                          onMouseOver={() => setIsHovering(true)}
+                          onMouseOut={() => setIsHovering(false)}
+                        >
                           <span>응답률 높음</span>
                         </div>
-                        <div className="Tooltip_tooltipContent__6exdr">
-                          지원 후 응답받을 확률이 90% 이상입니다.
-                        </div>
+                        {isHovering && (
+                          <div className="Tooltip_tooltipContent__6exdr">
+                            지원 후 응답받을 확률이 90% 이상입니다.
+                          </div>
+                        )}
                       </button>
                     </div>
                   </div>
