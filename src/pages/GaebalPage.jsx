@@ -63,7 +63,7 @@ const GaebalPage = (props) => {
     <div>
       <Header />
       <div style={{ background: "#fff" }}>
-        <article style={{ paddingTop: 40 }} role="navigation">
+        <article className="jobArticle" role="navigation">
           <div className="jobTitle">
             <div className="jobTitle_div1">
               <button type="button">

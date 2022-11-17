@@ -8,6 +8,13 @@ const JobListSection = styled.section`
     width: 100%;
     margin-bottom: 0;
   }
+  @media (max-width: 767px) {
+    white-space: nowrap;
+    padding-bottom: 0.625rem;
+    padding-right: 1.25rem;
+    margin: 0.9375rem 0 0;
+    margin-left: 20px;
+  }
 `;
 
 const ColorDiv = styled.div`
@@ -18,25 +25,24 @@ const ColorButton = styled.button`
   background: ${(props) => props.color || "blue"};
 
   position: relative;
-  height: 32px;
-  padding: 8px 14px;
-  border-radius: 20px;
-  display: -ms-inline-flexbox;
+  height: 2rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: 1.25rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
-  font-size: 13px;
-  line-height: 16px;
+  margin-right: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1rem;
   font-weight: 400;
   color: #333;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   font-family: Pretendard;
 
   & > img {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.3125rem;
   }
 `;
 

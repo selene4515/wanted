@@ -281,6 +281,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .header_div_join > ul li {
+    vertical-align: initial;
+  }
   .header_div_join > ul li .searchBtn {
     margin: 0;
   }
@@ -300,6 +303,9 @@
   }
   .header_div_join > ul {
     margin-top: -0.3125rem;
+  }
+  .header_div_join > ul li {
+    vertical-align: initial;
   }
   .header_div_join > ul li .searchBtn {
     margin: 0;

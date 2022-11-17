@@ -112,13 +112,15 @@ const Header = (props) => {
                   <i className="icon-logo_new"></i>
                 </Link>
               </div>
-              <button
-                id="gnbSignupBtn"
-                className="xsSignUpButton"
-                type="button"
-              >
-                회원가입하기
-              </button>
+              {savedEmail === null && (
+                <button
+                  id="gnbSignupBtn"
+                  className="xsSignUpButton"
+                  type="button"
+                >
+                  회원가입하기
+                </button>
+              )}
             </div>
             <ul className="header_div_menu">
               <li className="xsHomeButton xsOnly">

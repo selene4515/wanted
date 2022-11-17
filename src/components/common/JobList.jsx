@@ -7,6 +7,11 @@ const JobListStyled = styled.div`
   margin-bottom: 1.5625rem;
   padding-top: 0.625rem;
 
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-bottom: 0.625rem;
+  }
+
   ${(props) =>
     props.ScrollActive &&
     css`
@@ -18,9 +23,17 @@ const JobListStyled = styled.div`
       background: #fff;
       z-index: 2;
       padding: 1.25rem 0 1.5625rem !important;
+
+      @media (max-width: 767px) {
+        padding: 0.625rem 0 !important;
+        border-bottom-color: #36f;
+      }
     `}
 
   top: 3.125rem;
+  @media (max-width: 767px) {
+    top: 6.875rem;
+  }
 `;
 
 const JobList = ({ ScrollActive, handleScroll }) => {
