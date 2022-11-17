@@ -201,3 +201,9 @@ hr {
 .icon-logo_new:before {
   content: "\e992";
 }
+.icon-arrow_down:before {
+  content: "\e947";
+}
+strong {
+  font-weight: bold;
+}

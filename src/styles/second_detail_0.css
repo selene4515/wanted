@@ -1497,6 +1497,12 @@
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+/* 밍지수정 */
+.WarningHeader_WarningHeader_content__Yb7yY .btn-open {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 @media (max-width: 767px) {
   .WarningHeader_WarningHeader__F1ikW {
     padding: 20px;
