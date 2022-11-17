@@ -14,18 +14,27 @@ const GaebalCard = ({ cardText }) => {
     .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   const [isHovering, setIsHovering] = useState(false);
 
+  //로그인여부체크
+  let sessionStorage = window.localStorage;
+  const [savedEmail, setSavedEmail] = useState("");
+  useEffect(() => {
+    setSavedEmail(sessionStorage.getItem("email"));
+  }, [setSavedEmail, sessionStorage]);
+
   const [bookmark, setBookmark] = useState(false);
   const dispatch = useDispatch();
   const onClickBookmark = (e) => {
     e.preventDefault();
-    //로그인 안되어있으면 로그인창으로 if()
-
-    if (bookmark === false) {
-      setBookmark(true);
-      dispatch(addBookmark(cardText));
+    if (savedEmail === null) {
+      alert("로그인해주세요!");
     } else {
-      setBookmark(false);
-      dispatch(deleteBookmark(cardText));
+      if (bookmark === false) {
+        setBookmark(true);
+        dispatch(addBookmark(cardText));
+      } else {
+        setBookmark(false);
+        dispatch(deleteBookmark(cardText));
+      }
     }
   };
 
