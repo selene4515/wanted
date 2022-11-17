@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import styled, { css } from "styled-components";
 
 const JobListStyled = styled.div`
-  margin-bottom: 25px;
-  padding-top: 10px;
+  margin-bottom: 1.5625rem;
+  padding-top: 0.625rem;
 
   ${(props) =>
     props.ScrollActive &&
@@ -14,13 +14,13 @@ const JobListStyled = styled.div`
       left: 0;
       right: 0;
       top: 0;
-      border-bottom: 1px solid #36f;
+      border-bottom: 0.0625rem solid #36f;
       background: #fff;
       z-index: 2;
-      padding: 20px 0 25px !important;
+      padding: 1.25rem 0 1.5625rem !important;
     `}
 
-  top: 50px;
+  top: 3.125rem;
 `;
 
 const JobList = ({ ScrollActive, handleScroll }) => {

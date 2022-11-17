@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
 const Profile = styled.div`
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
-  border: 1px solid #e1e2e3;
+  border: 0.0625rem solid #e1e2e3;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -14,13 +14,13 @@ const Profile = styled.div`
   ${(props) =>
     props.profileOn &&
     css`
-      border: 1px solid #36f;
+      border: 0.0625rem solid #36f;
     `}
 `;
 
 const ProfileImg = styled.div`
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
   background-position: 50%;
   background-size: cover;
