@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import ResumeItem from "../components/common/ResumeItem";
+import ResumeItemFile from "../components/common/ResumeItem_file";
 import "../styles/resume.css";
 
 const CVPage = () => {
@@ -68,6 +69,7 @@ const CVPage = () => {
             />
           </div>
           <ResumeItem />
+          <ResumeItemFile />
         </div>
       </div>
     </div>

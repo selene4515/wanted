@@ -235,3 +235,43 @@
   height: 100%;
   width: 24px;
 }
+
+.ResumeItem_title_file {
+  padding-top: 20px;
+}
+.ResumeItem_icon {
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 10px;
+}
+.ResumeItem_icon i {
+  position: relative;
+  top: 1px;
+}
+
+.DropdownPopover_DropdownPopover_menu__j_mX_ {
+  z-index: 1400;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  border: 1px solid #e1e2e3;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px 5px;
+}
+.DropdownPopover_DropdownPopover_menu__j_mX_ > button {
+  height: 26px;
+  border: none;
+  color: #333;
+  text-align: left;
+  padding: 3px 15px;
+  font-size: 14px;
+}
+.DropdownPopover_DropdownPopover_menu__j_mX_ > button:last-child {
+  color: #fe415c;
+}

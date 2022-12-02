@@ -216,6 +216,9 @@ hr {
 .icon-more_vert:before {
   content: "\e952";
 }
+.icon-joblist_bottombar_cv:before {
+  content: "\e979";
+}
 strong {
   font-weight: bold;
 }
