@@ -1,9 +1,19 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import ResumeItem from "../components/common/ResumeItem";
 import "../styles/resume.css";
 
 const CVPage = () => {
+  const fileInput = useRef(null);
+  const handleButtonClick = (e) => {
+    fileInput.current.click();
+  };
+
+  const handleChange = (e) => {
+    console.log(e.target.files[0]);
+  };
+
   return (
     <div>
       <Header />
@@ -42,11 +52,20 @@ const CVPage = () => {
           </div>
           <div className="ResumeItem" role="button">
             <div className="ResumeList_upload">
-              <div className="ResumeList_upload_icon">
+              <div
+                className="ResumeList_upload_icon"
+                onClick={handleButtonClick}
+              >
                 <i className="icon-upload_resume"></i>
               </div>
               <p>파일 업로드</p>
             </div>
+            <input
+              type="file"
+              ref={fileInput}
+              onChange={handleChange}
+              style={{ display: "none" }}
+            />
           </div>
           <ResumeItem />
         </div>
