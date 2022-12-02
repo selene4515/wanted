@@ -204,6 +204,18 @@ hr {
 .icon-arrow_down:before {
   content: "\e947";
 }
+.icon-info_icon:before {
+  content: "\e9a7";
+}
+.icon-new_resume:before {
+  content: "\ea0e";
+}
+.icon-upload_resume:before {
+  content: "\e9c6";
+}
+.icon-more_vert:before {
+  content: "\e952";
+}
 strong {
   font-weight: bold;
 }

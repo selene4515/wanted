@@ -1,0 +1,237 @@
+.ResumeList {
+  position: relative;
+  max-width: 1060px;
+  width: 87.72%;
+  margin: 0 auto;
+}
+.CareerConnectBanner {
+  position: relative;
+  width: 100%;
+  height: 103px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #2b4bc8;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.CareerConnectBanner > img {
+  position: absolute;
+  width: 72%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.CareerConnectBanner_Banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 32px 40px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 26px;
+  color: #fff;
+}
+.CareerConnectBanner_Banner_Content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CareerConnectBanner_Banner_Content > strong {
+  border-radius: 20px;
+  background-color: #fff;
+  color: #2b4bc8;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 11px 20px;
+}
+.CareerConnectBanner_Banner_Content > img {
+  position: absolute;
+  width: 333px;
+  height: 90px;
+  bottom: 0;
+  right: 200px;
+}
+
+.ResumeList_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.ResumeList_header > h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  padding: 15px 0;
+  color: #333;
+  word-wrap: break-word;
+}
+.ResumeList_header_link {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 15px 0;
+  color: #36f !important;
+  display: flex;
+  align-items: center;
+}
+.ResumeList_header_link > i {
+  margin-left: 8px;
+  position: relative;
+  bottom: 1px;
+}
+
+.ResumeList_listWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: calc(100% + 20px);
+  flex-wrap: wrap;
+}
+.ResumeItem {
+  height: 190px;
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+.ResumeList_addItem,
+.ResumeList_upload {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ResumeList_addItem_icon,
+.ResumeList_upload_icon {
+  cursor: pointer;
+  width: 74px;
+  height: 74px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+.ResumeList_addItem_icon {
+  background-color: #36f;
+  color: #fff;
+}
+.ResumeList_upload_icon {
+  background-color: #e1e2e3;
+  color: #666;
+}
+.ResumeList_addItem > p,
+.ResumeList_upload > p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+  margin: 20px 0 0;
+}
+
+.ResumeItem_badge {
+  padding-left: 18px;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 5px;
+  gap: 5px;
+}
+.MatchupBadge_Badge {
+  background-color: #f3f9fe;
+  color: #36f;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 6px;
+}
+.ResumeItem_title {
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: left;
+}
+.ResumeItem_title > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  max-height: 46px;
+  max-width: 100%;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+  overflow: hidden;
+  word-break: break-all;
+  border: none;
+}
+.ResumeItem [iswriting="1"] {
+  color: #999;
+}
+.ResumeItem_title > p {
+  color: #999;
+  margin-top: 5px;
+}
+.ResumeItem_info {
+  position: absolute;
+  bottom: 0;
+  height: 41px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 12px 0 20px;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+}
+.ResumeItem_lang {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.ResumeItem_lang[iswriting="1"] {
+  border: 1px solid #999;
+}
+.ResumeItem_info > span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: left;
+}
+.ResumeItem_menu,
+.ResumeItem_menu > button {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ResumeItem_menu > button {
+  font-size: 24px;
+  color: #76797e;
+  height: 100%;
+  width: 24px;
+}

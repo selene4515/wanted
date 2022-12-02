@@ -5,6 +5,7 @@ import GaebalDetailPage from "./pages/GaebalDetailPage";
 import GaebalDetailGiwonPage from "./pages/GaebalDetailGiwonPage";
 import SearchPage from "./pages/SearchPage";
 import BookmarkPage from "./pages/BookmarkPage";
+import CVPage from "./pages/CVPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/gabalDetailGiwon" element={<GaebalDetailGiwonPage />} />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/bookmarks" element={<BookmarkPage />} />
+      <Route path="/cv" element={<CVPage />} />
     </Routes>
   );
 };

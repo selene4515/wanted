@@ -144,7 +144,7 @@ const Header = (props) => {
                 <Link to="/">직군별 연봉</Link>
               </li>
               <li className="smMoreVisible">
-                <Link to="/">이력서</Link>
+                <Link to="/cv">이력서</Link>
               </li>
               <li className="smMoreVisible">
                 <Link to="/">
