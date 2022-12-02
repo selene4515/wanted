@@ -13,8 +13,8 @@ const ResumeItem = () => {
         <p>2022.12.02</p>
       </div>
       <div className="ResumeItem_info">
-        <div class="ResumeItem_icon" onClick={DropDownHander}>
-          <i class="icon-joblist_bottombar_cv"></i>
+        <div className="ResumeItem_icon" onClick={DropDownHander}>
+          <i className="icon-joblist_bottombar_cv"></i>
         </div>
         <span className="writing" iswriting="0">
           첨부 완료
