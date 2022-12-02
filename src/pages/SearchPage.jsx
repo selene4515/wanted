@@ -1,11 +1,10 @@
-import React from "react";
-import JobList from "../components/common/JobList";
-import Header from "../components/header/Header";
-import CardFilterList from "../components/card/CardFilterList";
-import dummy from "../json/cardCompeny.json";
-import "../styles/search.css";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import Header from "../components/header/Header";
+import JobList from "../components/common/JobList";
+import CardFilterList from "../components/card/CardFilterList";
+import "../styles/search.css";
+import dummy from "../json/cardCompeny.json";
 
 const SearchPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;

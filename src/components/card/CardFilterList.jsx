@@ -1,5 +1,5 @@
-import GaebalCard from "./GaebalCard";
 import { useEffect } from "react";
+import GaebalCard from "./GaebalCard";
 
 const CardFilterList = (props) => {
   const cardGaebalD = props.cardGaebalData;

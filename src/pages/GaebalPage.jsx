@@ -1,14 +1,14 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
-import "../styles/main.css";
+import BannerBottom from "../components/common/BannerBottom";
+import CardList from "../components/card/CardList";
+import JobList from "../components/common/JobList";
 import { ReactComponent as ArrowRighBluetSvg } from "../svg/arrowRight_blue.svg";
 import { ReactComponent as ArrowBottomGraySvg } from "../svg/arrowBottom_gray.svg";
 import { ReactComponent as BookmarkBlueSvg } from "../svg/bookmark_blue.svg";
-import { Link } from "react-router-dom";
+import "../styles/main.css";
 import dummy from "../json/cardCompeny.json";
-import BannerBottom from "../components/common/BannerBottom";
-import { useState } from "react";
-import CardList from "../components/card/CardList";
-import JobList from "../components/common/JobList";
 
 const GaebalPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;

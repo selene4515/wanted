@@ -1,14 +1,14 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
 import AsideStiky from "../components/common/AsideStiky";
+import CardList from "../components/card/CardList";
+import { ReactComponent as RoundExSvg } from "../svg/roundEx.svg";
 import "../styles/second_detail_0.css";
 import "../styles/second_detail.css";
-import { Link } from "react-router-dom";
-import CardList from "../components/card/CardList";
 import dummy from "../json/cardCompeny.json";
-import { ReactComponent as RoundExSvg } from "../svg/roundEx.svg";
-import { RenderAfterNavermapsLoaded, NaverMap, Marker } from "react-naver-maps";
-import { useState } from "react";
 
 const GaebalDetailPage = (props) => {
   const cardGaebalData = dummy.cardGaebal;

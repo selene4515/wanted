@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
-import CardTitleTextName from "../components/card/CardTitleTextName";
 import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 import ReactSlick from "../components/ReactSlick";
 import MenuSlider from "../components/slider/MenuSlider";
+import CardTitleTextName from "../components/card/CardTitleTextName";
 import Card4NameTitleText from "../components/card/Card4NameTitleText";
 import Card4TitleTag from "../components/card/Card4TitleTag";
 import Card2IconTitleDate from "../components/card/Card2IconTitleDate";
-import "../styles/banner.css";
-import "../styles/main.css";
-import dummy from "../json/cardText.json";
 import { ReactComponent as RoundQSvg } from "../svg/roundQ.svg";
 import { ReactComponent as ArrowBottomSvg } from "../svg/arrowBottom.svg";
 import { ReactComponent as ArrowRightSvg } from "../svg/arrowRight.svg";
 import { ReactComponent as SurchSvg } from "../components/header/surchBtn.svg";
 import { ReactComponent as CheckSvg } from "../svg/check.svg";
+import "../styles/banner.css";
+import "../styles/main.css";
+import dummy from "../json/cardText.json";
 
 const MainPage = (props) => {
   const cardTag = dummy.cardTag;

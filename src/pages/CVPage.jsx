@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ResumeItem from "../components/common/ResumeItem";
 import Header from "../components/header/Header";
+import ResumeItem from "../components/common/ResumeItem";
 import "../styles/resume.css";
 
 const CVPage = () => {

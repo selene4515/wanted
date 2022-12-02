@@ -1,6 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as ShareBtnSvg } from "../../svg/shareBtn.svg";
 import { ReactComponent as BookmarkBlueLineSvg } from "../../svg/bookmark_blueLine.svg";
-import { useNavigate } from "react-router-dom";
 
 const AsideStiky = () => {
   const nav = useNavigate();

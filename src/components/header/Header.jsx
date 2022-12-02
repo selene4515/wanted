@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "../../styles/header.css";
-import "../../styles/dropMenu.css";
-import "../../styles/sign.css";
-import { ReactComponent as NewSvg } from "./new.svg";
-import { ReactComponent as BetaSvg } from "./beta.svg";
-import { ReactComponent as SurchSvg } from "./surchBtn.svg";
-import { ReactComponent as BellSvg } from "./bell.svg";
-import { ReactComponent as JumSvg } from "./jum3.svg";
+import ProfileStyled from "../../styled-components/ProfileStyled";
 import Category from "./Category";
 import CategorySub from "./CategorySub";
 import ModalLogin from "./ModalLogin";
 import ModalSign from "./ModalSign";
 import ModalPw from "./ModalPw";
 import SearchBar from "./SearchBar";
-import ProfileStyled from "../../styled-components/ProfileStyled";
+import { ReactComponent as NewSvg } from "./new.svg";
+import { ReactComponent as BetaSvg } from "./beta.svg";
+import { ReactComponent as SurchSvg } from "./surchBtn.svg";
+import { ReactComponent as BellSvg } from "./bell.svg";
+import { ReactComponent as JumSvg } from "./jum3.svg";
+import "../../styles/header.css";
+import "../../styles/dropMenu.css";
+import "../../styles/sign.css";
 
 const Header = (props) => {
   const [hoverMenu, setHoverMenu] = useState(true);

@@ -1,7 +1,7 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { ReactComponent as EmailIcon } from "./emailIcon.svg";
-import { useEffect } from "react";
 
 const REST_API_KEY = "3a1d2464e8046103afeb11c5ead05e65";
 const REDIRECT_URI = "http://localhost:3000";

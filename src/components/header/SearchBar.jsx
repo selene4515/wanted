@@ -1,7 +1,7 @@
+import { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { ReactComponent as SearchSvg } from "./surchBtn.svg";
 import "../../styles/dropMenu.css";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import { useState } from "react";
 
 const SearchBar = (props) => {
   const SetClickSearchBtn = props.setClickSearchBtn;

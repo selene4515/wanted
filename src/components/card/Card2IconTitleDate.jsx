@@ -1,6 +1,6 @@
 import CardMainTitle from "./CardMainTitle";
-import "../../styles/card2.css";
 import CardIconTitleDate from "./CardIconTitleDate";
+import "../../styles/card2.css";
 
 const Card2IconTitleDate = (props) => {
   const cardEvent = props.cardEvent;

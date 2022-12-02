@@ -1,5 +1,5 @@
-import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { useEffect, useState } from "react";
+import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 
 const PwModal = (props) => {
   const pwOff = () => {

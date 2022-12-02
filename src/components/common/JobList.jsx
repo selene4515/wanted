@@ -1,7 +1,7 @@
-import { ReactComponent as ArrowPullBottomSvg } from "../../svg/arrowPullBottom.svg";
-import CateSlider from "../slider/CateSlider";
 import { useEffect } from "react";
 import styled, { css } from "styled-components";
+import CateSlider from "../slider/CateSlider";
+import { ReactComponent as ArrowPullBottomSvg } from "../../svg/arrowPullBottom.svg";
 
 const JobListStyled = styled.div`
   margin-bottom: 1.5625rem;

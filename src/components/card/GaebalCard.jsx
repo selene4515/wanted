@@ -1,9 +1,9 @@
-import { ReactComponent as BookmarkNoneSvg } from "../../svg/bookmark_none.svg";
-import { ReactComponent as BookmarkBlueSvg } from "../../svg/bookmark_blue_whiteLine.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBookmark, deleteBookmark } from "../../reducers/bookmark";
+import { ReactComponent as BookmarkNoneSvg } from "../../svg/bookmark_none.svg";
+import { ReactComponent as BookmarkBlueSvg } from "../../svg/bookmark_blue_whiteLine.svg";
 
 const GaebalCard = ({ cardText }) => {
   const myId = cardText.id;

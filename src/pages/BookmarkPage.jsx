@@ -1,7 +1,7 @@
-import Header from "../components/header/Header";
-import "../styles/profile.css";
 import { useSelector } from "react-redux";
+import Header from "../components/header/Header";
 import GaebalCard from "../components/card/GaebalCard";
+import "../styles/profile.css";
 
 const BookmarkPage = () => {
   const mark = useSelector((store) => store.bookmark);
