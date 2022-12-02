@@ -3,6 +3,10 @@ import { ReactComponent as CloseBtnSvg } from "./closeBtn.svg";
 import { ReactComponent as EmailIcon } from "./emailIcon.svg";
 import { useEffect } from "react";
 
+const REST_API_KEY = "3a1d2464e8046103afeb11c5ead05e65";
+const REDIRECT_URI = "http://localhost:3000";
+const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+
 const ModalLogin = (props) => {
   const setNotAllow = props.setNotAllow;
   useEffect(() => {
@@ -87,7 +91,10 @@ const ModalLogin = (props) => {
                 다음 계정으로 계속하기
               </div>
               <div className="InputPanel_socialWrapper__Dhaxo isKR">
-                <div className="InputPanel_socialButton__Hggw2 isKR">
+                <a
+                  href={KAKAO_AUTH_URL}
+                  className="InputPanel_socialButton__Hggw2 isKR"
+                >
                   <button
                     type="button"
                     className="style_wrapper__IgK7U social-login-button kakao-login"
@@ -108,7 +115,7 @@ const ModalLogin = (props) => {
                       Kakao
                     </div>
                   </button>
-                </div>
+                </a>
                 <div className="InputPanel_socialButton__Hggw2 isKR">
                   <button
                     type="button"

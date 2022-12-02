@@ -64,15 +64,23 @@ const Header = (props) => {
   const [savedEmail, setSavedEmail] = useState("");
   const [savedPw, setSavedPw] = useState("");
 
+  let params = new URL(document.URL).searchParams;
+  let code = params.get("code");
+  const [savedKakao, setSavedKakao] = useState(null);
+
   useEffect(() => {
+    if (code) sessionStorage.setItem("kakao", code);
+    setSavedKakao(sessionStorage.getItem("kakao"));
+
     setSavedEmail(sessionStorage.getItem("email"));
     setSavedPw(sessionStorage.getItem("pw"));
   }, [setSavedEmail, setSavedPw, sessionStorage]);
 
   const LogoutHandler = () => {
+    setSavedKakao(sessionStorage.removeItem("kakao"));
     setSavedEmail(sessionStorage.removeItem("email"));
     setSavedPw(sessionStorage.removeItem("pw"));
-    window.location.reload();
+    window.location.href = "/";
   };
 
   //로그인 모달창 on/off
@@ -112,7 +120,7 @@ const Header = (props) => {
                   <i className="icon-logo_new"></i>
                 </Link>
               </div>
-              {savedEmail === null && (
+              {savedEmail === null || savedKakao === null ? (
                 <button
                   id="gnbSignupBtn"
                   className="xsSignUpButton"
@@ -120,7 +128,7 @@ const Header = (props) => {
                 >
                   회원가입하기
                 </button>
-              )}
+              ) : null}
             </div>
             <ul className="header_div_menu">
               <li className="xsHomeButton xsOnly">
@@ -159,7 +167,7 @@ const Header = (props) => {
               </li>
             </ul>
             <div className="header_div_join">
-              {savedEmail ? (
+              {savedEmail || savedKakao ? (
                 <ul>
                   <li>
                     <button className="searchBtn" onClick={SearchBarOn0}>
